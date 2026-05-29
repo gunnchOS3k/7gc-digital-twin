@@ -1,0 +1,14 @@
+site_id: ghana
+display_name: Ghana
+node_role: comparative_scenario
+is_flagship: false
+spectrum:
+  bands_ghz: [3.5, 28]
+  constraint: spectrum_limited
+population:
+  synthetic_users: 1000
+connectivity:
+  terrestrial: true
+  ntn_fallback: true
+metrics:
+  track: [fairness, spectral_efficiency, energy_efficiency, latency]

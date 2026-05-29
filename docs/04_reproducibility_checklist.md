@@ -1,0 +1,4 @@
+- [ ] `pytest -q` passes
+- [ ] Site YAMLs validate
+- [ ] No secrets in repo
+- [ ] Streamlit runs locally
