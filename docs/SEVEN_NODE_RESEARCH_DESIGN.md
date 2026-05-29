@@ -1,0 +1,2 @@
+# SEVEN_NODE_RESEARCH_DESIGN
+Research scaffold doc — see SUPERVISOR_README.md

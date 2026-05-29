@@ -1,0 +1,2 @@
+# SCENARIO_VALIDATION_PLAN
+Research scaffold doc — see SUPERVISOR_README.md
