@@ -1,62 +1,7 @@
-# Python
 __pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
+*.pyc
 .venv/
-venv/
-env/
-ENV/
-pip-wheel-metadata/
-*.egg-info/
-dist/
-build/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Environment / secrets
-.env
-.env.*
-!.env.example
-*.pem
-*.key
-secrets/
-private/
-
-# Data policy
-data/raw/
-data/private/
-data/external/
-*.csv
-*.parquet
-*.h5
-*.hdf5
-*.npz
-*.npy
-
-# Generated outputs
+<<<<<<< HEAD
 results/
-outputs/
-docs/generated/
-*.log
-
-# OS / editor
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Streamlit
-.streamlit/secrets.toml
-
-# Node / web tooling if present
-node_modules/
-.next/
-out/
-coverage/
+=======
+>>>>>>> origin/main

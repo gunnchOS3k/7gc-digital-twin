@@ -1,56 +1,86 @@
-"""CLI for 7GC digital twin research scaffold."""
+"""CLI for 7GC digital-twin toy scenarios (research prototype)."""
+from __future__ import annotations
+
 import argparse
 import json
-import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-
-from seven_gc_twin.scenario_loader import load_scenario
-from seven_gc_twin.sites import list_sites, load_site
-from seven_gc_twin.metrics import jains_fairness, energy_per_bit_joules
-from seven_gc_twin.visualization_stub import site_summary_table
+from .metrics import energy_per_bit_joules, jains_fairness, spectral_efficiency_bps_hz
+from .scenario_loader import load_scenario
+from .sites import list_sites
 
 
-def cmd_list_sites(_: argparse.Namespace) -> None:
+def _compute_summary(site_id: str) -> dict:
+    scenario = load_scenario(site_id)
+    site = scenario["site"]
+    users = scenario["users"]
+    demands = [u["demand_mbps"] for u in users]
+    fairness = jains_fairness(demands)
+    se = spectral_efficiency_bps_hz(site.get("radio", {}).get("sinr_db_stub", 10.0))
+    energy = energy_per_bit_joules(
+        site.get("energy", {}).get("power_w_stub", 5.0),
+        max(sum(demands), 0.001) * 1e6,
+    )
+    latency_ms = site.get("qos", {}).get("latency_ms_stub", 25.0)
+    return {
+        "site_id": site_id,
+        "is_flagship": site.get("is_flagship", False),
+        "n_users": len(users),
+        "jains_fairness": round(fairness, 4),
+        "spectral_efficiency_bps_hz": round(se, 4),
+        "energy_per_bit_j": round(energy, 8),
+        "latency_ms_stub": latency_ms,
+        "note": "research prototype — synthetic metrics only",
+    }
+
+
+def cmd_list_sites(_: argparse.Namespace) -> int:
     for sid in list_sites():
-        cfg = load_site(sid)
-        flag = " [flagship]" if cfg.get("is_flagship") else ""
-        print(f"{sid}{flag}")
+        print(sid)
+    return 0
 
 
-def cmd_summarize(args: argparse.Namespace) -> None:
-    scenario = load_scenario(args.site_id)
-    summary = site_summary_table([scenario])[0]
-    demands = [u["demand_mbps"] for u in scenario["users"][:20]]
-    summary["jain_fairness_toy"] = round(jains_fairness(demands), 4)
-    summary["energy_per_bit_toy"] = energy_per_bit_joules(10.0, 1e6)
+def cmd_summarize(args: argparse.Namespace) -> int:
+    summary = _compute_summary(args.site_id)
     print(json.dumps(summary, indent=2))
+    out = Path("results") / f"{args.site_id}_summary.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    print(f"Wrote {out}")
+    return 0
 
 
-def cmd_export(args: argparse.Namespace) -> None:
-    scenario = load_scenario(args.site_id)
-    out = {"site": scenario["site"], "user_count": len(scenario["users"])}
+def cmd_export(args: argparse.Namespace) -> int:
+    summary = _compute_summary(args.site_id)
+    out = Path("results") / f"{args.site_id}_export.{args.format}"
+    out.parent.mkdir(parents=True, exist_ok=True)
     if args.format == "json":
-        print(json.dumps(out, indent=2))
+        out.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     else:
-        print(out)
+        raise SystemExit(f"Unsupported format: {args.format}")
+    print(f"Wrote {out}")
+    return 0
 
 
-def main() -> None:
-    p = argparse.ArgumentParser(description="7GC digital twin CLI (research scaffold)")
-    sub = p.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("list-sites").set_defaults(func=cmd_list_sites)
-    s = sub.add_parser("summarize")
-    s.add_argument("site_id")
-    s.set_defaults(func=cmd_summarize)
-    e = sub.add_parser("export")
-    e.add_argument("site_id")
-    e.add_argument("--format", default="json", choices=["json"])
-    e.set_defaults(func=cmd_export)
-    args = p.parse_args()
-    args.func(args)
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description="7GC digital twin CLI (toy)")
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    p_list = sub.add_parser("list-sites", help="List configured site IDs")
+    p_list.set_defaults(func=cmd_list_sites)
+
+    p_sum = sub.add_parser("summarize", help="Summarize a site scenario")
+    p_sum.add_argument("site_id")
+    p_sum.set_defaults(func=cmd_summarize)
+
+    p_exp = sub.add_parser("export", help="Export scenario summary")
+    p_exp.add_argument("site_id")
+    p_exp.add_argument("--format", default="json", choices=["json"])
+    p_exp.set_defaults(func=cmd_export)
+
+    args = parser.parse_args(argv)
+    return int(args.func(args))
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

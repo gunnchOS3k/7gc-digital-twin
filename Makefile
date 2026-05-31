@@ -1,5 +1,7 @@
 .PHONY: test demo
+
 test:
-	pytest -q
+	PYTHONPATH=src pytest -q
+
 demo:
-	python -m seven_gc_twin.cli summarize gary
+	PYTHONPATH=src python3 -m seven_gc_twin.cli summarize gary
