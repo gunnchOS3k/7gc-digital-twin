@@ -1,0 +1,2 @@
+# DIGITAL_EQUALITY_METRICS
+Research scaffold doc — see SUPERVISOR_README.md

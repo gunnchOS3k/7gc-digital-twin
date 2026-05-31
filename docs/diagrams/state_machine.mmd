@@ -1,0 +1,10 @@
+stateDiagram-v2
+  [*] --> Start
+  draft
+  Validated --> validated schema
+  Validated --> synthetic users
+  Validated --> metrics
+  Validated --> exported
+  Validated --> compared
+  Validated --> archived
+  Exported --> [*]

@@ -1,0 +1,2 @@
+# EDGE_IO_TELEMETRY_CONTRACT
+Research scaffold doc — see SUPERVISOR_README.md
