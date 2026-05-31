@@ -1,6 +1,21 @@
 flowchart TB
-  CLI[CLI / demo scripts]
-  CORE[Core library]
-  CFG[configs/]
-  CLI --> CORE
-  CORE --> CFG
+  subgraph configs
+    SITES[configs/sites]
+  end
+  subgraph src/seven_gc_twin
+    LOADER[scenario_loader]
+    SITES_MOD[sites]
+    SYN[synthetic_users]
+    MET[metrics]
+    CLI[cli]
+    BASE[baseline_policy]
+    VIZ[visualization_stub]
+  end
+  APP[apps/streamlit_app.py]
+  SITES --> SITES_MOD
+  SITES_MOD --> LOADER
+  SYN --> LOADER
+  LOADER --> MET
+  CLI --> LOADER
+  CLI --> MET
+  APP -.optional.-> LOADER

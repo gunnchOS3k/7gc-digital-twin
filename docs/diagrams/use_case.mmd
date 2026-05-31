@@ -1,6 +1,11 @@
 flowchart LR
-  SUP[Supervisor review]
-  RES[Run demo]
-  STU[Apprenticeship task]
-  SUP --> RES
-  STU --> RES
+  UC1[Add site node]
+  UC2[Validate site schema]
+  UC3[Generate synthetic users]
+  UC4[Summarize Gary]
+  UC5[Export scenario JSON]
+  UC6[Compare digital equality metrics]
+  UC7[Prepare paper figure]
+  RES((Researcher)) --> UC1
+  RES --> UC4
+  RES --> UC5

@@ -1,8 +1,11 @@
 sequenceDiagram
-  participant U as User
-  participant CLI as Demo CLI
-  participant Core as Core modules
-  U->>CLI: run demo command
-  CLI->>Core: load synthetic data
-  Core-->>CLI: metrics/output
-  CLI-->>U: stdout + results file
+  participant U as Researcher
+  participant CLI as seven_gc_twin.cli
+  participant SL as scenario_loader
+  participant M as metrics
+  participant E as results/e2e
+  U->>CLI: make e2e / summarize gary
+  CLI->>SL: load_scenario gary
+  SL->>M: jains_fairness spectral_efficiency
+  M-->>CLI: summary dict
+  CLI->>E: gary_summary.md gary_export.json
