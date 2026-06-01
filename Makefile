@@ -18,3 +18,7 @@ e2e:
 	$(PY) python3 -m seven_gc_twin.cli make-report gary
 	python3 scripts/e2e_postprocess.py
 	python3 scripts/e2e_check_required_artifacts.py
+
+
+# Smoke test only — not evidence of readiness
+smoke: e2e
