@@ -1,10 +1,9 @@
 stateDiagram-v2
-  [*] --> Start
-  draft
-  Validated --> validated schema
-  Validated --> synthetic users
-  Validated --> metrics
-  Validated --> exported
-  Validated --> compared
-  Validated --> archived
-  Exported --> [*]
+  [*] --> DraftSite
+  DraftSite --> SchemaValid: sites.load_site OK
+  SchemaValid --> SyntheticPop: generate_users
+  SyntheticPop --> MetricsComputed: metrics.py
+  MetricsComputed --> Exported: export json
+  Exported --> Reviewed: human review
+  Reviewed --> Archived
+  Archived --> [*]

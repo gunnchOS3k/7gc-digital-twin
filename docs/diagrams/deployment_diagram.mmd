@@ -1,6 +1,8 @@
 flowchart LR
-  DEV[Developer laptop]
+  DEV[Developer laptop make e2e]
   GHA[GitHub Actions CI]
-  OUT[results/ docs/generated/]
-  DEV --> OUT
-  GHA --> OUT
+  ST[Streamlit optional]
+  ART[results/e2e/]
+  DEV --> ART
+  GHA --> ART
+  ST -.optional.-> ART

@@ -2,6 +2,8 @@
 from pathlib import Path
 import yaml
 
+from .site_validator import validate_site
+
 SITES_DIR = Path(__file__).resolve().parents[2] / "configs" / "sites"
 
 
@@ -13,7 +15,7 @@ def load_site(site_id: str) -> dict:
         data = yaml.safe_load(f)
     if data.get("site_id") != site_id:
         raise ValueError(f"site_id mismatch in {path}")
-    return data
+    return validate_site(data, str(path))
 
 
 def list_sites() -> list[str]:

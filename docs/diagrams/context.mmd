@@ -1,10 +1,21 @@
 flowchart TB
-  subgraph users [Users]
-    SUP[Supervisor]
-    RES[Researcher]
-    STU[Student]
+  SUP[Oulu/CWC supervisor candidate]
+  RES[Researcher]
+  STU[WAIKE apprentice]
+  CITY[City/community partner]
+  TUTOR[gunnchAI3k tutor]
+  subgraph SYS[7GC Digital Twin]
+    TWIN[seven_gc_twin]
   end
-  SYS[7gc-digital-twin]
-  TWIN[7gc-digital-twin]
-  users --> SYS
-  SYS --> TWIN
+  CFG[configs/sites/*.yaml]
+  SYN[synthetic_users.py]
+  TEL[EDGE_IO contract doc]
+  SUP --> TWIN
+  RES --> TWIN
+  STU --> TWIN
+  CITY -.scenario assumptions.-> CFG
+  TUTOR -.mentor.-> STU
+  CFG --> TWIN
+  SYN --> TWIN
+  TEL -.import stub.-> TWIN
+  TWIN --> OUT[results/e2e exports metrics]

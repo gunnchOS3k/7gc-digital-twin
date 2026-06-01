@@ -1,5 +1,6 @@
 flowchart TB
-  WAIKE --> EDGE --> TWIN[7gc-digital-twin]
-  TWIN --> SPX[spectrumx]
-  TWIN --> RG[readygary]
-  TWIN --> NTN[ntn-resilience]
+  WAIKE[waike-research-ops] --> TWIN[7gc-digital-twin]
+  EDGE[edge-io-measurement-node] --> TWIN
+  SPX[spectrumx-ai-ran-gary] --> TWIN
+  RG[readygary-6g-beam-selection] --> TWIN
+  NTN[ntn-resilience-sim] --> TWIN

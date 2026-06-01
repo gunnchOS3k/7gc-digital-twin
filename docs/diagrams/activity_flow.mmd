@@ -1,5 +1,7 @@
 flowchart TD
-  A[Load config] --> B[Validate schema]
-  B --> C[Run synthetic pipeline]
-  C --> D[Compute metrics]
-  D --> E[Write results artifact]
+  A[Load site YAML] --> B[sites.load_site validate]
+  B --> C[scenario_loader + synthetic_users]
+  C --> D[metrics: fairness SE energy latency]
+  D --> E[CLI export gary]
+  E --> F[results/e2e artifacts]
+  F --> G[Optional Streamlit apps/streamlit_app.py]

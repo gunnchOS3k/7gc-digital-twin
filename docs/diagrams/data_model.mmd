@@ -1,6 +1,17 @@
 erDiagram
-  SITE ||--o{ USER_SYN : generates
+  SITE ||--o{ SCENARIO : has
+  SCENARIO ||--o{ USER_POP : generates
+  SCENARIO ||--|| METRIC_SET : produces
+  SCENARIO ||--o| EXPORT_ARTIFACT : writes
   SITE {
     string site_id
     bool is_flagship
+  }
+  USER_POP {
+    int user_idx
+    float demand_mbps
+  }
+  METRIC_SET {
+    float jains_fairness
+    float spectral_efficiency
   }
