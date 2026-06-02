@@ -1,0 +1,234 @@
+site_id: guyana
+display_name: Guyana
+region_type: campus_guyana
+campus_role: Hinterland connectivity, Indigenous/community-governed data, e-services,
+  flood resilience
+digital_divide_context: Riverine and hinterland access gaps
+access_barriers:
+- geography
+- cost
+- skills
+affordability_barriers:
+- hardware cost
+- service fees
+device_barriers:
+- shared devices
+- ruggedness needs
+skills_barriers:
+- trainer capacity
+- language
+trust_privacy_barriers:
+- data harm risk
+- governance trust
+power_energy_barriers:
+- outage
+- remote power
+resilience_barriers:
+- disaster
+- congestion
+language_accessibility_barriers:
+- localization
+- a11y
+local_governance: Community steering circle required before deployment
+required_local_steering_circle_roles:
+- local lead
+- ethics reviewer
+- technical mentor
+- youth rep
+- partner liaison
+local_partner_types_needed:
+- school
+- municipality
+- NGO
+- research partner
+community_data_rights: Community retains rights to aggregated insights; no raw PII
+  in public repo
+no_foreign_savior_guardrails:
+- Community approves metrics
+- No foreign savior framing in reports
+- Consent before measurement
+- Aggregate-only public exports
+- Mark assumptions needing local validation
+anchor_use_cases:
+- use_case_id: guyana_anchor_a
+  name: guyana anchor A
+  human_problem: Human access gap
+  technical_problem: Technical gap
+  current_workaround: Workaround
+  7gc_intervention: 7GC intervention
+  risks_if_done_badly: Risk if bad
+  required_local_partner: local partner
+  evidence_to_collect:
+  - evidence list
+  repos_involved:
+  - 7gc-digital-twin
+  - edge-io-measurement-node
+  - ntn-resilience-sim
+- use_case_id: guyana_anchor_b
+  name: guyana anchor B
+  human_problem: Human B
+  technical_problem: Technical B
+  current_workaround: Workaround B
+  7gc_intervention: Intervention B
+  risks_if_done_badly: Risk B
+  required_local_partner: partner B
+  evidence_to_collect:
+  - evidence B
+  repos_involved:
+  - waike-research-ops
+  - gunnchos-device-os
+  - gunnchos-hardware-industrial-design
+- use_case_id: guyana_anchor_c
+  name: guyana anchor C
+  human_problem: Human C
+  technical_problem: Technical C
+  current_workaround: Workaround C
+  7gc_intervention: Intervention C
+  risks_if_done_badly: Risk C
+  required_local_partner: partner C
+  evidence_to_collect:
+  - evidence C
+  repos_involved:
+  - spectrumx-ai-ran-gary
+  - readygary-6g-beam-selection
+  - gunnchAI3k
+resilience_use_cases:
+- use_case_id: guyana_res_a
+  name: guyana resilience A
+  normal_day: Normal
+  bad_day: Bad
+  worst_day: Worst
+  recovery_day: Recovery
+  7gc_response: 7GC response
+  metrics:
+  - continuity
+  device_and_os_requirements: device req
+  edge_io_measurement_requirements: edge req
+  waike_learning_tracks:
+  - waike_guyana_res_a
+  ntn_resilience_requirements:
+  - ntn
+  - edge-io
+  ai_ran_requirements:
+  - spectrumx-ai-ran-gary
+  beam_selection_requirements:
+  - readygary-6g-beam-selection
+  privacy_and_ethics: Aggregate-only; local ethics review required
+  consent_requirements: Explicit opt-in before any measurement
+  data_never_collected:
+  - precise location of minors
+  - biometrics
+  - raw message content
+  retention_policy: Minimum necessary; delete on request where applicable
+  local_review_needed: true
+- use_case_id: guyana_res_b
+  name: guyana resilience B
+  normal_day: Normal B
+  bad_day: Bad B
+  worst_day: Worst B
+  recovery_day: Recovery B
+  7gc_response: Response B
+  metrics:
+  - recovery_time
+  device_and_os_requirements: device B
+  edge_io_measurement_requirements: edge B
+  waike_learning_tracks:
+  - waike_guyana_res_b
+  ntn_resilience_requirements:
+  - waike
+  - 7gc
+  ai_ran_requirements:
+  - spectrumx-ai-ran-gary
+  beam_selection_requirements:
+  - readygary-6g-beam-selection
+  privacy_and_ethics: Aggregate-only; local ethics review required
+  consent_requirements: Explicit opt-in before any measurement
+  data_never_collected:
+  - precise location of minors
+  - biometrics
+  - raw message content
+  retention_policy: Minimum necessary; delete on request where applicable
+  local_review_needed: true
+bad_day_scenarios:
+- scenario_id: guyana_flood
+  description: Bad-day scenario 1 for guyana
+  trigger: configurable stress event
+  metrics:
+  - service_continuity
+  - unmet_demand_proxy
+  - recovery_time_proxy
+  needs_local_validation: true
+- scenario_id: guyana_outage
+  description: Bad-day scenario 2 for guyana
+  trigger: configurable stress event
+  metrics:
+  - service_continuity
+  - unmet_demand_proxy
+  - recovery_time_proxy
+  needs_local_validation: true
+- scenario_id: guyana_congestion
+  description: Bad-day scenario 3 for guyana
+  trigger: configurable stress event
+  metrics:
+  - service_continuity
+  - unmet_demand_proxy
+  - recovery_time_proxy
+  needs_local_validation: true
+- scenario_id: guyana_privacy_incident
+  description: Bad-day scenario 4 for guyana
+  trigger: configurable stress event
+  metrics:
+  - service_continuity
+  - unmet_demand_proxy
+  - recovery_time_proxy
+  needs_local_validation: true
+- scenario_id: guyana_power_loss
+  description: Bad-day scenario 5 for guyana
+  trigger: configurable stress event
+  metrics:
+  - service_continuity
+  - unmet_demand_proxy
+  - recovery_time_proxy
+  needs_local_validation: true
+metrics_definitions:
+- metric_id: digital_inclusion_readiness
+  description: Inclusion readiness (smoke composite)
+  scale: 0-1
+- metric_id: access_barrier_score
+  description: Access barrier pressure
+  scale: 0-1
+- metric_id: affordability_pressure
+  description: Affordability pressure
+  scale: 0-1
+- metric_id: power_resilience_risk
+  description: Power/resilience risk
+  scale: 0-1
+- metric_id: privacy_data_harm_risk
+  description: Privacy/data harm risk
+  scale: 0-1
+local_capacity_indicators:
+- trainer_count_proxy
+- mentor_hours_proxy
+- open_lab_hours_proxy
+evidence_to_collect:
+- item_id: guyana_ev_0
+  description: Field validation item 1
+  requires_local_validation: true
+- item_id: guyana_ev_1
+  description: Field validation item 2
+  requires_local_validation: true
+- item_id: guyana_ev_2
+  description: Field validation item 3
+  requires_local_validation: true
+- item_id: guyana_ev_3
+  description: Field validation item 4
+  requires_local_validation: true
+- item_id: guyana_ev_4
+  description: Field validation item 5
+  requires_local_validation: true
+source_assumptions:
+- source_id: guyana_assumption_1
+  claim: Public resilience framework reference
+  url_or_reference: https://www.itu.int
+  confidence: low
+  needs_local_validation: true

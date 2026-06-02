@@ -1,0 +1,9 @@
+flowchart LR
+  YAML[configs/site_profiles/*.yaml] --> Loader[site_profiles.py]
+  Loader --> UC[use_cases.py]
+  Loader --> BD[bad_day_scenarios.py]
+  UC --> Engine[scenario_engine.py]
+  BD --> Engine
+  Engine --> Metrics[campus_metrics.py]
+  Metrics --> Reports[campus_reports.py]
+  Reports --> Out[results/site_profiles/]
