@@ -155,6 +155,79 @@ def cmd_make_report(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_validate_site(args: argparse.Namespace) -> int:
+    from .config.loader import load_site_config
+    from .config.validator import validate_site_config
+
+    errs = validate_site_config(load_site_config(args.site_id))
+    if errs:
+        print("INVALID:", errs)
+        return 1
+    print("OK", args.site_id)
+    return 0
+
+
+def cmd_build_scene(args: argparse.Namespace) -> int:
+    from .scene_builder import build_scene, CAMPUS_GEO
+    from .scene.osm_overpass import merge_into_geojson
+
+    r = build_scene(args.site_id, mode=args.mode)
+    if args.mode == "open-data":
+        c = CAMPUS_GEO[args.site_id]["center"]
+        if merge_into_geojson(args.site_id, c):
+            print("Overpass: updated community_anchors.geojson")
+        else:
+            print("Overpass: unavailable — synthetic anchors kept")
+    print(json.dumps(r, indent=2))
+    return 0
+
+
+def cmd_build_all_scenes(args: argparse.Namespace) -> int:
+    from .scene_builder import build_all_scenes
+
+    results = build_all_scenes(mode=args.mode)
+    print(json.dumps(results, indent=2))
+    return 0
+
+
+def cmd_export_scene(args: argparse.Namespace) -> int:
+    from .scene_builder import build_scene
+
+    build_scene(args.site_id, mode="synthetic-fixture")
+    print(f"Exported scene layers under results/scenes/{args.site_id}/")
+    return 0
+
+
+def cmd_run_use_cases(args: argparse.Namespace) -> int:
+    from .scene_builder import build_use_cases_layer
+
+    paths = build_use_cases_layer(args.site_id, "synthetic-fixture")
+    print(json.dumps({k: str(v) for k, v in paths.items()}, indent=2))
+    return 0
+
+
+def cmd_run_bad_day(args: argparse.Namespace) -> int:
+    from .bad_day_scenarios import run_bad_day
+
+    print(json.dumps(run_bad_day(args.site_id, args.scenario_id, mode="smoke"), indent=2))
+    return 0
+
+
+def cmd_make_conference_artifacts(_: argparse.Namespace) -> int:
+    from .scene_builder import integration_map_doc, make_conference_artifacts
+
+    print(make_conference_artifacts())
+    print(integration_map_doc())
+    return 0
+
+
+def cmd_integration_map_global(_: argparse.Namespace) -> int:
+    from .scene_builder import integration_map_doc
+
+    print(integration_map_doc())
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="7GC digital twin CLI")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -190,8 +263,37 @@ def main(argv: list[str] | None = None) -> int:
     p_exp_site.set_defaults(func=cmd_export_site)
 
     p_map = sub.add_parser("integration-map")
-    p_map.add_argument("site_id")
-    p_map.set_defaults(func=cmd_integration_map)
+    p_map.add_argument("site_id", nargs="?", default=None)
+    p_map.set_defaults(func=lambda a: cmd_integration_map(a) if a.site_id else cmd_integration_map_global(a))
+
+    p_val = sub.add_parser("validate-site")
+    p_val.add_argument("site_id")
+    p_val.set_defaults(func=cmd_validate_site)
+
+    p_bs = sub.add_parser("build-scene")
+    p_bs.add_argument("site_id")
+    p_bs.add_argument("--mode", default="synthetic-fixture", choices=["synthetic-fixture", "open-data"])
+    p_bs.set_defaults(func=cmd_build_scene)
+
+    p_bsa = sub.add_parser("build-all-scenes")
+    p_bsa.add_argument("--mode", default="synthetic-fixture")
+    p_bsa.set_defaults(func=cmd_build_all_scenes)
+
+    p_es = sub.add_parser("export-scene")
+    p_es.add_argument("site_id")
+    p_es.add_argument("--formats", default="geojson,gltf")
+    p_es.set_defaults(func=cmd_export_scene)
+
+    p_ruc = sub.add_parser("run-use-cases")
+    p_ruc.add_argument("site_id")
+    p_ruc.set_defaults(func=cmd_run_use_cases)
+
+    p_rbd = sub.add_parser("run-bad-day")
+    p_rbd.add_argument("site_id")
+    p_rbd.add_argument("scenario_id")
+    p_rbd.set_defaults(func=cmd_run_bad_day)
+
+    sub.add_parser("make-conference-artifacts").set_defaults(func=cmd_make_conference_artifacts)
 
     p_sum = sub.add_parser("summarize")
     p_sum.add_argument("site_id")

@@ -1,0 +1,13 @@
+flowchart TB
+  YAML[configs/site_profiles/*.yaml] --> Loader[config.loader]
+  Loader --> Validator[config.validator]
+  Validator --> SB[scene_builder.build_scene]
+  SB --> Geo[geo/*.geojson]
+  SB --> GLTF[3d/scene.gltf]
+  SB --> Conn[connectivity/connectivity_graph.json]
+  SB --> Pop[population/synthetic_population.json]
+  SB --> UC[use_cases/use_case_register.json]
+  SB --> Int[waike edge_io ntn ai_ran beam_selection]
+  SB --> Rep[reports/campus_report.md]
+  OSM[scene.osm_overpass optional] --> Geo
+  SB --> Conf[results/conference/]

@@ -1,0 +1,7 @@
+stateDiagram-v2
+  [*] --> smoke_test_only
+  smoke_test_only --> open_data_backed: OSM ingest OK
+  open_data_backed --> calibrated_simulation: model fit
+  calibrated_simulation --> field_validated: partner pilot
+  field_validated --> externally_reproduced: outside repro
+  externally_reproduced --> conference_candidate: paper package

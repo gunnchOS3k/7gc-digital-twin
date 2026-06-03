@@ -122,6 +122,24 @@ make smoke
 
 Video: [docs/video_walkthrough_script.md](docs/video_walkthrough_script.md)
 
+## Full digital twin scenes (seven campuses)
+
+Build complete scene trees (geo, 3D glTF, connectivity, population, use cases, cross-repo layers):
+
+```bash
+make validate-sites
+make build-scenes-offline          # synthetic-fixture — default CI
+make full-scenes                   # + optional open-data Overpass attempt
+make conference-artifacts
+streamlit run apps/streamlit_7gc_scene_dashboard.py
+```
+
+Outputs: `results/scenes/<site_id>/` · Conference: `results/conference/7gc_scene_table.md`
+
+Diagram: [docs/diagrams/architecture_full_scene_pipeline.mmd](docs/diagrams/architecture_full_scene_pipeline.mmd)
+
+**Evidence:** synthetic-fixture = `smoke_test_only`; open-data layers may be `open_data_backed` when Overpass succeeds. Not field validation.
+
 ## Visual map
 
 ```mermaid
