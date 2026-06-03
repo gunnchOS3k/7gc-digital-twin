@@ -1,0 +1,9 @@
+flowchart LR
+  profiles[configs/site_profiles/*.yaml] --> loader[config.loader]
+  loader --> osm[scene.osm_overpass]
+  loader --> synth[scene_builder synthetic]
+  osm --> geo[scene_exports geojson]
+  synth --> geo
+  synth --> gltf[scene.gltf]
+  synth --> sionna[sionna_scene.xml]
+  geo --> out[results/scenes/site_id/3d/]
