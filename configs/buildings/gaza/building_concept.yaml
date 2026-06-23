@@ -1,0 +1,6 @@
+site_id: gaza
+footprints:
+- minimum_pilot
+- semi_permanent_hub
+- full_campus
+evidence_status: design assumption

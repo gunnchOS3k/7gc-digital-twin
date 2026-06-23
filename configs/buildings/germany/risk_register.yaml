@@ -1,0 +1,4 @@
+site_id: germany
+risks:
+- id: overclaim
+  mitigation: non-claim policy

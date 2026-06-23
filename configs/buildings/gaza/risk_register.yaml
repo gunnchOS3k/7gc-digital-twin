@@ -1,0 +1,4 @@
+site_id: gaza
+risks:
+- id: overclaim
+  mitigation: non-claim policy
