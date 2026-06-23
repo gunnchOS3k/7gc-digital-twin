@@ -1,0 +1,4 @@
+site_id: guyana
+risks:
+- id: overclaim
+  mitigation: non-claim policy

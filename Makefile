@@ -1,4 +1,7 @@
-.PHONY: install test lint validate-sites build-scenes build-scenes-offline full-scenes conference-artifacts diagrams demo e2e smoke clean-results e2e-tooling e2e-sionna e2e-deepmimo e2e-aerial e2e-oran
+.PHONY: install test lint validate-sites build-scenes build-scenes-offline full-scenes conference-artifacts diagrams demo e2e smoke clean-results e2e-tooling e2e-sionna e2e-deepmimo e2e-aerial e2e-oran generate-7gc-campus-twin
+
+generate-7gc-campus-twin:
+	$(PY) python3 scripts/generate_7gc_campus_twin_bundle.py
 
 PY := PYTHONPATH=src
 
