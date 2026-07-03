@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -87.3764,
+              41.5634
+            ],
+            [
+              -87.3164,
+              41.5634
+            ],
+            [
+              -87.3164,
+              41.623400000000004
+            ],
+            [
+              -87.3764,
+              41.623400000000004
+            ],
+            [
+              -87.3764,
+              41.5634
+            ]
+          ]
+        ]
+      },
+      "properties": {}
+    }
+  ],
+  "properties": {
+    "site_id": "gary",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.397,
+              52.512
+            ],
+            [
+              13.412999999999998,
+              52.512
+            ],
+            [
+              13.412999999999998,
+              52.528000000000006
+            ],
+            [
+              13.397,
+              52.528000000000006
+            ],
+            [
+              13.397,
+              52.512
+            ]
+          ]
+        ]
+      },
+      "properties": {}
+    }
+  ],
+  "properties": {
+    "site_id": "germany",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

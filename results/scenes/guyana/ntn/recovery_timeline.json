@@ -1,0 +1,8 @@
+{
+  "recovery_steps": [
+    "restore_terrestrial",
+    "ntn_window",
+    "sync_cache"
+  ],
+  "evidence_status": "smoke_test_only"
+}

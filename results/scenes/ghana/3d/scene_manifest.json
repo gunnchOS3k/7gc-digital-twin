@@ -1,0 +1,11 @@
+{
+  "site_id": "ghana",
+  "scene_version": "1.0.0",
+  "evidence_status": "smoke_test_only",
+  "generator": "seven_gc_twin.scene_builder",
+  "objects": [
+    "ground_plane",
+    "learning_anchor",
+    "connectivity_volume"
+  ]
+}

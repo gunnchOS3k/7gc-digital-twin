@@ -1,0 +1,191 @@
+{
+  "site_id": "gary",
+  "anchor_use_cases": [
+    {
+      "use_case_id": "gary_youth_builder",
+      "name": "Youth builder pathway",
+      "human_problem": "Youth lack safe paths into wireless research",
+      "technical_problem": "Need reproducible lab-to-GitHub pipeline",
+      "current_workaround": "Informal online tutorials only",
+      "7gc_intervention": "WAIKE + 7GC twin scenarios",
+      "risks_if_done_badly": "Extractive volunteering",
+      "required_local_partner": "school",
+      "evidence_to_collect": [
+        "rubric samples"
+      ],
+      "repos_involved": [
+        "waike-research-ops",
+        "7gc-digital-twin"
+      ]
+    },
+    {
+      "use_case_id": "gary_family_nav",
+      "name": "Family digital navigation",
+      "human_problem": "Families struggle with device/setup trust",
+      "technical_problem": "Need privacy-first onboarding",
+      "current_workaround": "Ad hoc help desks",
+      "7gc_intervention": "Device OS kiosk + Edge-IO smoke",
+      "risks_if_done_badly": "Surveillance-style monitoring",
+      "required_local_partner": "library",
+      "evidence_to_collect": [
+        "consent logs"
+      ],
+      "repos_involved": [
+        "gunnchos-device-os",
+        "edge-io-measurement-node"
+      ]
+    },
+    {
+      "use_case_id": "gary_smb_starter",
+      "name": "Small business digital starter",
+      "human_problem": "SMBs lose revenue during outages",
+      "technical_problem": "Need resilience + fair AI-RAN",
+      "current_workaround": "Consumer hotspots",
+      "7gc_intervention": "NTN sim + AI-RAN policy smoke",
+      "risks_if_done_badly": "Over-promising uptime",
+      "required_local_partner": "chamber partner",
+      "evidence_to_collect": [
+        "outage drill notes"
+      ],
+      "repos_involved": [
+        "spectrumx-ai-ran-gary",
+        "ntn-resilience-sim"
+      ]
+    }
+  ],
+  "resilience_use_cases": [
+    {
+      "use_case_id": "gary_outage_learning",
+      "name": "Outage learning cache",
+      "normal_day": "School day",
+      "bad_day": "Neighborhood outage",
+      "worst_day": "Multi-day blackout",
+      "recovery_day": "Cache sync day",
+      "7gc_response": "Offline lesson bundles + NTN fallback sim",
+      "metrics": [
+        "service_continuity",
+        "priority_preservation"
+      ],
+      "device_and_os_requirements": "school fleet mode",
+      "edge_io_measurement_requirements": "aggregate latency only",
+      "waike_learning_tracks": [
+        "waike_gary_outage_learning"
+      ],
+      "ntn_resilience_requirements": [
+        "waike",
+        "ntn",
+        "device-os"
+      ],
+      "ai_ran_requirements": [
+        "spectrumx-ai-ran-gary"
+      ],
+      "beam_selection_requirements": [
+        "readygary-6g-beam-selection"
+      ],
+      "privacy_and_ethics": "Aggregate-only; local ethics review required",
+      "consent_requirements": "Explicit opt-in before any measurement",
+      "data_never_collected": [
+        "precise location of minors",
+        "biometrics",
+        "raw message content"
+      ],
+      "retention_policy": "Minimum necessary; delete on request where applicable",
+      "local_review_needed": true
+    },
+    {
+      "use_case_id": "gary_storm_fairness",
+      "name": "Storm fairness stress",
+      "normal_day": "Fair weekday",
+      "bad_day": "Storm congestion",
+      "worst_day": "Emergency prioritization",
+      "recovery_day": "Recovery fairness audit",
+      "7gc_response": "AI-RAN fairness policy smoke",
+      "metrics": [
+        "fairness_index",
+        "unmet_demand"
+      ],
+      "device_and_os_requirements": "URLLC lab mode",
+      "edge_io_measurement_requirements": "no location traces",
+      "waike_learning_tracks": [
+        "waike_gary_storm_fairness"
+      ],
+      "ntn_resilience_requirements": [
+        "spectrumx",
+        "7gc"
+      ],
+      "ai_ran_requirements": [
+        "spectrumx-ai-ran-gary"
+      ],
+      "beam_selection_requirements": [
+        "readygary-6g-beam-selection"
+      ],
+      "privacy_and_ethics": "Aggregate-only; local ethics review required",
+      "consent_requirements": "Explicit opt-in before any measurement",
+      "data_never_collected": [
+        "precise location of minors",
+        "biometrics",
+        "raw message content"
+      ],
+      "retention_policy": "Minimum necessary; delete on request where applicable",
+      "local_review_needed": true
+    }
+  ],
+  "bad_day_scenarios": [
+    {
+      "scenario_id": "neighborhood_outage",
+      "description": "Bad-day scenario 1 for gary",
+      "trigger": "configurable stress event",
+      "metrics": [
+        "service_continuity",
+        "unmet_demand_proxy",
+        "recovery_time_proxy"
+      ],
+      "needs_local_validation": true
+    },
+    {
+      "scenario_id": "storm_congestion",
+      "description": "Bad-day scenario 2 for gary",
+      "trigger": "configurable stress event",
+      "metrics": [
+        "service_continuity",
+        "unmet_demand_proxy",
+        "recovery_time_proxy"
+      ],
+      "needs_local_validation": true
+    },
+    {
+      "scenario_id": "school_bandwidth_collapse",
+      "description": "Bad-day scenario 3 for gary",
+      "trigger": "configurable stress event",
+      "metrics": [
+        "service_continuity",
+        "unmet_demand_proxy",
+        "recovery_time_proxy"
+      ],
+      "needs_local_validation": true
+    },
+    {
+      "scenario_id": "library_hotspot_overload",
+      "description": "Bad-day scenario 4 for gary",
+      "trigger": "configurable stress event",
+      "metrics": [
+        "service_continuity",
+        "unmet_demand_proxy",
+        "recovery_time_proxy"
+      ],
+      "needs_local_validation": true
+    },
+    {
+      "scenario_id": "smb_payment_system_down",
+      "description": "Bad-day scenario 5 for gary",
+      "trigger": "configurable stress event",
+      "metrics": [
+        "service_continuity",
+        "unmet_demand_proxy",
+        "recovery_time_proxy"
+      ],
+      "needs_local_validation": true
+    }
+  ],
+  "evidence_status": "smoke_test_only"
+}

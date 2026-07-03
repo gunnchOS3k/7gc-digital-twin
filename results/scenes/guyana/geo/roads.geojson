@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.155,
+          6.801
+        ]
+      },
+      "properties": {
+        "road": "main_stub"
+      }
+    }
+  ],
+  "properties": {
+    "site_id": "guyana",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

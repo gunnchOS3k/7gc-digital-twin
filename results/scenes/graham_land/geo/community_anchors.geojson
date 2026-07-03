@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.005,
+          -63.997
+        ]
+      },
+      "properties": {
+        "type": "school_or_learning",
+        "synthetic": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.996,
+          -64.0
+        ]
+      },
+      "properties": {
+        "type": "library_community",
+        "synthetic": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.0,
+          -64.004
+        ]
+      },
+      "properties": {
+        "type": "small_business",
+        "synthetic": true
+      }
+    }
+  ],
+  "properties": {
+    "site_id": "graham_land",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.207,
+              5.5837
+            ],
+            [
+              -0.167,
+              5.5837
+            ],
+            [
+              -0.167,
+              5.6236999999999995
+            ],
+            [
+              -0.207,
+              5.6236999999999995
+            ],
+            [
+              -0.207,
+              5.5837
+            ]
+          ]
+        ]
+      },
+      "properties": {}
+    }
+  ],
+  "properties": {
+    "site_id": "ghana",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}
