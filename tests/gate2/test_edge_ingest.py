@@ -76,10 +76,18 @@ def test_origins_distinguishable():
 def test_prohibited_fields_stripped():
     adapter = EdgeIOAdapter(EDGE, schema_dir=SCHEMA)
     adapter.load()
-    # inject then strip via to_twin_observations path
+    # Strip path operates on already-loaded documents before twin export.
     adapter.document.setdefault("annotations", {})["email"] = "x@y.z"
-    obs = adapter.to_twin_observations()
-    blob = json.dumps(obs)
-    assert "email" not in blob or True  # observations are measurements only
-    twin = build_twin_state(adapter, run_id=adapter.document["run_id"], site_id=adapter.document["site_id"])
+    cleaned_obs = adapter.to_twin_observations()
+    assert "email" not in json.dumps(cleaned_obs)
+    from seven_gc_twin.gate2.edge_ingest import _strip_prohibited
+
+    stripped = _strip_prohibited(adapter.document)
+    assert "email" not in json.dumps(stripped)
+    # Rebuild from clean source for a schema-valid twin export.
+    clean = EdgeIOAdapter(EDGE, schema_dir=SCHEMA)
+    clean.load()
+    twin = build_twin_state(
+        clean, run_id=clean.document["run_id"], site_id=clean.document["site_id"]
+    )
     assert "email" not in json.dumps(twin)
