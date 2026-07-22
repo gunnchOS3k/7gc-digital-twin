@@ -51,6 +51,21 @@ def _mean(vals: list[float]) -> float:
     return sum(vals) / len(vals) if vals else 0.0
 
 
+def _numeric_series(observations: list[dict[str, Any]], key: str) -> list[float]:
+    """Collect finite numeric values; skip null/unavailable fields without fabricating zeros into the series.
+
+    Empty series yields mean 0.0 via `_mean`, which is an aggregation placeholder only —
+    unavailable input values remain absent from the series itself.
+    """
+    out: list[float] = []
+    for m in observations:
+        v = m.get(key)
+        if v is None:
+            continue
+        out.append(float(v))
+    return out
+
+
 class EdgeIOAdapter:
     def __init__(self, path: Path, schema_dir: Path | None = None) -> None:
         self.path = Path(path)
@@ -142,11 +157,12 @@ def build_twin_state(
     if not observations:
         raise ValueError("No measurements to aggregate")
 
-    lat = [float(m["latency_ms"]) for m in observations]
-    jit = [float(m["jitter_ms"]) for m in observations]
-    loss = [float(m["packet_loss_pct"]) for m in observations]
-    up = [float(m["upload_mbps"]) for m in observations]
-    down = [float(m["download_mbps"]) for m in observations]
+    lat = _numeric_series(observations, "latency_ms")
+    jit = _numeric_series(observations, "jitter_ms")
+    loss = _numeric_series(observations, "packet_loss_pct")
+    up = _numeric_series(observations, "upload_mbps")
+    down = _numeric_series(observations, "download_mbps")
+    local_edge = _numeric_series(observations, "local_edge_response_ms")
     nets = Counter(str(m.get("network_type", "unknown")) for m in observations)
     dominant = nets.most_common(1)[0][0]
     workload = adapter.document["workload"]["profile"]
@@ -154,7 +170,7 @@ def build_twin_state(
 
     mean_latency = _mean(lat)
     terrestrial_up = mean_latency < 200 and _mean(loss) < 20 and dominant != "unknown"
-    local_edge_available = _mean([float(m["local_edge_response_ms"]) for m in observations]) < 50
+    local_edge_available = bool(local_edge) and _mean(local_edge) < 50
 
     cfg = _config_for_hash(site_id, run_id)
     configuration_hash = sha256_bytes(canonical_json_bytes(cfg))
@@ -208,7 +224,7 @@ def build_twin_state(
             {
                 "network": "local_edge_wifi",
                 "available": local_edge_available and dominant in {"wifi", "degraded_local"},
-                "estimated_latency_ms": _mean([float(m["local_edge_response_ms"]) for m in observations]),
+                "estimated_latency_ms": _mean(local_edge),
                 "estimated_capacity_mbps": _mean(down) * 0.8,
                 "origin": "measured",
             },
@@ -278,7 +294,7 @@ def build_twin_state(
         "energy_constraints": {
             "values": {
                 "energy_budget_j": 100.0,
-                "mean_battery_pct": _mean([float(m["battery_pct"]) for m in observations]),
+                "mean_battery_pct": _mean(_numeric_series(observations, "battery_pct")),
             },
             "origin": "measured",
         },
