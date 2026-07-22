@@ -1,18 +1,26 @@
-.PHONY: install test lint validate-sites build-scenes build-scenes-offline full-scenes conference-artifacts diagrams demo e2e smoke clean-results e2e-tooling e2e-sionna e2e-deepmimo e2e-aerial e2e-oran generate-7gc-campus-twin
+.PHONY: setup install test lint contract-test validate-sites build-scenes build-scenes-offline full-scenes conference-artifacts diagrams demo e2e smoke clean-results e2e-tooling e2e-sionna e2e-deepmimo e2e-aerial e2e-oran generate-7gc-campus-twin clean
 
 generate-7gc-campus-twin:
 	$(PY) python3 scripts/generate_7gc_campus_twin_bundle.py
 
 PY := PYTHONPATH=src
 
+setup: install
+
 install:
 	pip install -r requirements.txt
+	pip install -r requirements-dev.txt
 
 test:
 	$(PY) pytest -q
 
+contract-test:
+	$(PY) pytest -q tests/gate2
+
 lint:
-	@echo "lint: optional ruff not required for CI"
+	$(PY) python3 -m compileall -q src/seven_gc_twin/gate2
+
+clean: clean-results
 
 validate-sites:
 	@for s in gary ghana guyana gaza geelong graham_land germany; do \

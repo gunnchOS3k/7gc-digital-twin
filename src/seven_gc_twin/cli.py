@@ -228,6 +228,56 @@ def cmd_integration_map_global(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_ingest_edge(args: argparse.Namespace) -> int:
+    from .gate2.edge_ingest import ingest_edge
+
+    adapter = ingest_edge(
+        Path(args.input),
+        site_id=args.site,
+        run_id=args.run_id,
+        schema_dir=Path(args.schema_dir) if args.schema_dir else None,
+        store_dir=Path("results/gate2_ingest"),
+    )
+    print(
+        json.dumps(
+            {
+                "ok": True,
+                "run_id": args.run_id,
+                "site_id": args.site,
+                "sha256": adapter.input_sha256,
+            },
+            indent=2,
+        )
+    )
+    return 0
+
+
+def cmd_build_twin_state(args: argparse.Namespace) -> int:
+    from .gate2.common import write_json
+    from .gate2.edge_ingest import EdgeIOAdapter, build_twin_state, validate_twin_state
+
+    schema_dir = Path(args.schema_dir) if args.schema_dir else None
+    adapter = EdgeIOAdapter(Path(args.input), schema_dir=schema_dir)
+    adapter.load()
+    site_id = args.site or adapter.document["site_id"]
+    twin = build_twin_state(adapter, run_id=args.run_id, site_id=site_id)
+    out = write_json(Path(args.output), twin)
+    validate_twin_state(out, schema_dir=schema_dir)
+    print(str(out))
+    return 0
+
+
+def cmd_validate_twin_state(args: argparse.Namespace) -> int:
+    from .gate2.edge_ingest import validate_twin_state
+
+    result = validate_twin_state(
+        Path(args.path),
+        schema_dir=Path(args.schema_dir) if args.schema_dir else None,
+    )
+    print(json.dumps(result, indent=2))
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="7GC digital twin CLI")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -312,6 +362,27 @@ def main(argv: list[str] | None = None) -> int:
     p_rep = sub.add_parser("make-report")
     p_rep.add_argument("site_id")
     p_rep.set_defaults(func=cmd_make_report)
+
+    # Gate 2 integrated path
+    p_ingest = sub.add_parser("ingest-edge")
+    p_ingest.add_argument("--input", required=True)
+    p_ingest.add_argument("--site", required=True)
+    p_ingest.add_argument("--run-id", required=True)
+    p_ingest.add_argument("--schema-dir", default=None)
+    p_ingest.set_defaults(func=cmd_ingest_edge)
+
+    p_bts = sub.add_parser("build-twin-state")
+    p_bts.add_argument("--input", required=True, help="Edge measurement batch JSON")
+    p_bts.add_argument("--run-id", required=True)
+    p_bts.add_argument("--site", default=None)
+    p_bts.add_argument("--output", required=True)
+    p_bts.add_argument("--schema-dir", default=None)
+    p_bts.set_defaults(func=cmd_build_twin_state)
+
+    p_vts = sub.add_parser("validate-twin-state")
+    p_vts.add_argument("path")
+    p_vts.add_argument("--schema-dir", default=None)
+    p_vts.set_defaults(func=cmd_validate_twin_state)
 
     args = parser.parse_args(argv)
     return int(args.func(args))
