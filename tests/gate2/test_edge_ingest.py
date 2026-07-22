@@ -73,7 +73,27 @@ def test_origins_distinguishable():
     assert "missing" in twin["field_provenance"]["fields"].values() or twin["missing_data_flags"]
 
 
-def test_prohibited_fields_stripped():
+def test_null_unavailable_metrics_do_not_crash_build(tmp_path):
+    doc = json.loads(EDGE.read_text())
+    for m in doc["measurements"]:
+        m["jitter_ms"] = None
+        m["upload_mbps"] = None
+        m["download_mbps"] = None
+        m["packet_loss_pct"] = None
+        m["unavailable_fields"] = {
+            "jitter_ms": "api_not_exposed_without_privileged_radio_stats",
+            "upload_mbps": "api_not_exposed_without_privileged_radio_stats",
+            "download_mbps": "api_not_exposed_without_privileged_radio_stats",
+            "packet_loss_pct": "api_not_exposed_without_privileged_radio_stats",
+        }
+    path = tmp_path / "physical_nulls.json"
+    path.write_text(json.dumps(doc))
+    adapter = EdgeIOAdapter(path, schema_dir=SCHEMA)
+    adapter.load()
+    twin = build_twin_state(adapter, run_id=doc["run_id"], site_id=doc["site_id"])
+    assert twin["source_measurement"]["summary"]["n_samples"] == len(doc["measurements"])
+    assert twin["source_measurement"]["summary"]["mean_latency_ms"] >= 0
+
     adapter = EdgeIOAdapter(EDGE, schema_dir=SCHEMA)
     adapter.load()
     # Strip path operates on already-loaded documents before twin export.
