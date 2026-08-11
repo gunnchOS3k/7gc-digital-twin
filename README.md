@@ -1,247 +1,109 @@
-# 7GC Digital Twin — AI-RAN Research Scaffold
-## End-to-End Research Artifact
+# 7gc-digital-twin
 
-| Item | Detail |
-|------|--------|
-| **Runs today** | Research prototype with smoke test (synthetic, non-evidence) |
-| **Demo** | `make smoke` (smoke test only — not readiness proof) |
-| **Data** | Synthetic only — no private IQ or PII |
-| **Extend** | See [EXTERNAL_RESEARCHER_QUICKSTART.md](docs/EXTERNAL_RESEARCHER_QUICKSTART.md) |
-| **Limits** | Not operational 6G; not Oulu affiliation; not carrier-grade |
-| **Readiness** | [END_TO_END_READINESS.md](docs/END_TO_END_READINESS.md) |
-| **Smoke test** | [E2E_RUN_RECORD.md](reproducibility/E2E_RUN_RECORD.md) |
-| **Artifacts** | [results/e2e/](results/e2e/) |
+Community-scale **AI-RAN + digital twin** research scaffold (Gary flagship + comparative scenario nodes).
 
-**Spine repo** for the gunnchOS3k MLV **7GC AI-RAN Digital Twin Program**.
+> **Current release/state:** `DIGITALLY_VALIDATED` research twin — **NOT the gunnchOS3k product spine**. Portal + field-kit charter are canonical.
 
-> **Research prototype / simulation scaffold** — not a claim of deployed 6G infrastructure.
-
-## Thesis
-
-Community-scale **AI-RAN + digital twin + edge device testbeds** for under-connected, spectrum-constrained communities.
-
-- **Gary** — flagship node (node 1)
-- **Ghana, Guyana, Gaza, Geelong, Graham Land, Germany** — comparative scenario nodes for research and future partnerships
-
-## What this repo is
-
-- Reproducible site-aware simulation scaffold
-- Metrics library (fairness, spectral/energy efficiency, latency, NTN resilience hooks)
-- Future lab/testbed integration contracts
-
-## What this repo is not
-
-- Operational carrier 6G network
-- Certified consumer hardware
-- Production telemetry store with PII
-
-
----
+Ecosystem portal: [gunnchos-research-portal](https://github.com/gunnchOS3k/gunnchos-research-portal) · Product charter: [gunnchOS3k_PRODUCT_CHARTER.md](https://github.com/gunnchOS3k/gunnchos-7gc-ai-ran-field-kit/blob/main/program/charter/gunnchOS3k_PRODUCT_CHARTER.md)
 
 ## What is this?
 
-**Model community connectivity *before* deployment so planners can compare fair, efficient AI-RAN options.**
+Site-aware simulation scaffold, metrics (fairness, spectral/energy, latency, NTN hooks), and lab/testbed integration contracts.
 
-| | |
-|---|---|
-| **Status** | Evidence-building research scaffold · **Spine repo** |
-| **Evidence today** | Level 1 smoke test — see [Evidence status](#evidence-status-smoke-test-vs-real-validation) |
-| **Start** | [docs/START_HERE.md](docs/START_HERE.md) |
+## Why does it exist?
 
-## What problem does this solve?
+Compare connectivity policies *before* deployment for under-connected communities — research, not operations.
 
-**Human:** Under-connected neighborhoods lack affordable, fair wireless planning tools; mistakes in deployment waste money and deepen digital inequality.
+## Where does it fit?
 
-**Technical:** AI-RAN policies need site-aware digital twins with validated metrics—not guesswork from synthetic demos alone.
+Product Charter **layer 10** (twin research). Linked from portal as research — **not** control-plane / product spine.
 
-**Who is harmed if unsolved:** Residents, students, small businesses, and city partners who depend on reliable connectivity.
+## What is real today?
 
-**Gary / 7GC / digital equality:** This repo supports equitable connectivity research for under-connected communities; Gary is the flagship urban anchor where applicable.
+- Site schemas, CLI/Streamlit smoke paths, `make smoke` / `make e2e`
+- Metrics library and scene builders as documented
+- Contracts toward Edge-IO / AI-RAN / NTN research repos
 
-## Beginner mental model
+## What is simulated / modelled?
 
-A **flight simulator** for future community internet infrastructure—you can test policies without flying a real plane yet.
+- Synthetic campus/community scenes and policy comparisons
+- Optional Sionna/DeepMIMO/aerial tooling paths when enabled — still research
 
-## How this repo addresses the problem
+## What is physical / external pending?
 
-Site schemas, Gary flagship + comparative nodes, metrics library, CLI/Streamlit smoke paths, and contracts for Edge-IO, AI-RAN, and NTN repos.
+- Field-calibrated twin correlation
+- Any operational carrier network claim — **not claimed**
+- Reinstating this repo as product spine — **rejected**
 
-**Main output:** `results/e2e/` summaries and exports (synthetic smoke only until calibrated data lands).
-
-**Output does NOT prove:** Field-validated digital equality scores or operational carrier performance.
-
-## How this fits gunnchOS3k MLV
-
-Central spine for gunnchOS3k MLV 7GC program—feeds spectrumx, readygary, edge-io, ntn, WAIKE, device OS, and hardware roadmaps.
-
-Deep dive: [docs/HOW_THIS_FITS_GUNNCHOS.md](docs/HOW_THIS_FITS_GUNNCHOS.md) · [docs/CROSS_REPO_DEPENDENCY_MAP.md](docs/CROSS_REPO_DEPENDENCY_MAP.md) (where present)
-
-## How this fits 6G PhD research
-
-Relevant themes: **Digital twins · AI-native RAN · digital equality · ubiquitous connectivity · edge measurement integration**
-
-Oulu/CWC-style alignment (research direction, not affiliation claim): [docs/HOW_THIS_FITS_6G_PHD_RESEARCH.md](docs/HOW_THIS_FITS_6G_PHD_RESEARCH.md)
-
-## What exists today
-
-- Python package `seven_gc_twin`
-- CLI + Streamlit
-- `make smoke` / `make e2e`
-- Metrics + toy scenario (smoke)
-- Paper/diagram stubs
-- Cross-repo contracts
-
-Details: [docs/WHAT_IS_REAL_TODAY.md](docs/WHAT_IS_REAL_TODAY.md)
-
-## Evidence status: smoke test vs real validation
-
-- `make smoke` / `make e2e` = **CI smoke test** — proves code runs, **not** that research claims are field-validated.
-- See [docs/NO_MORE_TOY_DEMOS.md](docs/NO_MORE_TOY_DEMOS.md) · [docs/EVIDENCE_STANDARD.md](docs/EVIDENCE_STANDARD.md) · [quality/CLAIMS_TO_EVIDENCE_MATRIX.md](quality/CLAIMS_TO_EVIDENCE_MATRIX.md)
-
-**Next real evidence needed:**
-
-- Calibrated/open GIS Gary scenario
-- Validated equality metrics
-- Edge-IO import
-- Field validation protocol
-- External reproduction
-
-## Run or inspect this repo
+## Try / inspect in 5 minutes
 
 ```bash
-python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-make smoke
+make test
+make smoke   # synthetic only
 ```
 
-| | |
+## Architecture
+
+Python twin + `configs/` sites + `apps/` demos + metrics → `results/e2e/`.
+
+## Repo map
+
+| Path | Role |
 |---|---|
-| **Output** | `results/e2e/gary_summary.md, gary_export.json` |
-| **Means** | Reproducible smoke artifacts for CI and reviewers |
-| **Does not mean** | Conference, adoption, or manufacturing readiness |
+| `configs/` | Sites/scenarios |
+| package/apps | Twin + demos |
+| `quality/` | Claims/evidence |
+| `docs/history/` | Prior spine claim (HISTORICAL) |
 
-Video: [docs/video_walkthrough_script.md](docs/video_walkthrough_script.md)
+## Interfaces
 
-## Full digital twin scenes (seven campuses)
+Research contracts with spectrumx, edge-io, ntn-resilience-sim. Does **not** own Product Charter.
 
-Build complete scene trees (geo, 3D glTF, connectivity, population, use cases, cross-repo layers):
+## Tests
 
 ```bash
-make validate-sites
-make build-scenes-offline          # synthetic-fixture — default CI
-make full-scenes                   # + optional open-data Overpass attempt
-make conference-artifacts
-streamlit run apps/streamlit_7gc_scene_dashboard.py
+make lint test contract-test validate-sites
 ```
 
-Outputs: `results/scenes/<site_id>/` · Conference: `results/conference/7gc_scene_table.md`
+## Evidence
 
-Diagram: [docs/diagrams/architecture_full_scene_pipeline.mmd](docs/diagrams/architecture_full_scene_pipeline.mmd)
+`results/e2e/` synthetic summaries. Not digital-equality field proof.
 
-**Evidence:** synthetic-fixture = `smoke_test_only`; open-data layers may be `open_data_backed` when Overpass succeeds. Not field validation.
+## Known gaps
 
-## Visual map
+Calibration to real measurements; non-spine navigation clarity in older forks/mirrors.
 
-```mermaid
-flowchart LR
-  EdgeIO[edge-io-measurement-node] --> Twin[7gc-digital-twin]
-  Twin --> AIRAN[spectrumx-ai-ran-gary]
-  Twin --> NTN[ntn-resilience-sim]
-  Twin --> Beam[readygary-6g-beam-selection]
-  WAIKE[waike-research-ops] --> Twin
-  DeviceOS[gunnchos-device-os] --> EdgeIO
-```
+## Beginner path
 
-More diagrams: [docs/diagrams/README.md](docs/diagrams/README.md) (if present) · [docs/uml/README.md](docs/uml/README.md) (spectrumx)
+A **flight simulator** for community internet plans — not the airport authority (that’s portal + charter).
 
-## Start here based on who you are
+## Intern path
 
-| Reader | Start here | You will learn |
-|--------|------------|----------------|
-| Beginner | [docs/PLAIN_ENGLISH_EXPLANATION.md](docs/PLAIN_ENGLISH_EXPLANATION.md) | Idea without jargon |
-| Student / WAIKE | [docs/AUDIENCE_GUIDE.md](docs/AUDIENCE_GUIDE.md) | Learning path |
-| Researcher / professor | [docs/HOW_THIS_FITS_6G_PHD_RESEARCH.md](docs/HOW_THIS_FITS_6G_PHD_RESEARCH.md) | Research fit |
-| Contributor | [CONTRIBUTING.md](CONTRIBUTING.md) or Issues | How to help |
-| City / school partner | [docs/PROBLEM_SOLUTION_MAP.md](docs/PROBLEM_SOLUTION_MAP.md) | Why it matters locally |
+Run smoke; open one site config; list synthetic assumptions.
 
-## What would make this final?
+## Expert path
 
-**Not satisfied yet** for final / conference / adoption / manufacturing gates—see audit:
+Scene builders + metrics without spine/6G commercial overclaim.
 
-- [docs/WHAT_WOULD_MAKE_THIS_FINAL.md](docs/WHAT_WOULD_MAKE_THIS_FINAL.md)
-- [quality/FINAL_READINESS_CONFIRMATION.md](quality/FINAL_READINESS_CONFIRMATION.md)
+## Contribution path
 
-## Roadmap from current state to final readiness
+Twin fidelity + honesty. Point newcomers to the Ecosystem Portal.
 
-| Gate | Status |
-|------|--------|
-| Concept | Met |
-| Smoke test | Met (`make smoke`) |
-| Real evidence pipeline | Open |
-| Benchmark / field data | Open |
-| Internal validation | Open |
-| External reproduction | Open |
-| Candidate release | Open |
-| Final | Not claimed |
+## Current release / state
 
-Full table: [quality/READINESS_GATE_TABLE.md](quality/READINESS_GATE_TABLE.md)
+**DIGITALLY_VALIDATED**. Claim boundary: `not_canonical_product_spine`.
 
-## Related repos in the 7GC research spine
+## Claim boundary
 
-
-| Repo | Role |
-|------|------|
-| [7gc-digital-twin](https://github.com/gunnchOS3k/7gc-digital-twin) | Community digital twin spine |
-| [spectrumx-ai-ran-gary](https://github.com/gunnchOS3k/spectrumx-ai-ran-gary) | AI-RAN + SpectrumX competition path |
-| [readygary-6g-beam-selection](https://github.com/gunnchOS3k/readygary-6g-beam-selection) | Beam selection / PHY-facing evidence |
-| [edge-io-measurement-node](https://github.com/gunnchOS3k/edge-io-measurement-node) | Privacy-first edge measurement |
-| [ntn-resilience-sim](https://github.com/gunnchOS3k/ntn-resilience-sim) | NTN + terrestrial resilience |
-| [waike-research-ops](https://github.com/gunnchOS3k/waike-research-ops) | Education & workforce pipeline |
-| [gunnchos-hardware-industrial-design](https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design) | Device hardware EVT planning |
-| [gunnchos-device-os](https://github.com/gunnchOS3k/gunnchos-device-os) | School/research device OS prototype |
-| [gunnchAI3k](https://github.com/gunnchOS3k/gunnchAI3k) | Learning assistant (where relevant) |
-
-
-## Claims and non-claims
-
-**Supports today:** Runnable scaffold, documented methods, smoke-test artifacts, honest limitations.
-
-**Does not prove yet:** Field-validated digital equality scores or operational carrier performance.
-
-**Requires evidence issues:** See GitHub `[Evidence TODO]` issues and `quality/CLAIMS_TO_EVIDENCE_MATRIX.md`.
+NOT product spine · no commercial 6G · no certification · Cursor DRAFT-only.
 
 ---
 
-## Quick start
+## Retained detail (post–Cycle 3A front door)
 
-```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-pytest -q
-streamlit run apps/streamlit_app.py
-```
+Prior spine claim note: [docs/history/PRIOR_SPINE_CLAIM.md](docs/history/PRIOR_SPINE_CLAIM.md).
 
-## Sibling repos
+Full prior README: [docs/history/README_PRE_WP012.md](docs/history/README_PRE_WP012.md).
 
-- [spectrumx-ai-ran-gary](https://github.com/gunnchOS3k/spectrumx-ai-ran-gary) — Gary AI-RAN benchmark
-- [readygary-6g-beam-selection](https://github.com/gunnchOS3k/readygary-6g-beam-selection) — beam selection
-- [edge-io-measurement-node](https://github.com/gunnchOS3k/edge-io-measurement-node) — field endpoints
-- [ntn-resilience-sim](https://github.com/gunnchOS3k/ntn-resilience-sim) — NTN resilience
-
-## License
-
-MIT — see LICENSE.
-
-## Industry / research-grade tooling alignment
-
-| Tool / ecosystem | Why it matters | Adapter | Runs now? | Access? |
-|------------------|----------------|---------|-----------|---------|
-| See matrix | Evidence upgrade path | `industry_research_stack/` | Stub exports | Optional |
-
-**Commands:** `make e2e` (includes tool export stubs) · `python3 scripts/run_all_tool_exports.py`
-
-**Notice:** Aligned with public research ecosystems — [non-affiliation](industry_research_stack/NON_AFFILIATION_NOTICE.md). Smoke stubs only unless documented otherwise.
-
-## Wireless engineering alignment
-
-See [docs/WIRELESS_ENGINEERING_ALIGNMENT.md](docs/WIRELESS_ENGINEERING_ALIGNMENT.md).
+Retained entrypoints: [docs/START_HERE.md](docs/START_HERE.md) · [docs/HOW_THIS_FITS_GUNNCHOS.md](docs/HOW_THIS_FITS_GUNNCHOS.md).
