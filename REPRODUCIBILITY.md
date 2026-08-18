@@ -1,48 +1,57 @@
-        # Reproducibility — 7GC Digital Twin
+# Reproducibility — 7GC Digital Twin (RQ1)
 
-        ## Clone / setup / run
+This repository produces **synthetic site profiles and benchmarks**. It does not produce RF campaign measurements, community-deployment evidence, or any University of Oulu affiliation claim.
 
-        ```bash
-        git clone https://github.com/gunnchOS3k/{name}.git
+Gary is the **flagship scenario**. Ghana, Guyana, Gaza, Geelong, Graham Land, and Germany are **scenario environments**, not community deployments.
+
+## Clone / setup / run
+
+```bash
+git clone https://github.com/gunnchOS3k/7gc-digital-twin.git
 cd 7gc-digital-twin
 python3 -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python -m pytest -q
-# Expected: CI smoke pass; tests pass or documented skip
-        ```
+pip install -r requirements-dev.txt
+make test
+make smoke   # long e2e; synthetic only
+make reproduce
+```
 
-        ## Expected outputs
+Canonical independent digital path: `make reproduce` → `scripts/reproduce.py` → `results/experiments/rq1_gary_flagship_profiles.json` and `results/reproduce/REPRODUCE_RECORD.json`.
 
-        - Required documentation files present (`python3 scripts/check_required_files.py`)
-        - Tests pass **or** documented smoke-only path for docs-only repos
-        - No claim of field deployment from synthetic outputs alone
+## Expected outputs
 
-        ## Tool versions
+- `pytest -q` passes on the synthetic path
+- Gary experiment JSON includes workload / compute / radio / failure / mobility families labeled `synthetic_fixture`
+- Provenance records repository commit and non-claims
+- No claim of field deployment from these outputs
 
-        | Tool | Version guidance |
-        |------|------------------|
-        | Python | 3.10+ where `requirements.txt` exists |
-        | Node | 18+ LTS where `package.json` exists |
-        | Make | GNU Make where `Makefile` exists |
+## Tool versions
 
-        Record exact versions in PR / release notes when publishing.
+| Tool | Version guidance |
+|------|------------------|
+| Python | 3.10+ |
+| Make | GNU Make |
+| pytest | from `requirements-dev.txt` |
 
-        ## Fresh machine checklist
+Record exact versions in any independent reproduction log.
 
-        - [ ] Clone repo
-        - [ ] Create clean venv / `npm ci`
-        - [ ] Run `scripts/check_required_files.py`
-        - [ ] Run test command from README
-        - [ ] Compare outputs to `results/` or CI logs
-        - [ ] Log environment in `reproducibility/FRESH_MACHINE_LOG.md` (optional)
+## Fresh machine checklist
 
-        ## Evidence discipline
+- [ ] Clone repo and check out a frozen SHA
+- [ ] Create a clean venv
+- [ ] Run `make test`
+- [ ] Run `make reproduce`
+- [ ] Compare `output_hashes` in `results/reproduce/REPRODUCE_RECORD.json`
+- [ ] Do not relabel synthetic radio stubs as measurements
 
-        **Real today:** Twin scaffolding, simulation hooks, documentation
+## Evidence discipline
 
-        **Synthetic / demo-only:** Demo scenes and smoke outputs
+**Real today:** YAML schemas, synthetic fixtures, scene builder, metric families, provenance stamps, tests.
 
-        **Planned:** Field-calibrated twin parameters
+**Synthetic / demo-only:** `sinr_db_stub`, energy stubs, GeoJSON anchors, conference tables.
 
-        **Not claimed:** Operational city digital twin
+**Planned:** open-data-backed scenes and consented Edge-IO ingest.
+
+**Not claimed:** operational city digital twin; community deployment of non-Gary 7GC names; Oulu affiliation.

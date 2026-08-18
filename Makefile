@@ -1,4 +1,4 @@
-.PHONY: setup install test lint contract-test validate-sites build-scenes build-scenes-offline full-scenes conference-artifacts diagrams demo e2e smoke clean-results e2e-tooling e2e-sionna e2e-deepmimo e2e-aerial e2e-oran generate-7gc-campus-twin clean
+.PHONY: setup install test lint contract-test validate-sites build-scenes build-scenes-offline full-scenes conference-artifacts diagrams uml demo e2e smoke reproduce clean-results e2e-tooling e2e-sionna e2e-deepmimo e2e-aerial e2e-oran generate-7gc-campus-twin clean
 
 generate-7gc-campus-twin:
 	$(PY) python3 scripts/generate_7gc_campus_twin_bundle.py
@@ -42,6 +42,10 @@ conference-artifacts:
 diagrams:
 	$(PY) python3 -c "from seven_gc_twin.diagrams.diagram_data_export import export; export()"
 
+uml:
+	@echo "GitHub renders Mermaid in docs/uml/current/*.md"
+	@echo "Optional PlantUML: ./docs/uml/render_plantuml.sh"
+
 demo:
 	$(PY) python3 -m seven_gc_twin.cli summarize gary
 
@@ -70,6 +74,9 @@ e2e:
 	python3 scripts/e2e_check_required_artifacts.py
 
 smoke: e2e
+
+reproduce:
+	$(PY) python3 scripts/reproduce.py
 
 e2e-tooling:
 	@mkdir -p results/tool_exports
