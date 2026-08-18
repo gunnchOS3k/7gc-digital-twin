@@ -1,0 +1,18 @@
+experiment_id: rq1_gary_flagship_profiles
+research_question: RQ1
+site_id: gary
+scenario_id: neighborhood_outage
+mode: synthetic-fixture
+seeds: [1, 2, 7, 42]
+metrics:
+  - workload
+  - compute
+  - radio
+  - failure
+  - mobility
+  - inclusion
+non_claims:
+  - Gary is the flagship research scenario, not a deployed community network.
+  - Other 7GC names are scenario environments, not community deployments.
+  - Radio and energy values are YAML stubs, not RF campaign measurements.
+  - This repository does not claim University of Oulu affiliation.

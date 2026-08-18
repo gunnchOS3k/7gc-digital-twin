@@ -32,6 +32,13 @@ def normalize_site(data: dict) -> dict:
     out.setdefault("energy_constraints", {"power_w_stub": 5.0})
     out.setdefault("backhaul_assumptions", {"capacity_gbps_stub": 1.0})
     out.setdefault("privacy_constraints", {"synthetic_only": True, "no_pii": True})
+    out.setdefault("scenario_environment_not_community_deployment", True)
+    if out.get("site_id") == "gary":
+        out.setdefault("is_flagship", True)
+        out.setdefault("node_role", "flagship_scenario")
+    else:
+        out.setdefault("is_flagship", False)
+        out.setdefault("node_role", "comparative_scenario")
     return out
 
 

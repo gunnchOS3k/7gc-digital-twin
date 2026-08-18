@@ -267,6 +267,22 @@ def cmd_build_twin_state(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_run_experiment(args: argparse.Namespace) -> int:
+    from .experiment_manifest import run_experiment
+
+    result = run_experiment(args.experiment_id)
+    print(json.dumps({"wrote": result.get("wrote"), "result_sha256": result.get("result_sha256")}, indent=2))
+    return 0
+
+
+def cmd_list_experiments(_: argparse.Namespace) -> int:
+    from .experiment_manifest import list_experiments
+
+    for eid in list_experiments():
+        print(eid)
+    return 0
+
+
 def cmd_validate_twin_state(args: argparse.Namespace) -> int:
     from .gate2.edge_ingest import validate_twin_state
 
@@ -383,6 +399,11 @@ def main(argv: list[str] | None = None) -> int:
     p_vts.add_argument("path")
     p_vts.add_argument("--schema-dir", default=None)
     p_vts.set_defaults(func=cmd_validate_twin_state)
+
+    sub.add_parser("list-experiments").set_defaults(func=cmd_list_experiments)
+    p_exp_run = sub.add_parser("run-experiment")
+    p_exp_run.add_argument("experiment_id")
+    p_exp_run.set_defaults(func=cmd_run_experiment)
 
     args = parser.parse_args(argv)
     return int(args.func(args))
