@@ -1,4 +1,4 @@
-.PHONY: setup install test lint contract-test validate-sites build-scenes build-scenes-offline full-scenes conference-artifacts diagrams uml demo e2e smoke reproduce clean-results e2e-tooling e2e-sionna e2e-deepmimo e2e-aerial e2e-oran generate-7gc-campus-twin clean
+.PHONY: setup install test lint contract-test validate-sites build-scenes build-scenes-offline full-scenes conference-artifacts diagrams uml demo e2e smoke reproduce clean-results e2e-tooling e2e-sionna e2e-deepmimo e2e-aerial e2e-oran generate-7gc-campus-twin clean paper paper-reproduce
 
 generate-7gc-campus-twin:
 	$(PY) python3 scripts/generate_7gc_campus_twin_bundle.py
@@ -84,3 +84,13 @@ e2e-tooling:
 
 e2e-sionna e2e-deepmimo e2e-aerial e2e-oran:
 	@echo "Optional target $@ — requires external install; not run in default CI"
+
+paper-reproduce: reproduce
+	$(PY) python3 paper/scripts/generate_tables.py
+
+paper: paper-reproduce
+	@test -f paper/manuscript.tex
+	@test -f paper/MANUSCRIPT_STATUS.md
+	@echo "paper package ready (SYNTHETIC_SIM). pdflatex optional; banner forbids camera-ready claims."
+	@command -v pdflatex >/dev/null && (cd paper && pdflatex -interaction=nonstopmode manuscript.tex) || echo "pdflatex not installed — TeX scaffold only"
+

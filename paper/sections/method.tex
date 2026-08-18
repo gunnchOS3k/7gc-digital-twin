@@ -1,0 +1,4 @@
+\section{Method}
+Experiment \texttt{rq1\_gary\_flagship\_profiles} is pre-registered in \texttt{configs/experiments/rq1\_gary\_flagship\_profiles.yaml} (seeds, metrics, non-claims) before any held-out RF campaign --- none is claimed here.
+Mode is \texttt{synthetic-fixture}. Baselines named for later campaigns: terrestrial-only, cloud-only, local-only, edge-only, fixed policy, no adaptation, oracle. This digital run exports campus metric families (workload, compute, radio, failure, mobility, inclusion) with explicit \texttt{synthetic\_fixture} evidence flags.
+Device-class constraints are imported from the device-os continuity profile export when present; otherwise the twin site YAML is used alone.
