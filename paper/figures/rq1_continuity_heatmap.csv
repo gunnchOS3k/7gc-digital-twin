@@ -1,0 +1,5 @@
+research_class,wifi_nominal,dock_ethernet,degraded_wifi,jam_wifi_offline_fallback,force_offline
+desk,3.0,3.0,3.0,1.0,1.0
+mobile-docked,3.0,3.0,3.0,1.0,1.0
+local-creation,3.0,3.0,3.0,1.0,1.0
+wearable,3.0,3.0,3.0,1.0,1.0

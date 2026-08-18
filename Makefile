@@ -1,9 +1,10 @@
-.PHONY: setup install test lint contract-test validate-sites build-scenes build-scenes-offline full-scenes conference-artifacts diagrams demo e2e smoke clean-results e2e-tooling e2e-sionna e2e-deepmimo e2e-aerial e2e-oran generate-7gc-campus-twin clean
+.PHONY: setup install test lint contract-test validate-sites build-scenes build-scenes-offline full-scenes conference-artifacts diagrams uml demo e2e smoke reproduce clean-results e2e-tooling e2e-sionna e2e-deepmimo e2e-aerial e2e-oran generate-7gc-campus-twin clean paper paper-reproduce
+
+PYTHON := $(shell test -x .venv/bin/python && echo .venv/bin/python || echo python3)
+PY := PYTHONPATH=src
 
 generate-7gc-campus-twin:
-	$(PY) python3 scripts/generate_7gc_campus_twin_bundle.py
-
-PY := PYTHONPATH=src
+	$(PY) $(PYTHON) scripts/generate_7gc_campus_twin_bundle.py
 
 setup: install
 
@@ -42,6 +43,10 @@ conference-artifacts:
 diagrams:
 	$(PY) python3 -c "from seven_gc_twin.diagrams.diagram_data_export import export; export()"
 
+uml:
+	@echo "GitHub renders Mermaid in docs/uml/current/*.md"
+	@echo "Optional PlantUML: ./docs/uml/render_plantuml.sh"
+
 demo:
 	$(PY) python3 -m seven_gc_twin.cli summarize gary
 
@@ -71,9 +76,22 @@ e2e:
 
 smoke: e2e
 
+reproduce:
+	$(PY) $(PYTHON) scripts/reproduce.py
+
 e2e-tooling:
 	@mkdir -p results/tool_exports
 	python3 scripts/run_all_tool_exports.py 2>/dev/null || python3 scripts/check_optional_backends.py || true
 
 e2e-sionna e2e-deepmimo e2e-aerial e2e-oran:
 	@echo "Optional target $@ — requires external install; not run in default CI"
+
+paper-reproduce: reproduce
+	$(PY) $(PYTHON) paper/scripts/generate_tables.py
+
+paper: paper-reproduce
+	@test -f paper/manuscript.tex
+	@test -f paper/MANUSCRIPT_STATUS.md
+	@echo "paper package ready (SYNTHETIC_SIM). pdflatex optional; banner forbids camera-ready claims."
+	@command -v pdflatex >/dev/null && (cd paper && pdflatex -interaction=nonstopmode manuscript.tex) || echo "pdflatex not installed — TeX scaffold only"
+

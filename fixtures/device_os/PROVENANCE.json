@@ -1,0 +1,9 @@
+{
+  "artifact": "SERVICE_CONTINUITY_PROFILES.json",
+  "source_repo": "gunnchos-device-os-supervisor-ready",
+  "source_path": "artifacts/supervisor_ready/SERVICE_CONTINUITY_PROFILES.json",
+  "content_digest_sha256": "ef5323a1607bf88031fb209375325e3935049651346fcc138f022b1aba9c0083",
+  "file_sha256": "98f3a4e5bd76a1bd203af1a4797acc3b0041369eb879845462b3a231ece6e46a",
+  "claim_boundary": "Frozen digital snapshot of Device OS service-continuity profiles. Not live RF, not a shipping OS, not physical boot evidence, not University of Oulu affiliation.",
+  "read_only_note": "Original gunnchos-device-os dirty clone was not modified; snapshot copied from the supervisor-ready tree."
+}

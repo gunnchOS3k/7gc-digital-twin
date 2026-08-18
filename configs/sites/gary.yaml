@@ -1,7 +1,8 @@
 site_id: gary
 display_name: Gary
-node_role: comparative_scenario
+node_role: flagship_scenario
 is_flagship: true
+scenario_environment_not_community_deployment: true
 spectrum:
   bands_ghz: [3.5, 28]
   constraint: spectrum_limited
@@ -10,5 +11,20 @@ population:
 connectivity:
   terrestrial: true
   ntn_fallback: true
+radio:
+  sinr_db_stub: 12.0
+qos:
+  latency_ms_stub: 25.0
+energy_constraints:
+  power_w_stub: 5.0
+workload:
+  learn: 0.5
+  create: 0.3
+  sense: 0.2
+mobility:
+  static_pct: 0.7
+  pedestrian_pct: 0.3
+failure_model:
+  families: [neighborhood_outage, storm_congestion, school_bandwidth_collapse]
 metrics:
-  track: [fairness, spectral_efficiency, energy_efficiency, latency]
+  track: [fairness, spectral_efficiency, energy_efficiency, latency, workload, compute, radio, failure, mobility]

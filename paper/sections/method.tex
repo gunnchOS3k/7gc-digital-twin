@@ -1,0 +1,30 @@
+\section{Method}
+\label{sec:method}
+The frozen protocol is \texttt{paper/artifacts/experiment\_protocol.yaml}, mirroring \texttt{configs/experiments/rq1\_gary\_flagship\_profiles.yaml}.
+Seeds are $1,2,7,42$. Mode is \texttt{synthetic-fixture}.
+Requested metric families are workload, compute, radio, failure, mobility, and inclusion.
+
+\paragraph{Continuity levels.}
+Levels follow the Device OS rule (re-implemented in this repo and checked against stored labels):
+\texttt{connected}$\rightarrow$\texttt{target};
+\texttt{degraded} or \texttt{transitioning}$\rightarrow$\texttt{degraded};
+\texttt{offline} and the workload is in \texttt{offline\_capabilities}$\rightarrow$\texttt{min\_useful};
+otherwise \texttt{failed} (below min-useful).
+The injected bearer corpus is the same labeled set used by Device OS tests (\texttt{wifi\_nominal}, \texttt{dock\_ethernet}, \texttt{degraded\_wifi}, \texttt{jam\_wifi\_offline\_fallback}, \texttt{force\_offline}, plus an explicit wearable coding path).
+Those bearer metrics are scenario \emph{inputs}, not channel soundings~\cite{itur_m2160}.
+
+\paragraph{Gary overlay.}
+Gary bad-day names are mapped to bearer-stress labels \emph{before} looking at outcomes (protocol field \texttt{gary\_scenario\_to\_bearer\_stress}):
+neighborhood outage $\rightarrow$ jam/offline fallback;
+storm congestion, school bandwidth collapse, and library hotspot overload $\rightarrow$ degraded Wi-Fi;
+SMB payment down $\rightarrow$ force offline.
+The mapping is an assumption, not a field measurement.
+
+\paragraph{Seeds and sites.}
+Synthetic users are drawn with \texttt{generate\_users(n, seed)} so demand and mobility can vary across the pre-registered seeds.
+Radio $\mathrm{SINR}$ remains a YAML stub (\texttt{sinr\_db\_stub}) and is not seed-jittered.
+Comparative sites are scored with the same generator; inclusion composites hash site identifiers and barrier lists and are not RF.
+
+\paragraph{Non-claims.}
+No University of Oulu affiliation, no community deployment, no held-out RF campaign, no SUBMITTED/ACCEPTED status.
+Baselines named for later campaigns (terrestrial-only, cloud-only, local-only, oracle) are not executed in this digital run.

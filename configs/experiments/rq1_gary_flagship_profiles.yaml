@@ -1,0 +1,25 @@
+experiment_id: rq1_gary_flagship_profiles
+research_question: RQ1
+site_id: gary
+scenario_id: neighborhood_outage
+mode: synthetic-fixture
+seeds: [1, 2, 7, 42]
+metrics:
+  - workload
+  - compute
+  - radio
+  - failure
+  - mobility
+  - inclusion
+gary_scenario_to_bearer_stress:
+  neighborhood_outage: jam_wifi_offline_fallback
+  storm_congestion: degraded_wifi
+  school_bandwidth_collapse: degraded_wifi
+  library_hotspot_overload: degraded_wifi
+  smb_payment_system_down: force_offline
+device_os_profiles: fixtures/device_os/SERVICE_CONTINUITY_PROFILES.json
+non_claims:
+  - Gary is the flagship research scenario, not a deployed community network.
+  - Other 7GC names are scenario environments, not community deployments.
+  - Radio and energy values are YAML stubs, not RF campaign measurements.
+  - This repository does not claim University of Oulu affiliation.
