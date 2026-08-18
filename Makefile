@@ -1,9 +1,10 @@
 .PHONY: setup install test lint contract-test validate-sites build-scenes build-scenes-offline full-scenes conference-artifacts diagrams uml demo e2e smoke reproduce clean-results e2e-tooling e2e-sionna e2e-deepmimo e2e-aerial e2e-oran generate-7gc-campus-twin clean paper paper-reproduce
 
-generate-7gc-campus-twin:
-	$(PY) python3 scripts/generate_7gc_campus_twin_bundle.py
-
+PYTHON := $(shell test -x .venv/bin/python && echo .venv/bin/python || echo python3)
 PY := PYTHONPATH=src
+
+generate-7gc-campus-twin:
+	$(PY) $(PYTHON) scripts/generate_7gc_campus_twin_bundle.py
 
 setup: install
 
@@ -76,7 +77,7 @@ e2e:
 smoke: e2e
 
 reproduce:
-	$(PY) python3 scripts/reproduce.py
+	$(PY) $(PYTHON) scripts/reproduce.py
 
 e2e-tooling:
 	@mkdir -p results/tool_exports
@@ -86,7 +87,7 @@ e2e-sionna e2e-deepmimo e2e-aerial e2e-oran:
 	@echo "Optional target $@ — requires external install; not run in default CI"
 
 paper-reproduce: reproduce
-	$(PY) python3 paper/scripts/generate_tables.py
+	$(PY) $(PYTHON) paper/scripts/generate_tables.py
 
 paper: paper-reproduce
 	@test -f paper/manuscript.tex

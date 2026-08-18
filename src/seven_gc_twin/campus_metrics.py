@@ -83,9 +83,9 @@ def _failure_metrics(profile: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def compute_campus_metrics(site_id: str, mode: str = "smoke") -> dict:
+def compute_campus_metrics(site_id: str, mode: str = "smoke", seed: int = 42) -> dict:
     p = load_profile(site_id)
-    scenario = load_scenario(site_id)
+    scenario = load_scenario(site_id, seed=seed)
     site = scenario["site"]
     users = scenario["users"]
     n_barriers = sum(

@@ -60,3 +60,20 @@ def test_rq1_experiment_manifest_runs(tmp_path, monkeypatch):
     assert Path(result["wrote"]).exists()
     assert len(result["runs"]) == len(manifest["seeds"])
     assert result["result_sha256"]
+    assert "wearable" in result["findings"]["classes_that_failed"]
+    failed = result["continuity_benchmark"]["failed_cases"]
+    assert any(
+        r["research_class"] == "wearable" and r["workload"] == "offline_coding" for r in failed
+    )
+    assert result["continuity_benchmark"]["level_rederive_all_match"] is True
+    demands = {r["mean_demand_mbps"] for r in result["runs"]}
+    assert len(demands) == len(result["runs"])
+
+
+def test_continuity_classify_rule():
+    from seven_gc_twin.continuity_benchmark import classify_continuity
+
+    assert classify_continuity("connected", offline_covers_workload=False) == "target"
+    assert classify_continuity("degraded", offline_covers_workload=True) == "degraded"
+    assert classify_continuity("offline", offline_covers_workload=True) == "min_useful"
+    assert classify_continuity("offline", offline_covers_workload=False) == "failed"

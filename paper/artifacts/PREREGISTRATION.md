@@ -5,7 +5,7 @@ Frozen before treating any later held-out RF run as confirmatory.
 | Field | Value |
 |---|---|
 | experiment_id | `rq1_gary_flagship_profiles` |
-| file | `configs/experiments/rq1_gary_flagship_profiles.yaml` |
+| protocol | `paper/artifacts/experiment_protocol.yaml` |
 | site | gary (flagship scenario, not community deployment) |
 | mode | synthetic-fixture |
 | seeds | 1, 2, 7, 42 |

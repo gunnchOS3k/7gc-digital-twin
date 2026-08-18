@@ -1,0 +1,44 @@
+# Frozen Paper I digital experiment protocol.
+# Written before interpreting held-out RF (none is claimed). Do not treat later
+# undeclared metrics as confirmatory. Not SUBMITTED / ACCEPTED.
+experiment_id: rq1_gary_flagship_profiles
+research_question: RQ1
+site_id: gary
+scenario_id: neighborhood_outage
+mode: synthetic-fixture
+evidence_class: SYNTHETIC_SIM
+seeds: [1, 2, 7, 42]
+metrics:
+  - workload
+  - compute
+  - radio
+  - failure
+  - mobility
+  - inclusion
+device_os_profiles: fixtures/device_os/SERVICE_CONTINUITY_PROFILES.json
+device_os_content_digest_sha256: ef5323a1607bf88031fb209375325e3935049651346fcc138f022b1aba9c0083
+research_classes: [desk, mobile-docked, local-creation, wearable]
+continuity_levels: [target, degraded, min_useful, failed]
+classify_rule: >
+  connected → target; degraded|transitioning → degraded;
+  offline AND offline_covers_workload → min_useful; else failed.
+  Rule matches gunnchos_device_os.service_continuity.evaluate.classify_continuity.
+gary_scenario_to_bearer_stress:
+  neighborhood_outage: jam_wifi_offline_fallback
+  storm_congestion: degraded_wifi
+  school_bandwidth_collapse: degraded_wifi
+  library_hotspot_overload: degraded_wifi
+  smb_payment_system_down: force_offline
+analysis:
+  - Re-derive continuity levels from stored orchestrator_state + offline_covers_workload.
+  - Report which class/workload/scenario is below min-useful (failed) vs at min-useful.
+  - Overlay Gary bad-day names onto the frozen bearer-stress labels above.
+  - Seed-wise synthetic-user demand/mobility (generate_users seed wiring).
+  - Cross-site inclusion families for comparative scenario environments (not deployments).
+non_claims:
+  - Not RF channel sounding.
+  - Not a community deployment.
+  - Not University of Oulu affiliation.
+  - Not SUBMITTED or ACCEPTED.
+  - Seeded campus families are synthetic fixtures; radio YAML stubs are not measurements.
+status_ceiling: DIGITAL_RESULTS_VALIDATED requires reproduce PASS plus findings extracted from JSON, not typed numbers.

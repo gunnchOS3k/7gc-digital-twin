@@ -1,4 +1,4 @@
-% MANUSCRIPT STATUS: DIGITAL_RESULTS_AVAILABLE
+% MANUSCRIPT STATUS: DIGITAL_RESULTS_VALIDATED
 % Evidence class: SYNTHETIC_SIM. Not camera-ready. RESULT_PENDING for any RF/field number.
 % Never SUBMITTED / ACCEPTED from this file.
 \documentclass[11pt]{article}
@@ -9,9 +9,13 @@
 \date{\today}
 \begin{document}
 \maketitle
-\begin{center}\textbf{RESULT BANNER.} Digital synthetic-fixture results only. Independent reproduction pending. No measured RF.\end{center}
+\begin{center}\textbf{RESULT BANNER.} Digital synthetic-fixture results only. Independent human reproduction pending. No measured RF. Not SUBMITTED / ACCEPTED.\end{center}
 \begin{abstract}
-This Paper~I manuscript defines service-continuity profiles for four resource-constrained device classes and a synthetic Gary flagship scenario. Numbers in generated tables come from \texttt{make paper-reproduce} and are labelled \texttt{SYNTHETIC\_SIM}. They are not campus deployments or Oulu measurements.
+A radio link being available does not imply that a human-facing service remains above its minimum-useful operating point.
+This Paper~I manuscript turns four research device classes (desk, mobile/docked, local-creation, wearable) and the Gary flagship scenario into a runnable continuity benchmark.
+All numbers are produced by \texttt{make paper-reproduce} from frozen protocol \texttt{paper/artifacts/experiment\_protocol.yaml} and are labelled \texttt{SYNTHETIC\_SIM}.
+They are not campus deployments, not RF sounding, and not University of Oulu measurements.
+The benchmark's load-bearing result is not that a harness exists: it is \emph{which} class/workload/scenario drops below min-useful, and which labeled stresses do not.
 \end{abstract}
 \input{sections/introduction}
 \input{sections/method}

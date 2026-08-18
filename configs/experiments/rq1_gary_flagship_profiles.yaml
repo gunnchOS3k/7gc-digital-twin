@@ -11,6 +11,13 @@ metrics:
   - failure
   - mobility
   - inclusion
+gary_scenario_to_bearer_stress:
+  neighborhood_outage: jam_wifi_offline_fallback
+  storm_congestion: degraded_wifi
+  school_bandwidth_collapse: degraded_wifi
+  library_hotspot_overload: degraded_wifi
+  smb_payment_system_down: force_offline
+device_os_profiles: fixtures/device_os/SERVICE_CONTINUITY_PROFILES.json
 non_claims:
   - Gary is the flagship research scenario, not a deployed community network.
   - Other 7GC names are scenario environments, not community deployments.

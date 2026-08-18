@@ -9,6 +9,7 @@ import yaml
 
 from .campus_metrics import compute_campus_metrics
 from .config.schema import REQUIRED_EXPERIMENT_FIELDS
+from .continuity_benchmark import analyze_continuity, site_metric_panel
 from .provenance import sha256_json, stamp
 from .scenario_engine import run_scenario
 from .site_profiles import load_profile
@@ -42,12 +43,19 @@ def run_experiment(experiment_id: str, out_dir: Path | None = None) -> dict[str,
     seeds = list(manifest.get("seeds") or [42])
     runs = []
     for seed in seeds:
-        metrics = compute_campus_metrics(site_id, mode=mode)
+        metrics = compute_campus_metrics(site_id, mode=mode, seed=seed)
         scenario = run_scenario(site_id, scenario_id, mode=mode)
+        wl = metrics["families"]["workload"]
+        radio = metrics["families"]["radio"]
         runs.append(
             {
                 "seed": seed,
                 "scenario_id": scenario_id,
+                "mean_demand_mbps": wl["mean_demand_mbps"],
+                "p95_demand_mbps": wl["p95_demand_mbps"],
+                "jains_fairness_on_demand": wl["jains_fairness_on_demand"],
+                "radio_evidence_status": radio["evidence_status"],
+                "sinr_db_stub": radio["sinr_db_stub"],
                 "campus_metrics": metrics,
                 "scenario": {
                     "evidence_status": scenario.get("evidence_status"),
@@ -55,6 +63,9 @@ def run_experiment(experiment_id: str, out_dir: Path | None = None) -> dict[str,
                 },
             }
         )
+    mapping = manifest.get("gary_scenario_to_bearer_stress")
+    continuity = analyze_continuity(mapping=mapping, site_id=site_id)
+    panel = site_metric_panel(seeds, mode=mode)
     result = {
         "experiment_id": experiment_id,
         "research_question": manifest["research_question"],
@@ -66,6 +77,21 @@ def run_experiment(experiment_id: str, out_dir: Path | None = None) -> dict[str,
         "metrics_requested": manifest["metrics"],
         "non_claims": manifest["non_claims"],
         "runs": runs,
+        "continuity_benchmark": continuity,
+        "site_metric_panel": panel,
+        "findings": {
+            "classes_that_failed": continuity["classes_that_failed"],
+            "classes_never_failed": continuity["classes_never_failed"],
+            "n_failed_cases": len(continuity["failed_cases"]),
+            "n_min_useful_cases": len(continuity["min_useful_cases"]),
+            "degraded_wifi_n_still_target": len(continuity["degraded_wifi_still_target"]),
+            "gary_overlay_n_below_min_useful": len(continuity["gary_overlay_below_min_useful"]),
+            "gary_mean_demand_mbps_min": panel["gary_mean_demand_mbps_min"],
+            "gary_mean_demand_mbps_max": panel["gary_mean_demand_mbps_max"],
+            "gary_mean_demand_mbps_range": panel["gary_mean_demand_mbps_range"],
+            "level_rederive_all_match": continuity["level_rederive_all_match"],
+            "digest_match": continuity["digest_match"],
+        },
         "provenance": stamp(
             artifact_kind="rq1_experiment",
             site_id=site_id,
