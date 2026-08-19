@@ -1,0 +1,55 @@
+..............................                                           [100%]
+30 passed in 1.11s
+[
+  {
+    "site_id": "gary",
+    "mode": "synthetic-fixture",
+    "evidence_status": "smoke_test_only",
+    "report": "results/scenes/gary/reports/campus_report.md"
+  },
+  {
+    "site_id": "ghana",
+    "mode": "synthetic-fixture",
+    "evidence_status": "smoke_test_only",
+    "report": "results/scenes/ghana/reports/campus_report.md"
+  },
+  {
+    "site_id": "guyana",
+    "mode": "synthetic-fixture",
+    "evidence_status": "smoke_test_only",
+    "report": "results/scenes/guyana/reports/campus_report.md"
+  },
+  {
+    "site_id": "gaza",
+    "mode": "synthetic-fixture",
+    "evidence_status": "smoke_test_only",
+    "report": "results/scenes/gaza/reports/campus_report.md"
+  },
+  {
+    "site_id": "geelong",
+    "mode": "synthetic-fixture",
+    "evidence_status": "smoke_test_only",
+    "report": "results/scenes/geelong/reports/campus_report.md"
+  },
+  {
+    "site_id": "graham_land",
+    "mode": "synthetic-fixture",
+    "evidence_status": "smoke_test_only",
+    "report": "results/scenes/graham_land/reports/campus_report.md"
+  },
+  {
+    "site_id": "germany",
+    "mode": "synthetic-fixture",
+    "evidence_status": "smoke_test_only",
+    "report": "results/scenes/germany/reports/campus_report.md"
+  }
+]
+results/conference
+results/cross_repo/integration_map.md
+gary
+gaza
+geelong
+germany
+ghana
+graham_land
+guyana

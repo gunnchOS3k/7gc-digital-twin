@@ -1,0 +1,7 @@
+{
+  "site_id": "gary",
+  "backend": "oran_policy_loop",
+  "evidence_status": "export_stub_smoke_only",
+  "optional_dependency": "oran_policy_loop",
+  "needs_local_validation": true
+}

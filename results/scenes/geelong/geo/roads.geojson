@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.361,
+          -38.15
+        ]
+      },
+      "properties": {
+        "road": "main_stub"
+      }
+    }
+  ],
+  "properties": {
+    "site_id": "geelong",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

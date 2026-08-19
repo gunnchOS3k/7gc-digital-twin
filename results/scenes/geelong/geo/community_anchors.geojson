@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.356,
+          -38.147
+        ]
+      },
+      "properties": {
+        "type": "school_or_learning",
+        "synthetic": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.36499999999998,
+          -38.15
+        ]
+      },
+      "properties": {
+        "type": "library_community",
+        "synthetic": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.361,
+          -38.153999999999996
+        ]
+      },
+      "properties": {
+        "type": "small_business",
+        "synthetic": true
+      }
+    }
+  ],
+  "properties": {
+    "site_id": "geelong",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "id": "site_profiles",
+      "module": "config.loader"
+    },
+    {
+      "id": "scene_builder",
+      "module": "scene_builder"
+    },
+    {
+      "id": "geojson",
+      "module": "scene_builder.build_geospatial"
+    },
+    {
+      "id": "gltf",
+      "module": "scene_builder.build_3d"
+    }
+  ],
+  "edges": [
+    {
+      "from": "site_profiles",
+      "to": "scene_builder"
+    },
+    {
+      "from": "scene_builder",
+      "to": "geojson"
+    },
+    {
+      "from": "scene_builder",
+      "to": "gltf"
+    }
+  ]
+}

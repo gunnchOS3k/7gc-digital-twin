@@ -1,0 +1,8 @@
+{
+  "profiles": [
+    "education",
+    "workforce",
+    "emergency"
+  ],
+  "evidence_status": "smoke_test_only"
+}

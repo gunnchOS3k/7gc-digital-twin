@@ -1,0 +1,5 @@
+- `neighborhood_outage`
+- `storm_congestion`
+- `school_bandwidth_collapse`
+- `library_hotspot_overload`
+- `smb_payment_system_down`

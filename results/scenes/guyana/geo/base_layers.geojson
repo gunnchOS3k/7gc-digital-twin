@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -58.175000000000004,
+              6.781000000000001
+            ],
+            [
+              -58.135,
+              6.781000000000001
+            ],
+            [
+              -58.135,
+              6.821
+            ],
+            [
+              -58.175000000000004,
+              6.821
+            ],
+            [
+              -58.175000000000004,
+              6.781000000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {}
+    }
+  ],
+  "properties": {
+    "site_id": "guyana",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

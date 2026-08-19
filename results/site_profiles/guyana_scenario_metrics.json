@@ -1,0 +1,99 @@
+{
+  "site_id": "guyana",
+  "scenario_id": "guyana_flood",
+  "mode": "smoke",
+  "campus_metrics": {
+    "site_id": "guyana",
+    "mode": "smoke",
+    "evidence_status": "smoke_test_only",
+    "digital_inclusion_readiness": 0.4,
+    "access_barrier_score": 1.0,
+    "affordability_pressure": 0.1051,
+    "power_resilience_risk": 0.1989,
+    "privacy_data_harm_risk": 0.7634,
+    "local_capacity_readiness": 0.1749,
+    "community_governance_readiness": 0.6445,
+    "evidence_maturity_level": 1,
+    "needs_local_validation": true
+  },
+  "bad_day": {
+    "site_id": "guyana",
+    "scenario_id": "guyana_flood",
+    "mode": "smoke",
+    "evidence_status": "smoke_test_only",
+    "description": "Bad-day scenario 1 for guyana",
+    "metrics": [
+      "service_continuity",
+      "unmet_demand_proxy",
+      "recovery_time_proxy"
+    ],
+    "stress_score": 0.55,
+    "needs_local_validation": true,
+    "note": "Synthetic scenario metrics \u2014 not field validation"
+  },
+  "community_benefit": {
+    "site_id": "guyana",
+    "campus_role": "Hinterland connectivity, Indigenous/community-governed data, e-services, flood resilience",
+    "digital_divide_context": "Riverine and hinterland access gaps",
+    "barrier_count": 5,
+    "digital_inclusion_readiness": 0.4,
+    "community_data_rights": "Community retains rights to aggregated insights; no raw PII in public repo",
+    "guardrails": [
+      "Community approves metrics",
+      "No foreign savior framing in reports",
+      "Consent before measurement",
+      "Aggregate-only public exports",
+      "Mark assumptions needing local validation"
+    ],
+    "evidence_status": "smoke_test_only",
+    "needs_local_validation": true
+  },
+  "local_capacity": {
+    "site_id": "guyana",
+    "steering_roles": [
+      "local lead",
+      "ethics reviewer",
+      "technical mentor",
+      "youth rep",
+      "partner liaison"
+    ],
+    "partner_types": [
+      "school",
+      "municipality",
+      "NGO",
+      "research partner"
+    ],
+    "local_governance": "Community steering circle required before deployment",
+    "readiness_score": 0.75,
+    "evidence_to_collect": [
+      {
+        "item_id": "guyana_ev_0",
+        "description": "Field validation item 1",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "guyana_ev_1",
+        "description": "Field validation item 2",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "guyana_ev_2",
+        "description": "Field validation item 3",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "guyana_ev_3",
+        "description": "Field validation item 4",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "guyana_ev_4",
+        "description": "Field validation item 5",
+        "requires_local_validation": true
+      }
+    ],
+    "evidence_status": "smoke_test_only",
+    "needs_local_validation": true
+  },
+  "evidence_status": "smoke_test_only"
+}

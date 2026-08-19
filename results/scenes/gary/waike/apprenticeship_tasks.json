@@ -1,0 +1,6 @@
+{
+  "tasks": [
+    "smoke_lab_1"
+  ],
+  "evidence_status": "smoke_test_only"
+}

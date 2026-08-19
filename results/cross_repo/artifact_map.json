@@ -1,0 +1,12 @@
+{
+  "sites": [
+    "gary",
+    "ghana",
+    "guyana",
+    "gaza",
+    "geelong",
+    "graham_land",
+    "germany"
+  ],
+  "evidence_default": "smoke_test_only"
+}

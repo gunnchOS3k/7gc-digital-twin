@@ -1,0 +1,5 @@
+- `germany_flood`
+- `germany_outage`
+- `germany_congestion`
+- `germany_privacy_incident`
+- `germany_power_loss`

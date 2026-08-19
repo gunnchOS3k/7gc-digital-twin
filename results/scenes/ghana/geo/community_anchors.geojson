@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.192,
+          5.6067
+        ]
+      },
+      "properties": {
+        "type": "school_or_learning",
+        "synthetic": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.183,
+          5.6037
+        ]
+      },
+      "properties": {
+        "type": "library_community",
+        "synthetic": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.187,
+          5.5997
+        ]
+      },
+      "properties": {
+        "type": "small_business",
+        "synthetic": true
+      }
+    }
+  ],
+  "properties": {
+    "site_id": "ghana",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

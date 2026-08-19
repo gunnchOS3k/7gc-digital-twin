@@ -1,0 +1,5 @@
+- `gaza_flood`
+- `gaza_outage`
+- `gaza_congestion`
+- `gaza_privacy_incident`
+- `gaza_power_loss`
