@@ -1,0 +1,466 @@
+{
+  "scenario_family_id": "gary_flagship_continuity_profiles",
+  "seeds": [
+    1,
+    2,
+    7,
+    42
+  ],
+  "n_seeds": 4,
+  "steps_per_seed": 48,
+  "evidence_class": "SYNTHETIC_SIM",
+  "ci_method": "student_t_over_seed_means",
+  "ci_level": 0.95,
+  "ci_warning": "95% Student-t CIs quantify simulation-run variability across seeds, NOT real-world RF measurement uncertainty.",
+  "primary_outcomes": [
+    "task_completion_ratio",
+    "time_above_minimum_useful"
+  ],
+  "no_composite_metric": true,
+  "per_seed": [
+    {
+      "seed": 1,
+      "scenario_family_id": "gary_flagship_continuity_profiles",
+      "steps": 48,
+      "per_class": {
+        "wearable": {
+          "task_completion_ratio": 0.125,
+          "time_above_minimum_useful": 0.270833,
+          "outage_fraction": 0.729167,
+          "recovery_event_count": 10,
+          "qoe_violation_fraction": 0.729167,
+          "energy_proxy_j": 15.1522,
+          "mean_latency_ms": 128.9927,
+          "mean_jitter_ms": 83.0961,
+          "packet_loss_proxy": 0.729167,
+          "throughput_proxy_mbps": 1.3542,
+          "reliability": 0.270833,
+          "compute_completion_time_proxy": 55.2
+        },
+        "smartphone": {
+          "task_completion_ratio": 0.354167,
+          "time_above_minimum_useful": 0.541667,
+          "outage_fraction": 0.458333,
+          "recovery_event_count": 13,
+          "qoe_violation_fraction": 0.458333,
+          "energy_proxy_j": 20.6111,
+          "mean_latency_ms": 104.955,
+          "mean_jitter_ms": 61.5733,
+          "packet_loss_proxy": 0.458333,
+          "throughput_proxy_mbps": 2.7083,
+          "reliability": 0.541667,
+          "compute_completion_time_proxy": 50.8
+        },
+        "laptop": {
+          "task_completion_ratio": 0.416667,
+          "time_above_minimum_useful": 0.5,
+          "outage_fraction": 0.5,
+          "recovery_event_count": 11,
+          "qoe_violation_fraction": 0.5,
+          "energy_proxy_j": 22.0309,
+          "mean_latency_ms": 95.5681,
+          "mean_jitter_ms": 56.6122,
+          "packet_loss_proxy": 0.5,
+          "throughput_proxy_mbps": 2.5,
+          "reliability": 0.5,
+          "compute_completion_time_proxy": 49.6
+        },
+        "edge_node": {
+          "task_completion_ratio": 0.583333,
+          "time_above_minimum_useful": 0.645833,
+          "outage_fraction": 0.354167,
+          "recovery_event_count": 10,
+          "qoe_violation_fraction": 0.354167,
+          "energy_proxy_j": 22.8513,
+          "mean_latency_ms": 93.8588,
+          "mean_jitter_ms": 30.7419,
+          "packet_loss_proxy": 0.354167,
+          "throughput_proxy_mbps": 3.2292,
+          "reliability": 0.645833,
+          "compute_completion_time_proxy": 46.4
+        }
+      },
+      "primary": {
+        "task_completion_ratio": 0.369792,
+        "time_above_minimum_useful": 0.489583
+      },
+      "evidence_class": "SYNTHETIC_SIM"
+    },
+    {
+      "seed": 2,
+      "scenario_family_id": "gary_flagship_continuity_profiles",
+      "steps": 48,
+      "per_class": {
+        "wearable": {
+          "task_completion_ratio": 0.166667,
+          "time_above_minimum_useful": 0.4375,
+          "outage_fraction": 0.5625,
+          "recovery_event_count": 11,
+          "qoe_violation_fraction": 0.5625,
+          "energy_proxy_j": 23.2232,
+          "mean_latency_ms": 149.4586,
+          "mean_jitter_ms": 80.1932,
+          "packet_loss_proxy": 0.5625,
+          "throughput_proxy_mbps": 2.1875,
+          "reliability": 0.4375,
+          "compute_completion_time_proxy": 54.4
+        },
+        "smartphone": {
+          "task_completion_ratio": 0.479167,
+          "time_above_minimum_useful": 0.541667,
+          "outage_fraction": 0.458333,
+          "recovery_event_count": 14,
+          "qoe_violation_fraction": 0.458333,
+          "energy_proxy_j": 24.1734,
+          "mean_latency_ms": 103.3833,
+          "mean_jitter_ms": 63.4189,
+          "packet_loss_proxy": 0.458333,
+          "throughput_proxy_mbps": 2.7083,
+          "reliability": 0.541667,
+          "compute_completion_time_proxy": 48.4
+        },
+        "laptop": {
+          "task_completion_ratio": 0.5625,
+          "time_above_minimum_useful": 0.645833,
+          "outage_fraction": 0.354167,
+          "recovery_event_count": 9,
+          "qoe_violation_fraction": 0.354167,
+          "energy_proxy_j": 25.76,
+          "mean_latency_ms": 99.3056,
+          "mean_jitter_ms": 50.9934,
+          "packet_loss_proxy": 0.354167,
+          "throughput_proxy_mbps": 3.2292,
+          "reliability": 0.645833,
+          "compute_completion_time_proxy": 46.8
+        },
+        "edge_node": {
+          "task_completion_ratio": 0.708333,
+          "time_above_minimum_useful": 0.895833,
+          "outage_fraction": 0.104167,
+          "recovery_event_count": 5,
+          "qoe_violation_fraction": 0.104167,
+          "energy_proxy_j": 27.5566,
+          "mean_latency_ms": 85.8153,
+          "mean_jitter_ms": 43.5115,
+          "packet_loss_proxy": 0.104167,
+          "throughput_proxy_mbps": 4.4792,
+          "reliability": 0.895833,
+          "compute_completion_time_proxy": 44.0
+        }
+      },
+      "primary": {
+        "task_completion_ratio": 0.479167,
+        "time_above_minimum_useful": 0.630208
+      },
+      "evidence_class": "SYNTHETIC_SIM"
+    },
+    {
+      "seed": 7,
+      "scenario_family_id": "gary_flagship_continuity_profiles",
+      "steps": 48,
+      "per_class": {
+        "wearable": {
+          "task_completion_ratio": 0.270833,
+          "time_above_minimum_useful": 0.416667,
+          "outage_fraction": 0.583333,
+          "recovery_event_count": 12,
+          "qoe_violation_fraction": 0.583333,
+          "energy_proxy_j": 17.7442,
+          "mean_latency_ms": 133.7658,
+          "mean_jitter_ms": 86.6004,
+          "packet_loss_proxy": 0.583333,
+          "throughput_proxy_mbps": 2.0833,
+          "reliability": 0.416667,
+          "compute_completion_time_proxy": 52.4
+        },
+        "smartphone": {
+          "task_completion_ratio": 0.333333,
+          "time_above_minimum_useful": 0.458333,
+          "outage_fraction": 0.541667,
+          "recovery_event_count": 10,
+          "qoe_violation_fraction": 0.541667,
+          "energy_proxy_j": 18.8911,
+          "mean_latency_ms": 121.162,
+          "mean_jitter_ms": 63.1583,
+          "packet_loss_proxy": 0.541667,
+          "throughput_proxy_mbps": 2.2917,
+          "reliability": 0.458333,
+          "compute_completion_time_proxy": 51.2
+        },
+        "laptop": {
+          "task_completion_ratio": 0.6875,
+          "time_above_minimum_useful": 0.8125,
+          "outage_fraction": 0.1875,
+          "recovery_event_count": 6,
+          "qoe_violation_fraction": 0.1875,
+          "energy_proxy_j": 26.5364,
+          "mean_latency_ms": 93.3244,
+          "mean_jitter_ms": 46.1528,
+          "packet_loss_proxy": 0.1875,
+          "throughput_proxy_mbps": 4.0625,
+          "reliability": 0.8125,
+          "compute_completion_time_proxy": 44.4
+        },
+        "edge_node": {
+          "task_completion_ratio": 0.604167,
+          "time_above_minimum_useful": 0.75,
+          "outage_fraction": 0.25,
+          "recovery_event_count": 10,
+          "qoe_violation_fraction": 0.25,
+          "energy_proxy_j": 24.6192,
+          "mean_latency_ms": 91.3226,
+          "mean_jitter_ms": 51.3169,
+          "packet_loss_proxy": 0.25,
+          "throughput_proxy_mbps": 3.75,
+          "reliability": 0.75,
+          "compute_completion_time_proxy": 46.0
+        }
+      },
+      "primary": {
+        "task_completion_ratio": 0.473958,
+        "time_above_minimum_useful": 0.609375
+      },
+      "evidence_class": "SYNTHETIC_SIM"
+    },
+    {
+      "seed": 42,
+      "scenario_family_id": "gary_flagship_continuity_profiles",
+      "steps": 48,
+      "per_class": {
+        "wearable": {
+          "task_completion_ratio": 0.1875,
+          "time_above_minimum_useful": 0.354167,
+          "outage_fraction": 0.645833,
+          "recovery_event_count": 9,
+          "qoe_violation_fraction": 0.645833,
+          "energy_proxy_j": 16.3359,
+          "mean_latency_ms": 144.5658,
+          "mean_jitter_ms": 93.5982,
+          "packet_loss_proxy": 0.645833,
+          "throughput_proxy_mbps": 1.7708,
+          "reliability": 0.354167,
+          "compute_completion_time_proxy": 54.0
+        },
+        "smartphone": {
+          "task_completion_ratio": 0.3125,
+          "time_above_minimum_useful": 0.4375,
+          "outage_fraction": 0.5625,
+          "recovery_event_count": 15,
+          "qoe_violation_fraction": 0.5625,
+          "energy_proxy_j": 21.4114,
+          "mean_latency_ms": 119.6744,
+          "mean_jitter_ms": 57.7194,
+          "packet_loss_proxy": 0.5625,
+          "throughput_proxy_mbps": 2.1875,
+          "reliability": 0.4375,
+          "compute_completion_time_proxy": 51.6
+        },
+        "laptop": {
+          "task_completion_ratio": 0.541667,
+          "time_above_minimum_useful": 0.708333,
+          "outage_fraction": 0.291667,
+          "recovery_event_count": 12,
+          "qoe_violation_fraction": 0.291667,
+          "energy_proxy_j": 25.8584,
+          "mean_latency_ms": 98.213,
+          "mean_jitter_ms": 45.5999,
+          "packet_loss_proxy": 0.291667,
+          "throughput_proxy_mbps": 3.5417,
+          "reliability": 0.708333,
+          "compute_completion_time_proxy": 47.2
+        },
+        "edge_node": {
+          "task_completion_ratio": 0.729167,
+          "time_above_minimum_useful": 0.833333,
+          "outage_fraction": 0.166667,
+          "recovery_event_count": 8,
+          "qoe_violation_fraction": 0.166667,
+          "energy_proxy_j": 28.8413,
+          "mean_latency_ms": 89.2953,
+          "mean_jitter_ms": 39.5171,
+          "packet_loss_proxy": 0.166667,
+          "throughput_proxy_mbps": 4.1667,
+          "reliability": 0.833333,
+          "compute_completion_time_proxy": 43.6
+        }
+      },
+      "primary": {
+        "task_completion_ratio": 0.442709,
+        "time_above_minimum_useful": 0.583333
+      },
+      "evidence_class": "SYNTHETIC_SIM"
+    }
+  ],
+  "primary": {
+    "task_completion_ratio": {
+      "n": 4,
+      "mean": 0.44140650000000003,
+      "std": 0.050384483818599016,
+      "ci_low": 0.361244786244609,
+      "ci_high": 0.5215682137553911
+    },
+    "time_above_minimum_useful": {
+      "n": 4,
+      "mean": 0.57812475,
+      "std": 0.062064510569648415,
+      "ci_low": 0.4793801136836893,
+      "ci_high": 0.6768693863163106
+    }
+  },
+  "secondary": {
+    "outage_fraction": {
+      "n": 4,
+      "mean": 0.42187506249999995,
+      "std": 0.062064468610394344,
+      "ci_low": 0.32313049294086255,
+      "ci_high": 0.5206196320591373
+    },
+    "qoe_violation_fraction": {
+      "n": 4,
+      "mean": 0.42187506249999995,
+      "std": 0.062064468610394344,
+      "ci_low": 0.32313049294086255,
+      "ci_high": 0.5206196320591373
+    },
+    "energy_proxy_j": {
+      "n": 4,
+      "mean": 22.599787499999998,
+      "std": 2.1041129039831334,
+      "ci_low": 19.252143869762833,
+      "ci_high": 25.947431130237163
+    },
+    "mean_latency_ms": {
+      "n": 4,
+      "mean": 109.54129375,
+      "std": 2.9057981733635443,
+      "ci_low": 104.9181688561786,
+      "ci_high": 114.16441864382139
+    },
+    "mean_jitter_ms": {
+      "n": 4,
+      "mean": 59.61271875,
+      "std": 1.597738844348343,
+      "ci_low": 57.07071624864179,
+      "ci_high": 62.15472125135821
+    },
+    "packet_loss_proxy": {
+      "n": 4,
+      "mean": 0.42187506249999995,
+      "std": 0.062064468610394344,
+      "ci_low": 0.32313049294086255,
+      "ci_high": 0.5206196320591373
+    },
+    "throughput_proxy_mbps": {
+      "n": 4,
+      "mean": 2.8906312499999998,
+      "std": 0.3103208745093535,
+      "ci_low": 2.3969107386556185,
+      "ci_high": 3.384351761344381
+    },
+    "reliability": {
+      "n": 4,
+      "mean": 0.5781249375,
+      "std": 0.062064468610394344,
+      "ci_low": 0.47938036794086264,
+      "ci_high": 0.6768695070591374
+    },
+    "compute_completion_time_proxy": {
+      "n": 4,
+      "mean": 49.125,
+      "std": 0.9673847907287637,
+      "ci_low": 47.58589079795054,
+      "ci_high": 50.66410920204946
+    }
+  },
+  "per_class": {
+    "wearable": {
+      "task_completion_ratio": {
+        "n": 4,
+        "mean": 0.1875,
+        "std": 0.0613314839703068,
+        "ci_low": 0.08992160900324188,
+        "ci_high": 0.28507839099675814
+      },
+      "time_above_minimum_useful": {
+        "n": 4,
+        "mean": 0.36979175,
+        "std": 0.0748747024362479,
+        "ci_low": 0.25066609842392956,
+        "ci_high": 0.4889174015760704
+      }
+    },
+    "smartphone": {
+      "task_completion_ratio": {
+        "n": 4,
+        "mean": 0.36979175,
+        "std": 0.0748747024362479,
+        "ci_low": 0.25066609842392956,
+        "ci_high": 0.4889174015760704
+      },
+      "time_above_minimum_useful": {
+        "n": 4,
+        "mean": 0.49479175,
+        "std": 0.054791006545326405,
+        "ci_low": 0.40761925858638565,
+        "ci_high": 0.5819642414136142
+      }
+    },
+    "laptop": {
+      "task_completion_ratio": {
+        "n": 4,
+        "mean": 0.5520835,
+        "std": 0.11089373876073136,
+        "ci_low": 0.37565156163167635,
+        "ci_high": 0.7285154383683236
+      },
+      "time_above_minimum_useful": {
+        "n": 4,
+        "mean": 0.6666665,
+        "std": 0.1306589247991375,
+        "ci_low": 0.45878815064457235,
+        "ci_high": 0.8745448493554278
+      }
+    },
+    "edge_node": {
+      "task_completion_ratio": {
+        "n": 4,
+        "mean": 0.65625,
+        "std": 0.07316432545077325,
+        "ci_low": 0.5398455582078198,
+        "ci_high": 0.7726544417921802
+      },
+      "time_above_minimum_useful": {
+        "n": 4,
+        "mean": 0.78124975,
+        "std": 0.10825314339816343,
+        "ci_low": 0.609018998853522,
+        "ci_high": 0.953480501146478
+      }
+    }
+  },
+  "paired_vs_baseline": null,
+  "effect_sizes": null,
+  "schema": {
+    "mean_ci_keys": [
+      "n",
+      "mean",
+      "std",
+      "ci_low",
+      "ci_high"
+    ]
+  },
+  "frozen_corpus_classes_that_failed": [
+    "wearable"
+  ],
+  "level_order_reference": {
+    "failed": 0,
+    "min_useful": 1,
+    "degraded": 2,
+    "target": 3
+  },
+  "classify_rule_probe": {
+    "connected": "target",
+    "offline_covers": "min_useful"
+  },
+  "profile_bundle_present": true
+}

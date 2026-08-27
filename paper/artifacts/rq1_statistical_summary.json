@@ -1,0 +1,28 @@
+{
+  "experiment_id": "rq1_gary_flagship_profiles",
+  "evidence_class": "SYNTHETIC_SIM",
+  "seeds": [
+    1,
+    2,
+    7,
+    42
+  ],
+  "scenario_family_id": "gary_flagship_continuity_profiles",
+  "primary": {
+    "task_completion_ratio": {
+      "n": 4,
+      "mean": 0.44140650000000003,
+      "std": 0.050384483818599016,
+      "ci_low": 0.361244786244609,
+      "ci_high": 0.5215682137553911
+    },
+    "time_above_minimum_useful": {
+      "n": 4,
+      "mean": 0.57812475,
+      "std": 0.062064510569648415,
+      "ci_low": 0.4793801136836893,
+      "ci_high": 0.6768693863163106
+    }
+  },
+  "ci_warning": "95% Student-t CIs quantify simulation-run variability across seeds, NOT real-world RF measurement uncertainty."
+}
