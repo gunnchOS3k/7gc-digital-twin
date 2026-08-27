@@ -8,7 +8,7 @@ Frozen before treating any later held-out RF run as confirmatory.
 | protocol | `paper/artifacts/experiment_protocol.yaml` |
 | site | gary (flagship scenario, not community deployment) |
 | mode | synthetic-fixture |
-| seeds | 1, 2, 7, 42 |
+| seeds | 1–30 (n=30, predeclared; no outcome-based selection) |
 | metrics | workload, compute, radio, failure, mobility, inclusion |
 | analysis | export families + SHA256; no p-hacking of undeclared metrics |
 | non-claims | not RF; not Oulu affiliation; not community deployment |
