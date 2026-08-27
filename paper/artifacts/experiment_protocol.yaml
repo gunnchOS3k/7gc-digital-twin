@@ -7,7 +7,13 @@ site_id: gary
 scenario_id: neighborhood_outage
 mode: synthetic-fixture
 evidence_class: SYNTHETIC_SIM
-seeds: [1, 2, 7, 42]
+# Predeclared before outcome inspection; n=30 (runtime trivial for synthetic timelines).
+seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+seed_design:
+  n: 30
+  selection: predeclared_contiguous_integers_1_through_30
+  outcome_based_selection: false
+  shared_across_comparable_policies: true
 metrics:
   - workload
   - compute

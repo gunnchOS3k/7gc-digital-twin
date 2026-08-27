@@ -19,8 +19,8 @@ from .continuity_benchmark import LEVEL_ORDER, analyze_continuity, classify_cont
 from .stats import (
     CI_SIM_VARIABILITY_WARNING,
     MIN_SAMPLE_N,
+    T_CRIT_VERIFICATION_SOURCE,
     assert_finite,
-    cohens_d,
     mean_ci,
     paired_diff_ci,
     schema_keys,
@@ -177,8 +177,11 @@ def build_statistical_report(
             "time_above_minimum_useful": paired_diff_ci(tau_series, b_tau),
         }
         effect = {
-            "task_completion_ratio_cohens_d": cohens_d(task_series, b_task),
-            "time_above_minimum_useful_cohens_d": cohens_d(tau_series, b_tau),
+            "task_completion_ratio_paired_d_z": paired["task_completion_ratio"]["paired_cohens_d_z"],
+            "time_above_minimum_useful_paired_d_z": paired["time_above_minimum_useful"][
+                "paired_cohens_d_z"
+            ],
+            "effect_size_definition": "d_z = mean(pairwise_differences) / sd(pairwise_differences)",
         }
 
     corpus = analyze_continuity()
@@ -190,6 +193,7 @@ def build_statistical_report(
         "evidence_class": EVIDENCE_CLASS,
         "ci_method": "student_t_over_seed_means",
         "ci_level": 0.95,
+        "t_crit_verification_source": T_CRIT_VERIFICATION_SOURCE,
         "ci_warning": CI_SIM_VARIABILITY_WARNING,
         "primary_outcomes": ["task_completion_ratio", "time_above_minimum_useful"],
         "no_composite_metric": True,

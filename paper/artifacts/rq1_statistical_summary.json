@@ -1,28 +1,55 @@
 {
-  "experiment_id": "rq1_gary_flagship_profiles",
-  "evidence_class": "SYNTHETIC_SIM",
   "seeds": [
     1,
     2,
+    3,
+    4,
+    5,
+    6,
     7,
-    42
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
   ],
-  "scenario_family_id": "gary_flagship_continuity_profiles",
+  "n_seeds": 30,
+  "runtime_seconds": 2.071980375039857,
   "primary": {
     "task_completion_ratio": {
-      "n": 4,
-      "mean": 0.44140650000000003,
-      "std": 0.050384483818599016,
-      "ci_low": 0.361244786244609,
-      "ci_high": 0.5215682137553911
+      "n": 30,
+      "mean": 0.4272570333333333,
+      "std": 0.041610184156652984,
+      "ci_low": 0.41171953521785287,
+      "ci_high": 0.44279453144881376
     },
     "time_above_minimum_useful": {
-      "n": 4,
-      "mean": 0.57812475,
-      "std": 0.062064510569648415,
-      "ci_low": 0.4793801136836893,
-      "ci_high": 0.6768693863163106
+      "n": 30,
+      "mean": 0.5914930666666667,
+      "std": 0.04024342465112251,
+      "ci_low": 0.5764659249380156,
+      "ci_high": 0.6065202083953177
     }
   },
-  "ci_warning": "95% Student-t CIs quantify simulation-run variability across seeds, NOT real-world RF measurement uncertainty."
+  "evidence_class": "SYNTHETIC_SIM",
+  "ci_warning": "95% Student-t CIs quantify simulation-run variability across seeds, NOT real-world RF measurement uncertainty.",
+  "t_crit_verification_source": "SciPy 1.18.0 scipy.stats.t.ppf(0.975, df); stdlib table + 1/df interpolation + Cornish\u2013Fisher for df>120 (no silent 1.96 substitution for finite missing df)"
 }
