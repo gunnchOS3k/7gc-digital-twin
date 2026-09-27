@@ -1,6 +1,7 @@
 """Cross-repo integration maps."""
 from .ai_ran import integration_status as ai_ran_status
 from .beam_selection import integration_status as beam_status
+from .campus_design import adapt_campus_design_bundle
 from .device_os import integration_status as device_os_status
 from .edge_io import integration_status as edge_io_status
 from .ntn import integration_status as ntn_status
@@ -14,6 +15,12 @@ INTEGRATORS = {
     "ai_ran": ai_ran_status,
     "beam_selection": beam_status,
 }
+
+__all__ = [
+    "INTEGRATORS",
+    "adapt_campus_design_bundle",
+    "integration_map",
+]
 
 
 def integration_map(site_id: str) -> dict:

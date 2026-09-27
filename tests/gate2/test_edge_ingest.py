@@ -9,7 +9,20 @@ import pytest
 from seven_gc_twin.gate2.common import sha256_file
 from seven_gc_twin.gate2.edge_ingest import EdgeIOAdapter, build_twin_state, validate_twin_state
 
-FK = Path(__file__).resolve().parents[3] / "gunnchos-7gc-ai-ran-field-kit"
+def _field_kit_root() -> Path:
+    here = Path(__file__).resolve()
+    candidates = [
+        here.parents[3] / "gunnchos-7gc-ai-ran-field-kit",
+        here.parents[3] / "field-kit",
+        here.parents[4] / "gunnchos-7gc-ai-ran-field-kit",
+    ]
+    for cand in candidates:
+        if (cand / "contracts").is_dir():
+            return cand
+    return candidates[0]
+
+
+FK = _field_kit_root()
 SCHEMA = FK / "contracts"
 EDGE = FK / "fixtures/valid/edge_measurement_batch.valid.json"
 
