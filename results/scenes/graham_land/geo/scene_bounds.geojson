@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -60.03,
+              -64.03
+            ],
+            [
+              -59.97,
+              -64.03
+            ],
+            [
+              -59.97,
+              -63.97
+            ],
+            [
+              -60.03,
+              -63.97
+            ],
+            [
+              -60.03,
+              -64.03
+            ]
+          ]
+        ]
+      },
+      "properties": {}
+    }
+  ],
+  "properties": {
+    "site_id": "graham_land",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

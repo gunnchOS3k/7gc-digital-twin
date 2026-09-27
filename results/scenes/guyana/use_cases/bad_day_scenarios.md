@@ -1,0 +1,5 @@
+- `guyana_flood`
+- `guyana_outage`
+- `guyana_congestion`
+- `guyana_privacy_incident`
+- `guyana_power_loss`

@@ -1,0 +1,16 @@
+{
+  "categories": [
+    "students",
+    "teachers",
+    "families",
+    "small_business_owners",
+    "community_technicians",
+    "public_service_users",
+    "researchers",
+    "accessibility_users",
+    "crisis_priority_users"
+  ],
+  "synthetic": true,
+  "evidence_status": "smoke_test_only",
+  "no_real_person_data": true
+}

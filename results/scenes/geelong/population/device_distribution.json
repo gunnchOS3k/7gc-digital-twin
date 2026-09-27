@@ -1,0 +1,13 @@
+{
+  "classes": [
+    "student_14_5",
+    "handheld_hybrid",
+    "ds_xl_coder",
+    "edge_io_wearable",
+    "community_kiosk",
+    "teacher_admin_device",
+    "repair_lab_device",
+    "sensor_or_measurement_node"
+  ],
+  "evidence_status": "smoke_test_only"
+}

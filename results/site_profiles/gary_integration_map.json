@@ -1,0 +1,38 @@
+{
+  "edge_io": {
+    "repo": "edge-io-measurement-node",
+    "site_id": "gary",
+    "export_contract": "sanitized_measurements.json",
+    "status": "smoke_contract"
+  },
+  "ntn": {
+    "repo": "ntn-resilience-sim",
+    "site_id": "gary",
+    "scenario_prefix": "gary",
+    "status": "smoke_contract"
+  },
+  "waike": {
+    "repo": "waike-research-ops",
+    "site_id": "gary",
+    "track_config": "configs/campus_learning_tracks/gary.yaml",
+    "status": "smoke_contract"
+  },
+  "device_os": {
+    "repo": "gunnchos-device-os",
+    "site_id": "gary",
+    "mode_config": "configs/campus_device_modes/gary.yaml",
+    "status": "smoke_contract"
+  },
+  "ai_ran": {
+    "repo": "spectrumx-ai-ran-gary",
+    "site_id": "gary",
+    "profile": "configs/campus_ai_ran_profiles/gary.yaml",
+    "status": "smoke_contract"
+  },
+  "beam_selection": {
+    "repo": "readygary-6g-beam-selection",
+    "site_id": "gary",
+    "radio_profile": "configs/campus_radio_profiles/gary.yaml",
+    "status": "smoke_contract"
+  }
+}

@@ -1,0 +1,5 @@
+- `backhaul_cut`
+- `solar_low`
+- `mobile_money_phishing_spike`
+- `exam_day_congestion`
+- `clinic_telehealth_drop`

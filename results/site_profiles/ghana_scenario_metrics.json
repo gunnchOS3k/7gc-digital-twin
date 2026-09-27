@@ -1,0 +1,98 @@
+{
+  "site_id": "ghana",
+  "scenario_id": "backhaul_cut",
+  "mode": "smoke",
+  "campus_metrics": {
+    "site_id": "ghana",
+    "mode": "smoke",
+    "evidence_status": "smoke_test_only",
+    "digital_inclusion_readiness": 0.6,
+    "access_barrier_score": 0.7,
+    "affordability_pressure": 0.0849,
+    "power_resilience_risk": 0.9718,
+    "privacy_data_harm_risk": 0.6402,
+    "local_capacity_readiness": 0.3917,
+    "community_governance_readiness": 0.314,
+    "evidence_maturity_level": 1,
+    "needs_local_validation": true
+  },
+  "bad_day": {
+    "site_id": "ghana",
+    "scenario_id": "backhaul_cut",
+    "mode": "smoke",
+    "evidence_status": "smoke_test_only",
+    "description": "Bad-day scenario 1 for ghana",
+    "metrics": [
+      "service_continuity",
+      "unmet_demand_proxy",
+      "recovery_time_proxy"
+    ],
+    "stress_score": 0.55,
+    "needs_local_validation": true,
+    "note": "Synthetic scenario metrics \u2014 not field validation"
+  },
+  "community_benefit": {
+    "site_id": "ghana",
+    "campus_role": "Mobile-first, power-aware, affordability-aware inclusion node",
+    "digital_divide_context": "Mobile-first access with power and cost constraints",
+    "barrier_count": 4,
+    "digital_inclusion_readiness": 0.6,
+    "community_data_rights": "Community retains rights to aggregated insights; no raw PII in public repo",
+    "guardrails": [
+      "Local instructors own curriculum pacing",
+      "No donor-driven tech dumping",
+      "Power metrics include solar reality",
+      "Mobile money hygiene taught before telemetry",
+      "Export only aggregates"
+    ],
+    "evidence_status": "smoke_test_only",
+    "needs_local_validation": true
+  },
+  "local_capacity": {
+    "site_id": "ghana",
+    "steering_roles": [
+      "vocational instructor",
+      "solar hub operator",
+      "youth apprentice",
+      "telehealth liaison",
+      "local gov ICT"
+    ],
+    "partner_types": [
+      "vocational school",
+      "solar hub",
+      "health clinic ICT"
+    ],
+    "local_governance": "Community + vocational school co-governance",
+    "readiness_score": 0.75,
+    "evidence_to_collect": [
+      {
+        "item_id": "ghana_ev_0",
+        "description": "Field validation item 1",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "ghana_ev_1",
+        "description": "Field validation item 2",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "ghana_ev_2",
+        "description": "Field validation item 3",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "ghana_ev_3",
+        "description": "Field validation item 4",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "ghana_ev_4",
+        "description": "Field validation item 5",
+        "requires_local_validation": true
+      }
+    ],
+    "evidence_status": "smoke_test_only",
+    "needs_local_validation": true
+  },
+  "evidence_status": "smoke_test_only"
+}

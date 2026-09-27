@@ -1,0 +1,180 @@
+{
+  "site_id": "gaza",
+  "nodes": [
+    {
+      "id": "welcome_intake",
+      "label": "welcome intake"
+    },
+    {
+      "id": "flexible_classroom",
+      "label": "flexible classroom"
+    },
+    {
+      "id": "device_bar",
+      "label": "device bar"
+    },
+    {
+      "id": "hardware_repair_lab",
+      "label": "hardware repair lab"
+    },
+    {
+      "id": "networking_cyber_lab",
+      "label": "networking cyber lab"
+    },
+    {
+      "id": "ai_cloud_studio",
+      "label": "ai cloud studio"
+    },
+    {
+      "id": "career_portfolio_studio",
+      "label": "career portfolio studio"
+    },
+    {
+      "id": "community_room",
+      "label": "community room"
+    },
+    {
+      "id": "staff_mentor_workspace",
+      "label": "staff mentor workspace"
+    },
+    {
+      "id": "secure_storage",
+      "label": "secure storage"
+    },
+    {
+      "id": "quiet_decompression",
+      "label": "quiet decompression"
+    },
+    {
+      "id": "hybrid_learning_corner",
+      "label": "hybrid learning corner"
+    },
+    {
+      "id": "server_comms_closet",
+      "label": "server comms closet"
+    },
+    {
+      "id": "mechanical_electrical_zone",
+      "label": "mechanical electrical zone"
+    },
+    {
+      "id": "public_exhibit_wall",
+      "label": "public exhibit wall"
+    },
+    {
+      "id": "offline_kit_station",
+      "label": "offline kit station"
+    },
+    {
+      "id": "device_clinic",
+      "label": "device clinic"
+    },
+    {
+      "id": "teacher_support_station",
+      "label": "teacher support station"
+    }
+  ],
+  "edges": [
+    {
+      "from": "welcome_intake",
+      "to": "flexible_classroom",
+      "type": "adjacent"
+    },
+    {
+      "from": "flexible_classroom",
+      "to": "device_bar",
+      "type": "adjacent"
+    },
+    {
+      "from": "device_bar",
+      "to": "hardware_repair_lab",
+      "type": "adjacent"
+    },
+    {
+      "from": "hardware_repair_lab",
+      "to": "networking_cyber_lab",
+      "type": "adjacent"
+    },
+    {
+      "from": "networking_cyber_lab",
+      "to": "ai_cloud_studio",
+      "type": "adjacent"
+    },
+    {
+      "from": "ai_cloud_studio",
+      "to": "career_portfolio_studio",
+      "type": "adjacent"
+    },
+    {
+      "from": "career_portfolio_studio",
+      "to": "community_room",
+      "type": "adjacent"
+    },
+    {
+      "from": "community_room",
+      "to": "staff_mentor_workspace",
+      "type": "adjacent"
+    },
+    {
+      "from": "staff_mentor_workspace",
+      "to": "secure_storage",
+      "type": "adjacent"
+    },
+    {
+      "from": "secure_storage",
+      "to": "quiet_decompression",
+      "type": "adjacent"
+    },
+    {
+      "from": "quiet_decompression",
+      "to": "hybrid_learning_corner",
+      "type": "adjacent"
+    },
+    {
+      "from": "hybrid_learning_corner",
+      "to": "server_comms_closet",
+      "type": "adjacent"
+    },
+    {
+      "from": "server_comms_closet",
+      "to": "mechanical_electrical_zone",
+      "type": "adjacent"
+    },
+    {
+      "from": "mechanical_electrical_zone",
+      "to": "public_exhibit_wall",
+      "type": "adjacent"
+    },
+    {
+      "from": "public_exhibit_wall",
+      "to": "offline_kit_station",
+      "type": "adjacent"
+    },
+    {
+      "from": "offline_kit_station",
+      "to": "device_clinic",
+      "type": "adjacent"
+    },
+    {
+      "from": "device_clinic",
+      "to": "teacher_support_station",
+      "type": "adjacent"
+    },
+    {
+      "from": "welcome_intake",
+      "to": "flexible_classroom",
+      "type": "hub"
+    },
+    {
+      "from": "welcome_intake",
+      "to": "device_bar",
+      "type": "hub"
+    },
+    {
+      "from": "welcome_intake",
+      "to": "hardware_repair_lab",
+      "type": "hub"
+    }
+  ],
+  "evidence_status": "design assumption"
+}

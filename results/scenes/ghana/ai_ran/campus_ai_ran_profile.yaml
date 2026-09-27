@@ -1,0 +1,5 @@
+evidence_status: smoke_test_only
+site_id: ghana
+traffic_classes:
+- education
+- emergency

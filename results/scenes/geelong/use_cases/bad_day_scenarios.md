@@ -1,0 +1,5 @@
+- `geelong_flood`
+- `geelong_outage`
+- `geelong_congestion`
+- `geelong_privacy_incident`
+- `geelong_power_loss`

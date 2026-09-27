@@ -1,0 +1,99 @@
+{
+  "site_id": "gary",
+  "scenario_id": "neighborhood_outage",
+  "mode": "smoke",
+  "campus_metrics": {
+    "site_id": "gary",
+    "mode": "smoke",
+    "evidence_status": "smoke_test_only",
+    "digital_inclusion_readiness": 0.44,
+    "access_barrier_score": 0.98,
+    "affordability_pressure": 0.7373,
+    "power_resilience_risk": 0.2801,
+    "privacy_data_harm_risk": 0.073,
+    "local_capacity_readiness": 0.2786,
+    "community_governance_readiness": 0.1724,
+    "evidence_maturity_level": 1,
+    "needs_local_validation": true
+  },
+  "bad_day": {
+    "site_id": "gary",
+    "scenario_id": "neighborhood_outage",
+    "mode": "smoke",
+    "evidence_status": "smoke_test_only",
+    "description": "Bad-day scenario 1 for gary",
+    "metrics": [
+      "service_continuity",
+      "unmet_demand_proxy",
+      "recovery_time_proxy"
+    ],
+    "stress_score": 0.55,
+    "needs_local_validation": true,
+    "note": "Synthetic scenario metrics \u2014 not field validation"
+  },
+  "community_benefit": {
+    "site_id": "gary",
+    "campus_role": "Flagship community digital equality and family/community technology node",
+    "digital_divide_context": "Spectrum-constrained urban connectivity with affordability and trust barriers",
+    "barrier_count": 5,
+    "digital_inclusion_readiness": 0.44,
+    "community_data_rights": "Community retains rights to aggregated insights; no raw PII in public repo",
+    "guardrails": [
+      "No outside vendor decides community priorities",
+      "Residents review metrics before public claims",
+      "Youth co-design for family tech nights",
+      "No PII in public artifacts",
+      "Competition data never mixed with community pilots"
+    ],
+    "evidence_status": "smoke_test_only",
+    "needs_local_validation": true
+  },
+  "local_capacity": {
+    "site_id": "gary",
+    "steering_roles": [
+      "community liaison",
+      "school tech lead",
+      "library anchor",
+      "youth mentor",
+      "small business rep"
+    ],
+    "partner_types": [
+      "school district",
+      "library",
+      "community org",
+      "local ISP partner"
+    ],
+    "local_governance": "Community steering with schools, libraries, and local partners",
+    "readiness_score": 0.75,
+    "evidence_to_collect": [
+      {
+        "item_id": "gary_ev_0",
+        "description": "Field validation item 1",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "gary_ev_1",
+        "description": "Field validation item 2",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "gary_ev_2",
+        "description": "Field validation item 3",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "gary_ev_3",
+        "description": "Field validation item 4",
+        "requires_local_validation": true
+      },
+      {
+        "item_id": "gary_ev_4",
+        "description": "Field validation item 5",
+        "requires_local_validation": true
+      }
+    ],
+    "evidence_status": "smoke_test_only",
+    "needs_local_validation": true
+  },
+  "evidence_status": "smoke_test_only"
+}

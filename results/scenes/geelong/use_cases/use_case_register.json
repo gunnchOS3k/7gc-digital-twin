@@ -1,0 +1,191 @@
+{
+  "site_id": "geelong",
+  "anchor_use_cases": [
+    {
+      "use_case_id": "geelong_anchor_a",
+      "name": "geelong anchor A",
+      "human_problem": "Human access gap",
+      "technical_problem": "Technical gap",
+      "current_workaround": "Workaround",
+      "7gc_intervention": "7GC intervention",
+      "risks_if_done_badly": "Risk if bad",
+      "required_local_partner": "local partner",
+      "evidence_to_collect": [
+        "evidence list"
+      ],
+      "repos_involved": [
+        "7gc-digital-twin",
+        "edge-io-measurement-node",
+        "ntn-resilience-sim"
+      ]
+    },
+    {
+      "use_case_id": "geelong_anchor_b",
+      "name": "geelong anchor B",
+      "human_problem": "Human B",
+      "technical_problem": "Technical B",
+      "current_workaround": "Workaround B",
+      "7gc_intervention": "Intervention B",
+      "risks_if_done_badly": "Risk B",
+      "required_local_partner": "partner B",
+      "evidence_to_collect": [
+        "evidence B"
+      ],
+      "repos_involved": [
+        "waike-research-ops",
+        "gunnchos-device-os",
+        "gunnchos-hardware-industrial-design"
+      ]
+    },
+    {
+      "use_case_id": "geelong_anchor_c",
+      "name": "geelong anchor C",
+      "human_problem": "Human C",
+      "technical_problem": "Technical C",
+      "current_workaround": "Workaround C",
+      "7gc_intervention": "Intervention C",
+      "risks_if_done_badly": "Risk C",
+      "required_local_partner": "partner C",
+      "evidence_to_collect": [
+        "evidence C"
+      ],
+      "repos_involved": [
+        "spectrumx-ai-ran-gary",
+        "readygary-6g-beam-selection",
+        "gunnchAI3k"
+      ]
+    }
+  ],
+  "resilience_use_cases": [
+    {
+      "use_case_id": "geelong_res_a",
+      "name": "geelong resilience A",
+      "normal_day": "Normal",
+      "bad_day": "Bad",
+      "worst_day": "Worst",
+      "recovery_day": "Recovery",
+      "7gc_response": "7GC response",
+      "metrics": [
+        "continuity"
+      ],
+      "device_and_os_requirements": "device req",
+      "edge_io_measurement_requirements": "edge req",
+      "waike_learning_tracks": [
+        "waike_geelong_res_a"
+      ],
+      "ntn_resilience_requirements": [
+        "ntn",
+        "edge-io"
+      ],
+      "ai_ran_requirements": [
+        "spectrumx-ai-ran-gary"
+      ],
+      "beam_selection_requirements": [
+        "readygary-6g-beam-selection"
+      ],
+      "privacy_and_ethics": "Aggregate-only; local ethics review required",
+      "consent_requirements": "Explicit opt-in before any measurement",
+      "data_never_collected": [
+        "precise location of minors",
+        "biometrics",
+        "raw message content"
+      ],
+      "retention_policy": "Minimum necessary; delete on request where applicable",
+      "local_review_needed": true
+    },
+    {
+      "use_case_id": "geelong_res_b",
+      "name": "geelong resilience B",
+      "normal_day": "Normal B",
+      "bad_day": "Bad B",
+      "worst_day": "Worst B",
+      "recovery_day": "Recovery B",
+      "7gc_response": "Response B",
+      "metrics": [
+        "recovery_time"
+      ],
+      "device_and_os_requirements": "device B",
+      "edge_io_measurement_requirements": "edge B",
+      "waike_learning_tracks": [
+        "waike_geelong_res_b"
+      ],
+      "ntn_resilience_requirements": [
+        "waike",
+        "7gc"
+      ],
+      "ai_ran_requirements": [
+        "spectrumx-ai-ran-gary"
+      ],
+      "beam_selection_requirements": [
+        "readygary-6g-beam-selection"
+      ],
+      "privacy_and_ethics": "Aggregate-only; local ethics review required",
+      "consent_requirements": "Explicit opt-in before any measurement",
+      "data_never_collected": [
+        "precise location of minors",
+        "biometrics",
+        "raw message content"
+      ],
+      "retention_policy": "Minimum necessary; delete on request where applicable",
+      "local_review_needed": true
+    }
+  ],
+  "bad_day_scenarios": [
+    {
+      "scenario_id": "geelong_flood",
+      "description": "Bad-day scenario 1 for geelong",
+      "trigger": "configurable stress event",
+      "metrics": [
+        "service_continuity",
+        "unmet_demand_proxy",
+        "recovery_time_proxy"
+      ],
+      "needs_local_validation": true
+    },
+    {
+      "scenario_id": "geelong_outage",
+      "description": "Bad-day scenario 2 for geelong",
+      "trigger": "configurable stress event",
+      "metrics": [
+        "service_continuity",
+        "unmet_demand_proxy",
+        "recovery_time_proxy"
+      ],
+      "needs_local_validation": true
+    },
+    {
+      "scenario_id": "geelong_congestion",
+      "description": "Bad-day scenario 3 for geelong",
+      "trigger": "configurable stress event",
+      "metrics": [
+        "service_continuity",
+        "unmet_demand_proxy",
+        "recovery_time_proxy"
+      ],
+      "needs_local_validation": true
+    },
+    {
+      "scenario_id": "geelong_privacy_incident",
+      "description": "Bad-day scenario 4 for geelong",
+      "trigger": "configurable stress event",
+      "metrics": [
+        "service_continuity",
+        "unmet_demand_proxy",
+        "recovery_time_proxy"
+      ],
+      "needs_local_validation": true
+    },
+    {
+      "scenario_id": "geelong_power_loss",
+      "description": "Bad-day scenario 5 for geelong",
+      "trigger": "configurable stress event",
+      "metrics": [
+        "service_continuity",
+        "unmet_demand_proxy",
+        "recovery_time_proxy"
+      ],
+      "needs_local_validation": true
+    }
+  ],
+  "evidence_status": "smoke_test_only"
+}

@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.458999999999996,
+              31.494
+            ],
+            [
+              34.475,
+              31.494
+            ],
+            [
+              34.475,
+              31.509999999999998
+            ],
+            [
+              34.458999999999996,
+              31.509999999999998
+            ],
+            [
+              34.458999999999996,
+              31.494
+            ]
+          ]
+        ]
+      },
+      "properties": {}
+    }
+  ],
+  "properties": {
+    "site_id": "gaza",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

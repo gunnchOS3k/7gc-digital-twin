@@ -1,0 +1,8 @@
+{
+  "coverage_equity_score": 0.8087,
+  "energy_pressure_score": 0.0,
+  "backhaul_constraint_score": 1.0,
+  "latency_risk_score": 0.5,
+  "digital_equality_readiness_score": 0.6235,
+  "note": "toy synthetic scores \u2014 not calibrated field measurements"
+}

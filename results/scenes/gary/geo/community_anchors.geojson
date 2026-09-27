@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.3514,
+          41.5964
+        ]
+      },
+      "properties": {
+        "type": "school_or_learning",
+        "synthetic": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.3424,
+          41.5934
+        ]
+      },
+      "properties": {
+        "type": "library_community",
+        "synthetic": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.3464,
+          41.589400000000005
+        ]
+      },
+      "properties": {
+        "type": "small_business",
+        "synthetic": true
+      }
+    }
+  ],
+  "properties": {
+    "site_id": "gary",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

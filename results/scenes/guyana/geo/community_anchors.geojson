@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.160000000000004,
+          6.804
+        ]
+      },
+      "properties": {
+        "type": "school_or_learning",
+        "synthetic": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.151,
+          6.801
+        ]
+      },
+      "properties": {
+        "type": "library_community",
+        "synthetic": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.155,
+          6.797000000000001
+        ]
+      },
+      "properties": {
+        "type": "small_business",
+        "synthetic": true
+      }
+    }
+  ],
+  "properties": {
+    "site_id": "guyana",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

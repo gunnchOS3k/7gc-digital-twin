@@ -1,0 +1,7 @@
+{
+  "objects": [
+    "ground_plane",
+    "learning_anchor",
+    "connectivity_volume"
+  ]
+}

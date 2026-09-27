@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.467,
+          31.502
+        ]
+      },
+      "properties": {
+        "node": "bs_stub"
+      }
+    }
+  ]
+}

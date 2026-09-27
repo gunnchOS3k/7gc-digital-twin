@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.3464,
+          41.5934
+        ]
+      },
+      "properties": {
+        "road": "main_stub"
+      }
+    }
+  ],
+  "properties": {
+    "site_id": "gary",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}

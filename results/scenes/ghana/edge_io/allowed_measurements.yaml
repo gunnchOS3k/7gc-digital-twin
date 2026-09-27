@@ -1,0 +1,5 @@
+allowed:
+- latency_ms
+- jitter_ms
+- packet_loss_pct
+evidence_status: smoke_test_only

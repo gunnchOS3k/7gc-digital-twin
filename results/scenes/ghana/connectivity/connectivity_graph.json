@@ -1,0 +1,25 @@
+{
+  "site_id": "ghana",
+  "nodes": [
+    {
+      "id": "ap_school",
+      "type": "wifi_zone"
+    },
+    {
+      "id": "bs_stub",
+      "type": "private_5g_zone"
+    },
+    {
+      "id": "ntn_fallback",
+      "type": "ntn_fallback_zone"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ap_school",
+      "to": "bs_stub",
+      "latency_ms_stub": 12
+    }
+  ],
+  "evidence_status": "smoke_test_only"
+}

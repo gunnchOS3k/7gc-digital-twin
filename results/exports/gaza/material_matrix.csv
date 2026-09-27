@@ -1,0 +1,11 @@
+material_class,site_id,suitability_score,cost_class,expert_review_needed,evidence_status
+light-gauge steel framing with mineral wool,gaza,0.7,medium,True,design assumption
+double-stud acoustic partitions,gaza,0.7,medium,True,design assumption
+acoustic gypsum assemblies,gaza,0.7,medium,True,design assumption
+fiber cement / cement board,gaza,0.7,medium,True,design assumption
+mineral wool insulation,gaza,0.7,medium,True,design assumption
+acoustic sealant and gasketed doors,gaza,0.7,medium,True,design assumption
+low-VOC acoustic wall panels,gaza,0.7,medium,True,design assumption
+moisture-resistant flooring,gaza,0.7,medium,True,design assumption
+structured cabling pathways,gaza,0.7,medium,True,design assumption
+modular utility pods,gaza,0.85,medium,True,design assumption

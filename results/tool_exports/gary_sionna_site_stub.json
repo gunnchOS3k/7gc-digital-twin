@@ -1,0 +1,7 @@
+{
+  "site_id": "gary",
+  "backend": "sionna",
+  "evidence_status": "export_stub_smoke_only",
+  "optional_dependency": "sionna",
+  "needs_local_validation": true
+}

@@ -1,0 +1,71 @@
+site_id: gary
+floorplan:
+  site_id: gary
+  footprint: semi_permanent_hub
+  blocks:
+  - id: welcome_intake
+    x: 0
+    y: 0
+    width: 120
+    height: 80
+    label: welcome intake
+  - id: flexible_classroom
+    x: 140
+    y: 0
+    width: 120
+    height: 80
+    label: flexible classroom
+  - id: device_bar
+    x: 280
+    y: 0
+    width: 120
+    height: 80
+    label: device bar
+  - id: hardware_repair_lab
+    x: 420
+    y: 0
+    width: 120
+    height: 80
+    label: hardware repair lab
+  - id: networking_cyber_lab
+    x: 0
+    y: 100
+    width: 120
+    height: 80
+    label: networking cyber lab
+  - id: ai_cloud_studio
+    x: 140
+    y: 100
+    width: 120
+    height: 80
+    label: ai cloud studio
+  - id: career_portfolio_studio
+    x: 280
+    y: 100
+    width: 120
+    height: 80
+    label: career portfolio studio
+  - id: community_room
+    x: 420
+    y: 100
+    width: 120
+    height: 80
+    label: community room
+  label: "Conceptual only \u2014 not for construction"
+  evidence_status: design assumption
+power:
+  site_id: gary
+  wired_ethernet_fiber: true
+  wifi_ap_per_zone: true
+  student_network_segmented: true
+  lab_network_isolated: true
+  backup: UPS + generator concept
+  edge_cache: true
+  evidence_status: design assumption
+  disclaimer: "research simulation only \u2014 not operational service"
+evidence:
+  site_id: gary
+  flags:
+    conceptual_only_not_for_construction: true
+    requires_architect_engineer_review: true
+    research_simulation_only: true

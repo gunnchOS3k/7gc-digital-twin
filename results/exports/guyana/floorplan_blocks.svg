@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="240">
+<text x="10" y="20" font-size="12">Conceptual only — not for construction</text>
+<rect x="0" y="30" width="120" height="80" fill="#e8f0fe" stroke="#333"/>
+<text x="5" y="55" font-size="10">welcome intake</text>
+<rect x="140" y="30" width="120" height="80" fill="#e8f0fe" stroke="#333"/>
+<text x="145" y="55" font-size="10">flexible classroom</text>
+<rect x="280" y="30" width="120" height="80" fill="#e8f0fe" stroke="#333"/>
+<text x="285" y="55" font-size="10">device bar</text>
+<rect x="420" y="30" width="120" height="80" fill="#e8f0fe" stroke="#333"/>
+<text x="425" y="55" font-size="10">hardware repair la</text>
+<rect x="0" y="130" width="120" height="80" fill="#e8f0fe" stroke="#333"/>
+<text x="5" y="155" font-size="10">networking cyber l</text>
+<rect x="140" y="130" width="120" height="80" fill="#e8f0fe" stroke="#333"/>
+<text x="145" y="155" font-size="10">ai cloud studio</text>
+<rect x="280" y="130" width="120" height="80" fill="#e8f0fe" stroke="#333"/>
+<text x="285" y="155" font-size="10">career portfolio s</text>
+<rect x="420" y="130" width="120" height="80" fill="#e8f0fe" stroke="#333"/>
+<text x="425" y="155" font-size="10">community room</text>
+</svg>

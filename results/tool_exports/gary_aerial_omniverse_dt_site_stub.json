@@ -1,0 +1,7 @@
+{
+  "site_id": "gary",
+  "backend": "aerial_omniverse_dt",
+  "evidence_status": "export_stub_smoke_only",
+  "optional_dependency": "aerial_omniverse_dt",
+  "needs_local_validation": true
+}

@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.331,
+              -38.18
+            ],
+            [
+              144.391,
+              -38.18
+            ],
+            [
+              144.391,
+              -38.12
+            ],
+            [
+              144.331,
+              -38.12
+            ],
+            [
+              144.331,
+              -38.18
+            ]
+          ]
+        ]
+      },
+      "properties": {}
+    }
+  ],
+  "properties": {
+    "site_id": "geelong",
+    "evidence_status": "smoke_test_only",
+    "data_mode": "synthetic-fixture"
+  }
+}
