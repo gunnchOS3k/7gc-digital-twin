@@ -16,13 +16,15 @@ def resolve_schema_dir(schema_dir: str | Path | None = None) -> Path:
     env = os.environ.get("GATE2_CONTRACTS_DIR")
     if env:
         return Path(env).expanduser().resolve()
-    sibling = (
-        Path(__file__).resolve().parents[3]
-        / "gunnchos-7gc-ai-ran-field-kit"
-        / "contracts"
-    )
-    if sibling.is_dir():
-        return sibling
+    here = Path(__file__).resolve()
+    candidates = [
+        here.parents[3] / "gunnchos-7gc-ai-ran-field-kit" / "contracts",
+        here.parents[4] / "field-kit" / "contracts",
+        here.parents[4] / "gunnchos-7gc-ai-ran-field-kit" / "contracts",
+    ]
+    for sibling in candidates:
+        if sibling.is_dir():
+            return sibling
     raise FileNotFoundError("Pass --schema-dir or set GATE2_CONTRACTS_DIR")
 
 
