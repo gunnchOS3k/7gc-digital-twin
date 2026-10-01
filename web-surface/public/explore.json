@@ -1,0 +1,100 @@
+{
+  "schema": "gunnchos.surfacekit.v2",
+  "measured_topology": false,
+  "diagram_note": "Synthetic-fixture findings copied from paper/artifacts/rq1_experiment_summary.json. evidence class in the protocol is SYNTHETIC_SIM. Wearable is the class that failed. This is not a measured campus radio map.",
+  "nodes": [
+    {
+      "id": "fixture",
+      "label": "Synthetic fixture"
+    },
+    {
+      "id": "wearable",
+      "label": "Wearable class"
+    },
+    {
+      "id": "continuity",
+      "label": "Continuity class"
+    }
+  ],
+  "rows": [
+    {
+      "source": "paper/artifacts/rq1_experiment_summary.json",
+      "scenario_id": "rq1_gary_flagship_profiles",
+      "evidence_class": "SYNTHETIC_SIM",
+      "ethical_framing": "Synthetic fixture summary for the Gary flagship profiles. Held-out RF is not claimed in the protocol file.",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "n_failed_cases": 1,
+      "n_min_useful_cases": 8,
+      "classes_that_failed": "wearable",
+      "classes_never_failed": "desk,local-creation,mobile-docked",
+      "gary_mean_demand_mbps_min": 24.9347,
+      "gary_mean_demand_mbps_max": 26.0733
+    },
+    {
+      "source": "paper/artifacts/rq1_experiment_summary.json",
+      "scenario_id": "force_offline_coding_unsupported",
+      "evidence_class": "SYNTHETIC_SIM",
+      "ethical_framing": "Failed case copied from rq1_experiment_summary.json.",
+      "research_class": "wearable",
+      "device_id": "wearables_arena_set",
+      "workload": "offline_coding",
+      "orchestrator_state": "offline",
+      "active_bearer": "offline"
+    }
+  ],
+  "sources": [
+    "paper/artifacts/rq1_experiment_summary.json"
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "body": "# 7GC Digital Twin \u2014 AI-RAN Research Scaffold"
+    },
+    {
+      "id": "end-to-end-research-artifact",
+      "title": "End-to-End Research Artifact",
+      "body": "**Spine repo** for the gunnchOS3k MLV **7GC AI-RAN Digital Twin Program**. > **Research prototype / simulation scaffold** \u2014 not a claim of deployed 6G infrastructure."
+    },
+    {
+      "id": "thesis",
+      "title": "Thesis",
+      "body": "Community-scale **AI-RAN + digital twin + edge device testbeds** for under-connected, spectrum-constrained communities. - **Gary** \u2014 flagship node (node 1) - **Ghana, Guyana, Gaza, Geelong, Graham Land, Germany** \u2014 comparative scenario nodes for research and future partnerships"
+    },
+    {
+      "id": "what-this-repo-is",
+      "title": "What this repo is",
+      "body": "- Reproducible site-aware simulation scaffold - Metrics library (fairness, spectral/energy efficiency, latency, NTN resilience hooks) - Future lab/testbed integration contracts"
+    },
+    {
+      "id": "what-this-repo-is-not",
+      "title": "What this repo is not",
+      "body": "- Operational carrier 6G network - Certified consumer hardware - Production telemetry store with PII ---"
+    },
+    {
+      "id": "what-is-this",
+      "title": "What is this?",
+      "body": "**Model community connectivity *before* deployment so planners can compare fair, efficient AI-RAN options.**"
+    }
+  ],
+  "artifacts": [
+    "paper/ARTIFACT_EVALUATION.md",
+    "paper/CITATION_AUDIT.md",
+    "paper/CLAIMS_TO_EVIDENCE.md",
+    "paper/CONFERENCE_READINESS_TODOS.md",
+    "paper/MANUSCRIPT_STATUS.md",
+    "paper/README.md",
+    "paper/REPRODUCIBILITY.md",
+    "paper/abstract.md",
+    "paper/artifacts/PREREGISTRATION.md",
+    "paper/artifacts/RESEARCH_ARTIFACT_INDEX_RQ1_STATISTICAL_PARITY.md",
+    "paper/artifacts/rq1_experiment_summary.json",
+    "paper/artifacts/rq1_statistical_report.csv"
+  ],
+  "methods": "Methods follow paper/artifacts/experiment_protocol.yaml: experiment rq1_gary_flagship_profiles, site gary, mode synthetic-fixture, evidence class SYNTHETIC_SIM, seeds 1 through 30 predeclared. Findings are copied from paper/artifacts/rq1_experiment_summary.json. The protocol says not to treat this as held-out RF.",
+  "cards": [],
+  "runtime_mode": "PRECOMPUTED",
+  "runtime_boot": false,
+  "evidence_class": "SYNTHETIC_SIM"
+}
