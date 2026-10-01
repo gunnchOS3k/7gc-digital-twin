@@ -1,64 +1,51 @@
 {
   "schema": "gunnchos.surfacekit.v2",
   "measured_topology": false,
-  "diagram_note": "Reading aid built from repository headings. It is not a measured topology and it is not a live system.",
+  "diagram_note": "Synthetic-fixture findings copied from paper/artifacts/rq1_experiment_summary.json. evidence class in the protocol is SYNTHETIC_SIM. Wearable is the class that failed. This is not a measured campus radio map.",
   "nodes": [
     {
-      "id": "overview",
-      "label": "Overview"
+      "id": "fixture",
+      "label": "Synthetic fixture"
     },
     {
-      "id": "end-to-end-research-artifact",
-      "label": "End-to-End Research Artifact"
+      "id": "wearable",
+      "label": "Wearable class"
     },
     {
-      "id": "thesis",
-      "label": "Thesis"
-    },
-    {
-      "id": "what-this-repo-is",
-      "label": "What this repo is"
+      "id": "continuity",
+      "label": "Continuity class"
     }
   ],
   "rows": [
     {
-      "source": "README.md",
-      "scenario_id": "Overview",
-      "site_id": "7GC",
-      "ethical_framing": "# 7GC Digital Twin \u2014 AI-RAN Research Scaffold"
+      "source": "paper/artifacts/rq1_experiment_summary.json",
+      "scenario_id": "rq1_gary_flagship_profiles",
+      "evidence_class": "SYNTHETIC_SIM",
+      "ethical_framing": "Synthetic fixture summary for the Gary flagship profiles. Held-out RF is not claimed in the protocol file.",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "n_failed_cases": 1,
+      "n_min_useful_cases": 8,
+      "classes_that_failed": "wearable",
+      "classes_never_failed": "desk,local-creation,mobile-docked",
+      "gary_mean_demand_mbps_min": 24.9347,
+      "gary_mean_demand_mbps_max": 26.0733
     },
     {
-      "source": "README.md",
-      "scenario_id": "End-to-End Research Artifact",
-      "site_id": "7GC",
-      "ethical_framing": "**Spine repo** for the gunnchOS3k MLV **7GC AI-RAN Digital Twin Program**. > **Research prototype / simulation scaffold** \u2014 not a claim of deployed 6G infrastructure."
-    },
-    {
-      "source": "README.md",
-      "scenario_id": "Thesis",
-      "site_id": "7GC",
-      "ethical_framing": "Community-scale **AI-RAN + digital twin + edge device testbeds** for under-connected, spectrum-constrained communities. - **Gary** \u2014 flagship node (node 1) - **Ghana, Guyana, Gaza, Geelong, Graham Land, Germany** \u2014 comparative scenario nodes for research and future partnerships"
-    },
-    {
-      "source": "README.md",
-      "scenario_id": "What this repo is",
-      "site_id": "7GC",
-      "ethical_framing": "- Reproducible site-aware simulation scaffold - Metrics library (fairness, spectral/energy efficiency, latency, NTN resilience hooks) - Future lab/testbed integration contracts"
-    },
-    {
-      "source": "README.md",
-      "scenario_id": "What this repo is not",
-      "site_id": "7GC",
-      "ethical_framing": "- Operational carrier 6G network - Certified consumer hardware - Production telemetry store with PII ---"
-    },
-    {
-      "source": "README.md",
-      "scenario_id": "What is this?",
-      "site_id": "7GC",
-      "ethical_framing": "**Model community connectivity *before* deployment so planners can compare fair, efficient AI-RAN options.**"
+      "source": "paper/artifacts/rq1_experiment_summary.json",
+      "scenario_id": "force_offline_coding_unsupported",
+      "evidence_class": "SYNTHETIC_SIM",
+      "ethical_framing": "Failed case copied from rq1_experiment_summary.json.",
+      "research_class": "wearable",
+      "device_id": "wearables_arena_set",
+      "workload": "offline_coding",
+      "orchestrator_state": "offline",
+      "active_bearer": "offline"
     }
   ],
-  "sources": [],
+  "sources": [
+    "paper/artifacts/rq1_experiment_summary.json"
+  ],
   "sections": [
     {
       "id": "overview",
@@ -105,7 +92,7 @@
     "paper/artifacts/rq1_experiment_summary.json",
     "paper/artifacts/rq1_statistical_report.csv"
   ],
-  "methods": "# Reproducibility \u2014 7GC Digital Twin (RQ1) This repository produces **synthetic site profiles and benchmarks**. It does not produce RF campaign measurements, community-deployment evidence, or any University of Oulu affiliation claim. Gary is the **flagship scenario**. Ghana, Guyana, Gaza, Geelong, Graham Land, and Germany are **scenario environments**, not community deployments. ## Clone / setup / run ```bash git clone https://github.com/gunnchOS3k/7gc-digital-twin.git cd 7gc-digital-twin python3 -m venv .venv source .venv/bin/activate # Windows: .venv\\Scripts\\activate pip install -r requirements.txt pip install -r requirements-dev.txt make test make smoke # long e2e; synthetic only make rep",
+  "methods": "Methods follow paper/artifacts/experiment_protocol.yaml: experiment rq1_gary_flagship_profiles, site gary, mode synthetic-fixture, evidence class SYNTHETIC_SIM, seeds 1 through 30 predeclared. Findings are copied from paper/artifacts/rq1_experiment_summary.json. The protocol says not to treat this as held-out RF.",
   "cards": [],
   "runtime_mode": "PRECOMPUTED",
   "runtime_boot": false
