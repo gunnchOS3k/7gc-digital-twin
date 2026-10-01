@@ -1,0 +1,21 @@
+{
+  "repo": "7gc-digital-twin",
+  "productName": "7GC digital twin",
+  "family": "7GC",
+  "classification": "STATIC_RESEARCH_SURFACE_WORKER",
+  "acceptedSha": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+  "status": "STAGING_WORKER",
+  "summary": "Campus and network digital-twin research code for scenario scores and reports.",
+  "capabilities": [
+    "Read what the simulator covers",
+    "Open the source repository"
+  ],
+  "limitations": [
+    "Simulation output is not scientific acceptance",
+    "The twin does not run inside this Worker"
+  ],
+  "sourceUrl": "https://github.com/gunnchOS3k/7gc-digital-twin",
+  "returnUrlEnv": "GUNNCHOS_PORTAL_URL",
+  "returnUrl": "https://gunnchos-site.gunnchos-finds.workers.dev",
+  "workerName": "gunnchos-7gc-digital-twin"
+}
