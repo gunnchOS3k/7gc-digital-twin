@@ -95,5 +95,6 @@
   "methods": "Methods follow paper/artifacts/experiment_protocol.yaml: experiment rq1_gary_flagship_profiles, site gary, mode synthetic-fixture, evidence class SYNTHETIC_SIM, seeds 1 through 30 predeclared. Findings are copied from paper/artifacts/rq1_experiment_summary.json. The protocol says not to treat this as held-out RF.",
   "cards": [],
   "runtime_mode": "PRECOMPUTED",
-  "runtime_boot": false
+  "runtime_boot": false,
+  "evidence_class": "SYNTHETIC_SIM"
 }
