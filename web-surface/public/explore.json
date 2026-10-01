@@ -1,0 +1,112 @@
+{
+  "schema": "gunnchos.surfacekit.v2",
+  "measured_topology": false,
+  "diagram_note": "Reading aid built from repository headings. It is not a measured topology and it is not a live system.",
+  "nodes": [
+    {
+      "id": "overview",
+      "label": "Overview"
+    },
+    {
+      "id": "end-to-end-research-artifact",
+      "label": "End-to-End Research Artifact"
+    },
+    {
+      "id": "thesis",
+      "label": "Thesis"
+    },
+    {
+      "id": "what-this-repo-is",
+      "label": "What this repo is"
+    }
+  ],
+  "rows": [
+    {
+      "source": "README.md",
+      "scenario_id": "Overview",
+      "site_id": "7GC",
+      "ethical_framing": "# 7GC Digital Twin \u2014 AI-RAN Research Scaffold"
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "End-to-End Research Artifact",
+      "site_id": "7GC",
+      "ethical_framing": "**Spine repo** for the gunnchOS3k MLV **7GC AI-RAN Digital Twin Program**. > **Research prototype / simulation scaffold** \u2014 not a claim of deployed 6G infrastructure."
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "Thesis",
+      "site_id": "7GC",
+      "ethical_framing": "Community-scale **AI-RAN + digital twin + edge device testbeds** for under-connected, spectrum-constrained communities. - **Gary** \u2014 flagship node (node 1) - **Ghana, Guyana, Gaza, Geelong, Graham Land, Germany** \u2014 comparative scenario nodes for research and future partnerships"
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "What this repo is",
+      "site_id": "7GC",
+      "ethical_framing": "- Reproducible site-aware simulation scaffold - Metrics library (fairness, spectral/energy efficiency, latency, NTN resilience hooks) - Future lab/testbed integration contracts"
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "What this repo is not",
+      "site_id": "7GC",
+      "ethical_framing": "- Operational carrier 6G network - Certified consumer hardware - Production telemetry store with PII ---"
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "What is this?",
+      "site_id": "7GC",
+      "ethical_framing": "**Model community connectivity *before* deployment so planners can compare fair, efficient AI-RAN options.**"
+    }
+  ],
+  "sources": [],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "body": "# 7GC Digital Twin \u2014 AI-RAN Research Scaffold"
+    },
+    {
+      "id": "end-to-end-research-artifact",
+      "title": "End-to-End Research Artifact",
+      "body": "**Spine repo** for the gunnchOS3k MLV **7GC AI-RAN Digital Twin Program**. > **Research prototype / simulation scaffold** \u2014 not a claim of deployed 6G infrastructure."
+    },
+    {
+      "id": "thesis",
+      "title": "Thesis",
+      "body": "Community-scale **AI-RAN + digital twin + edge device testbeds** for under-connected, spectrum-constrained communities. - **Gary** \u2014 flagship node (node 1) - **Ghana, Guyana, Gaza, Geelong, Graham Land, Germany** \u2014 comparative scenario nodes for research and future partnerships"
+    },
+    {
+      "id": "what-this-repo-is",
+      "title": "What this repo is",
+      "body": "- Reproducible site-aware simulation scaffold - Metrics library (fairness, spectral/energy efficiency, latency, NTN resilience hooks) - Future lab/testbed integration contracts"
+    },
+    {
+      "id": "what-this-repo-is-not",
+      "title": "What this repo is not",
+      "body": "- Operational carrier 6G network - Certified consumer hardware - Production telemetry store with PII ---"
+    },
+    {
+      "id": "what-is-this",
+      "title": "What is this?",
+      "body": "**Model community connectivity *before* deployment so planners can compare fair, efficient AI-RAN options.**"
+    }
+  ],
+  "artifacts": [
+    "paper/ARTIFACT_EVALUATION.md",
+    "paper/CITATION_AUDIT.md",
+    "paper/CLAIMS_TO_EVIDENCE.md",
+    "paper/CONFERENCE_READINESS_TODOS.md",
+    "paper/MANUSCRIPT_STATUS.md",
+    "paper/README.md",
+    "paper/REPRODUCIBILITY.md",
+    "paper/abstract.md",
+    "paper/artifacts/PREREGISTRATION.md",
+    "paper/artifacts/RESEARCH_ARTIFACT_INDEX_RQ1_STATISTICAL_PARITY.md",
+    "paper/artifacts/rq1_experiment_summary.json",
+    "paper/artifacts/rq1_statistical_report.csv"
+  ],
+  "methods": "# Reproducibility \u2014 7GC Digital Twin (RQ1) This repository produces **synthetic site profiles and benchmarks**. It does not produce RF campaign measurements, community-deployment evidence, or any University of Oulu affiliation claim. Gary is the **flagship scenario**. Ghana, Guyana, Gaza, Geelong, Graham Land, and Germany are **scenario environments**, not community deployments. ## Clone / setup / run ```bash git clone https://github.com/gunnchOS3k/7gc-digital-twin.git cd 7gc-digital-twin python3 -m venv .venv source .venv/bin/activate # Windows: .venv\\Scripts\\activate pip install -r requirements.txt pip install -r requirements-dev.txt make test make smoke # long e2e; synthetic only make rep",
+  "cards": [],
+  "runtime_mode": "PRECOMPUTED",
+  "runtime_boot": false
+}
