@@ -1,0 +1,3 @@
+# Figure reading guide
+
+Figure 1 shows the separate semantic corpus and stochastic generator, with no live sensor bridge. Figure 2 maps 21 stored states: offline-capable workloads persist, unsupported wearable coding fails, and degraded Wi-Fi labels remain connected. Figure 3 shows all 30 seed means and confidence bands over generator variability. Figure 4 compares class means to post hoc analytical expectations; ordering follows configured priors. The legends, axis labels, captions and marker shapes preserve meaning without relying solely on color. PDF accessibility tagging has not been certified; editable sources and this reading guide are provided.

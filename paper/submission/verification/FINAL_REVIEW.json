@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-13",
+  "pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "pdf_sha256": "3589f946b38b618eac9e336ece55ea45c517968ed32be7a1663c3a6a84c645a3",
+  "layout": "All pages legible; no clipped figures/tables/equations or unresolved references. Official Access zero-width footer boxes cause large hbox warnings without visible overflow. Long code identifiers reviewed.",
+  "source": "Canonical sections synchronized with submission by package_submission.py",
+  "human_review": "pending"
+}

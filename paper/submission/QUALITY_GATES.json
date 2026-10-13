@@ -1,0 +1,51 @@
+{
+  "schema": "gunnchos.publication.quality_gates.v1",
+  "date": "2026-10-13",
+  "scope": "Owner scientific review, not publication endorsement",
+  "gates": {
+    "MANUSCRIPT_COMPILES": {
+      "status": true,
+      "basis": "Final pdfLaTeX/BibTeX output, 8 pages"
+    },
+    "CITATIONS_VERIFIED": {
+      "status": true,
+      "basis": "Eight current references; source identity and narrow support audit, with partial inspection levels explicitly retained"
+    },
+    "EXPERIMENT_REPRODUCED": {
+      "status": true,
+      "basis": "Fresh full payload equality at 1a5491bf; reproduction records and focused 27-test log"
+    },
+    "STATISTICS_VERIFIED": {
+      "status": true,
+      "basis": "Independent Student-t means/sample SD/CI in reproduction/statistical_audit.json; no paired policy effect claimed"
+    },
+    "CLAIMS_EVIDENCE_ALIGNED": {
+      "status": true,
+      "basis": "Corpus/generator separated, proxy metrics and outage-entry counter qualified, post hoc expectations labeled"
+    },
+    "VENUE_FORMAT_VERIFIED": {
+      "status": true,
+      "basis": "Official IEEE Access template and all-page visual inspection; final portal/declaration review pending"
+    },
+    "AI_DISCLOSURE_PREPARED": {
+      "status": true,
+      "basis": "Full acknowledgment plus tool citation and detailed AI_USE_DISCLOSURE.md"
+    },
+    "AUTHOR_METADATA_VERIFIED": {
+      "status": true,
+      "basis": "Confirmed author name, affiliation, email and ORCID; unknown declarations pending"
+    },
+    "OWNER_REVIEW_READY": {
+      "status": true,
+      "basis": "Complete editable package and reviewed PDF; small novelty and external validity unresolved"
+    },
+    "OWNER_APPROVED": {
+      "status": false,
+      "basis": "Owner has not approved final manuscript"
+    },
+    "SUBMISSION_AUTHORIZED": {
+      "status": false,
+      "basis": "No submission authorization"
+    }
+  }
+}

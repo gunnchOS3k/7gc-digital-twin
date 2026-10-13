@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.1)  13 OCT 2026 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.1)  13 OCT 2026 17:36
 entering extended mode
  %&-line parsing enabled.
 **manuscript.tex
@@ -484,10 +484,10 @@ Overfull \hbox (9.2679pt too wide) in paragraph at lines 45--45
  []
 
 (./sections/introduction.tex
-<logo.png, id=114, 206.27063pt x 53.44969pt>
+<logo.png, id=113, 206.27063pt x 53.44969pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 9.
+Package pdftex.def Info: logo.png  used on input line 8.
 (pdftex.def)             Requested size: 91.32pt x 23.66309pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -513,35 +513,35 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
  <./logo.png> <./bullet.png>]) (./sections/related_work.tex
-Underfull \hbox (badness 1596) in paragraph at lines 12--1
+Underfull \hbox (badness 1596) in paragraph at lines 11--1
 []\T1/times/n/n/10 The re-main-der dis-tin-guishes prior work, the two ev-i-
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 21--21
+Underfull \hbox (badness 2293) in paragraph at lines 20--20
 []|\T1/times/m/n/9 Acceptable ser-vice un-der chal-lenges; op-er-a-
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 23--24
+Underfull \hbox (badness 2680) in paragraph at lines 22--23
 []|\T1/times/m/n/9 Snapshot se-man-tics and syn-thetic oc-cu-pancy; no
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 24--24
+Underfull \hbox (badness 1881) in paragraph at lines 23--23
 []|\T1/times/m/n/9 Twin def-i-ni-tions, en-abling tech-nolo-gies, and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 []|\T1/times/m/n/9 Clear physical-calibration bound-ary; no sensor-
  []
 
 ) (./sections/method.tex
-<notaglinelogo.png, id=145, 169.38281pt x 42.91031pt>
+<notaglinelogo.png, id=141, 169.38281pt x 42.91031pt>
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 34.
+Package pdftex.def Info: notaglinelogo.png  used on input line 35.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -559,26 +559,29 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [2 <./notaglinelogo.png>]
-Underfull \hbox (badness 1436) in paragraph at lines 39--40
+Underfull \hbox (badness 1436) in paragraph at lines 40--41
 []\T1/times/n/n/10 Five Gary con-text names map to com-mon snap-shots:
  []
 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 42.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 43.
 (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
 LaTeX Font Warning: Font shape `T1/pcr/n/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 42.
+(Font)              using `T1/pcr/m/n' instead on input line 43.
 
 
-Overfull \hbox (16.21298pt too wide) in paragraph at lines 42--43
-\T1/times/n/n/10 For each seed $\T1/times/m/it/10 s$\T1/times/n/n/10 , the sim-u-la-tor in-stan-ti-ates \T1/pcr/m/n/10 random.Random(s)
+Overfull \hbox (16.21298pt too wide) in paragraph at lines 43--44
+\T1/times/n/n/10 For each seed $\T1/times/n/it/10 s$\T1/times/n/n/10 , the sim-u-la-tor in-stan-ti-ates \T1/pcr/m/n/10 random.Random(s)
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 70.
+Package pdftex.def Info: notaglinelogo.png  used on input line 71.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -596,138 +599,64 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}]) (./sections/experimental_design.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 \T1/times/n/n/10 fig-u-ra-tion \T1/pcr/n/n/10 rq1_gary_flagship_profiles.yaml\T1/times/n/n/10 .
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 4--6
+Underfull \hbox (badness 1694) in paragraph at lines 4--5
 \T1/times/n/n/10 The eval-u-ated source re-vi-sion is \T1/pcr/n/n/10 1a5491bf9261f77a
  []
 
 
-Underfull \hbox (badness 5475) in paragraph at lines 4--6
+Underfull \hbox (badness 5475) in paragraph at lines 4--5
 \T1/pcr/n/n/10 75cc0fa7edbb5f25b425c7aa\T1/times/n/n/10 . The pro-to-col mir-ror
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 \T1/times/n/n/10 in \T1/pcr/n/n/10 paper/artifacts \T1/times/n/n/10 is re-tained un-changed. Ear-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 \T1/times/n/n/10 lier source re-vi-sion \T1/pcr/n/n/10 376b6d673ff6aaf1d60b5a73
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 \T1/pcr/n/n/10 b8c84e465fc89e3e14915a1f30ff8491645f884a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 \T1/pcr/n/n/10 38f9e4e65830ea2397fb4438e255d5b0 \T1/times/n/n/10 ex-panded
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 \T1/pcr/n/n/10 607bf88031fb209375325e3935049651346fcc13
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 \T1/pcr/n/n/10 bd76a1bd203af1a4797acc3b0041369eb8798454
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 21--23
+Underfull \vbox (badness 1831) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 20--22
 \T1/times/n/n/10 The source's tab-u-lated crit-i-cal value was in-de-pen-dently
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 \T1/times/n/n/10 The re-cov-ered dig-i-tal re-pro-duc-tion com-pleted \T1/pcr/n/n/10 make
  []
 
 ) (./sections/results.tex (./tables/owner_fixture.tex)
-File: notaglinelogo.png Graphic file (type png)
-<use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 9.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[4]
-<figures/owner_fixture_matrix.pdf, id=198, 520.34402pt x 209.58301pt>
-File: figures/owner_fixture_matrix.pdf Graphic file (type pdf)
-<use figures/owner_fixture_matrix.pdf>
-Package pdftex.def Info: figures/owner_fixture_matrix.pdf  used on input line 11.
-(pdftex.def)             Requested size: 459.66264pt x 185.14995pt.
- (./tables/owner_primary.tex)
-Underfull \hbox (badness 5533) in paragraph at lines 20--22
-\T1/times/n/n/10 Table []4[] gives the re-pro-duced over-all out-comes. Task
- []
-
-
-Underfull \hbox (badness 2368) in paragraph at lines 20--22
-\T1/times/n/n/10 com-ple-tion is 0.427257 with sam-ple stan-dard de-vi-a-tion
- []
-
-
-Underfull \hbox (badness 3482) in paragraph at lines 20--22
-\T1/times/n/n/10 0.041610; use-ful oc-cu-pancy is 0.591493 with stan-dard
- []
-
-
-Underfull \hbox (badness 3343) in paragraph at lines 20--22
-\T1/times/n/n/10 de-vi-a-tion 0.040243. Their 95% seed-level in-ter-vals are
- []
-
-<figures/owner_seed_outcomes.pdf, id=201, 252.945pt x 202.356pt>
-File: figures/owner_seed_outcomes.pdf Graphic file (type pdf)
-<use figures/owner_seed_outcomes.pdf>
-Package pdftex.def Info: figures/owner_seed_outcomes.pdf  used on input line 24.
-(pdftex.def)             Requested size: 242.67355pt x 194.14221pt.
-(./tables/owner_class.tex)
-<figures/owner_class_outcomes.pdf, id=207, 252.945pt x 202.356pt>
-File: figures/owner_class_outcomes.pdf Graphic file (type pdf)
-<use figures/owner_class_outcomes.pdf>
-Package pdftex.def Info: figures/owner_class_outcomes.pdf  used on input line 42.
-(pdftex.def)             Requested size: 242.67355pt x 194.14221pt.
-
-Underfull \hbox (badness 2205) in paragraph at lines 47--48
-\T1/times/n/n/10 Out-age frac-tion, QoE-violation frac-tion, and packet-loss
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
-[]|\T1/times/m/n/9 Compute com-ple-tion
- []
-
-
-Underfull \hbox (badness 2653) in paragraph at lines 58--59
-[]|\T1/times/m/n/9 Number of out-age en-tries; no
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
-[]|\T1/times/m/n/9 Demand-weighted syn-thetic
- []
-
-) (./sections/discussion.tex
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
 Package pdftex.def Info: notaglinelogo.png  used on input line 8.
@@ -747,15 +676,99 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
+[4]
+<figures/owner_fixture_matrix.pdf, id=189, 520.34402pt x 209.58301pt>
+File: figures/owner_fixture_matrix.pdf Graphic file (type pdf)
+<use figures/owner_fixture_matrix.pdf>
+Package pdftex.def Info: figures/owner_fixture_matrix.pdf  used on input line 10.
+(pdftex.def)             Requested size: 459.66264pt x 185.14995pt.
+ (./tables/owner_primary.tex)
+Underfull \hbox (badness 5533) in paragraph at lines 19--21
+\T1/times/n/n/10 Table []4[] gives the re-pro-duced over-all out-comes. Task
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 19--21
+\T1/times/n/n/10 com-ple-tion is 0.427257 with sam-ple stan-dard de-vi-a-tion
+ []
+
+
+Underfull \hbox (badness 3482) in paragraph at lines 19--21
+\T1/times/n/n/10 0.041610; use-ful oc-cu-pancy is 0.591493 with stan-dard
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 19--21
+\T1/times/n/n/10 de-vi-a-tion 0.040243. Their 95% seed-level in-ter-vals are
+ []
+
+<figures/owner_seed_outcomes.pdf, id=192, 252.945pt x 202.356pt>
+File: figures/owner_seed_outcomes.pdf Graphic file (type pdf)
+<use figures/owner_seed_outcomes.pdf>
+Package pdftex.def Info: figures/owner_seed_outcomes.pdf  used on input line 23.
+(pdftex.def)             Requested size: 242.67355pt x 194.14221pt.
+(./tables/owner_class.tex
+Overfull \hbox (1.80838pt too wide) in paragraph at lines 6--16
+ [][] 
+ []
+
+)
+<figures/owner_class_outcomes.pdf, id=198, 252.945pt x 202.356pt>
+File: figures/owner_class_outcomes.pdf Graphic file (type pdf)
+<use figures/owner_class_outcomes.pdf>
+Package pdftex.def Info: figures/owner_class_outcomes.pdf  used on input line 41.
+(pdftex.def)             Requested size: 242.67355pt x 194.14221pt.
+
+Underfull \hbox (badness 2205) in paragraph at lines 46--47
+\T1/times/n/n/10 Out-age frac-tion, QoE-violation frac-tion, and packet-loss
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+[]|\T1/times/m/n/9 Compute com-ple-tion
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 57--58
+[]|\T1/times/m/n/9 Number of out-age en-tries; no
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]|\T1/times/m/n/9 Demand-weighted syn-thetic
+ []
+
+) (./sections/discussion.tex
+File: notaglinelogo.png Graphic file (type png)
+<use notaglinelogo.png>
+Package pdftex.def Info: notaglinelogo.png  used on input line 5.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
 [5]
-Underfull \vbox (badness 3735) has occurred while \output is active []
+Underfull \hbox (badness 2073) in paragraph at lines 11--12
+\T1/times/n/n/10 The cur-rent repos-i-tory does not ex-e-cute terrestrial-only,
+ []
 
 
-Underfull \vbox (badness 1436) has occurred while \output is active []
+Underfull \vbox (badness 8132) has occurred while \output is active []
 
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 10.
+Package pdftex.def Info: notaglinelogo.png  used on input line 12.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -773,19 +786,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [6 <./figures/owner_fixture_matrix.pdf> <./figures/owner_seed_outcomes.pdf> <./figures/owner_class_outcomes.pdf>]
-Underfull \hbox (badness 2073) in paragraph at lines 12--13
-\T1/times/n/n/10 The cur-rent repos-i-tory does not ex-e-cute terrestrial-only,
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 19--20
+Underfull \hbox (badness 1609) in paragraph at lines 18--19
 \T1/times/n/n/10 for-mance; a sep-a-rate terrestrial/non-terrestrial study asks
  []
 
 ) (./sections/limitations.tex
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 11.
+Package pdftex.def Info: notaglinelogo.png  used on input line 12.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -807,9 +815,9 @@ Underfull \hbox (badness 2781) in paragraph at lines 8--2
 []\T1/times/b/n/10 Funding, con-flicts, con-tri-bu-tions, and rights: \T1/times/n/n/10 Fi-nal
  []
 
-LaTeX Font Info:    Calculating math sizes for size <7.61> on input line 29.
+LaTeX Font Info:    Calculating math sizes for size <7.61> on input line 25.
 
-Underfull \hbox (badness 1406) in paragraph at lines 54--56
+Underfull \hbox (badness 1406) in paragraph at lines 37--38
 []\T1/times/n/n/7.61 M. Satya-narayanan, ``The emer-gence of edge com-put-ing,'' \T1/times/n/it/7.61 Com-puter\T1/times/n/n/7.61 ,
  []
 
@@ -846,37 +854,25 @@ L3 programming layer <2026-08-10>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: BA2E4A1AD3067BEEDA503BE0D97D8380;5605.
  ) 
 Here is how much of TeX's memory you used:
- 11474 strings out of 469028
- 182477 string characters out of 5456322
- 623029 words of memory out of 5000000
- 40297 multiletter control sequences out of 15000+600000
+ 11464 strings out of 469028
+ 182344 string characters out of 5456322
+ 621974 words of memory out of 5000000
+ 40290 multiletter control sequences out of 15000+600000
  716671 words of font info for 177 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 74i,13n,79p,1595b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{equation.3.3} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{equation.3.2} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{equation.3.1} has been referenced but does not exist, replaced by a fixed one
-
+ 74i,12n,79p,1595b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{section*.2} has been referenced but does not exist, replaced by a fixed one
 
 </Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><./t1-formata-bold.pfb><./t1-formata-condmedium.pfb><./t1-formata-medium.pfb><./t1-formata-mediumitalic.pfb><./t1-formata-regular.pfb><./t1-giovannistd-bookitalic.pfb><./t1-times-bold.pfb><./t1-times-italic.pfb><./t1-times.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on manuscript.pdf (8 pages, 422270 bytes).
+Output written on manuscript.pdf (8 pages, 420824 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 311 compressed objects within 4 object streams
- 66 named destinations out of 1000 (max. 500000)
+ 380 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
  247 words of extra memory for PDF output out of 10000 (max. 10000000)
 

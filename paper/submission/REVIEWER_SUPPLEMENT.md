@@ -1,0 +1,3 @@
+# Reviewer orientation
+
+Read the manuscript, CLAIM_TO_EVIDENCE.md, CITATION_VERIFICATION.md and SUPPLEMENTAL_METHODS.md together. The 21 snapshots and seeded generator are distinct evidence paths and cannot validate each other as independent physical measurements. REPRODUCIBILITY.md specifies commands and exact source revision; reproduction/ retains outputs, statistical calculations and tests. Figure sources live in paper/scripts/build_owner_review.py; exported sources accompany the package. Historical protocols and results remain preserved. This supplement is optional and intended to orient author/technical review.

@@ -7,8 +7,7 @@
 \providecommand{\BIBentrySTDinterwordspacing}{\spaceskip=0pt\relax}
 \providecommand{\BIBentryALTinterwordstretchfactor}{4}
 \providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
-\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
-  \fontdimen4\font\relax}
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
 \providecommand{\BIBforeignlanguage}[2]{{%
 \expandafter\ifx\csname l@#1\endcsname\relax
 \typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
@@ -23,53 +22,32 @@
 
 \bibitem{itur_m2160}
 \BIBentryALTinterwordspacing
-{ITU-R}, ``Framework and overall objectives of the future development of {IMT}
-  for 2030 and beyond,'' International Telecommunication Union, Recommendation
-  M.2160-0, Nov. 2023. [Online]. Available:
-  \url{https://www.itu.int/rec/R-REC-M.2160-0-202311-I/en}
+{ITU-R}, ``Framework and overall objectives of the future development of {IMT} for 2030 and beyond,'' International Telecommunication Union, Recommendation M.2160-0, Nov. 2023. [Online]. Available: \url{https://www.itu.int/rec/R-REC-M.2160-0-202311-I/en}
 \BIBentrySTDinterwordspacing
 
 \bibitem{3gpp_ts22261}
 \BIBentryALTinterwordspacing
-{3GPP}, ``{5G}; service requirements for the {5G} system,'' ETSI, Technical
-  Specification TS 122 261 V19.12.0 (3GPP TS 22.261 Release 19), Oct. 2025,
-  versioned reference; later releases exist. [Online]. Available:
-  \url{https://www.etsi.org/deliver/etsi_TS/122200_122299/122261/19.12.00_60/ts_122261v191200p.pdf}
-\BIBentrySTDinterwordspacing
-
-\bibitem{openai_codex}
-\BIBentryALTinterwordspacing
-{OpenAI}, ``Codex,'' Software and product documentation, 2026, accessed October
-  13, 2026; tool-use citation, not scholarly evidence. [Online]. Available:
-  \url{https://openai.com/codex/}
+{3GPP}, ``{5G}; service requirements for the {5G} system,'' ETSI, Technical Specification TS 122 261 V19.12.0 (3GPP TS 22.261 Release 19), Oct. 2025, versioned reference; later releases exist. [Online]. Available: \url{https://www.etsi.org/deliver/etsi_TS/122200_122299/122261/19.12.00_60/ts_122261v191200p.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{sterbenz2010}
-J.~P.~G. Sterbenz, D.~Hutchison, E.~K. {\c C}etinkaya, A.~Jabbar, J.~P. Rohrer,
-  M.~Sch{\"o}ller, and P.~Smith, ``Resilience and survivability in
-  communication networks: Strategies, principles, and survey of disciplines,''
-  \emph{Computer Networks}, vol.~54, no.~8, pp. 1245--1265, 2010.
+J.~P.~G. Sterbenz, D.~Hutchison, E.~K. {\c C}etinkaya, A.~Jabbar, J.~P. Rohrer, M.~Sch{\"o}ller, and P.~Smith, ``Resilience and survivability in communication networks: Strategies, principles, and survey of disciplines,'' \emph{Computer Networks}, vol.~54, no.~8, pp. 1245--1265, 2010.
 
 \bibitem{satyanarayanan2017}
-M.~Satyanarayanan, ``The emergence of edge computing,'' \emph{Computer},
-  vol.~50, no.~1, pp. 30--39, 2017.
+M.~Satyanarayanan, ``The emergence of edge computing,'' \emph{Computer}, vol.~50, no.~1, pp. 30--39, 2017.
 
 \bibitem{olguin2019}
-M.~O.~J. {Olgu{\'i}n Mu{\~n}oz}, J.~Wang, M.~Satyanarayanan, and J.~Gross,
-  ``{EdgeDroid}: An experimental approach to benchmarking human-in-the-loop
-  applications,'' in \emph{Proceedings of the 20th International Workshop on
-  Mobile Computing Systems and Applications (HotMobile)}.\hskip 1em plus 0.5em
-  minus 0.4em\relax ACM, 2019, pp. 93--98.
+M.~O.~J. {Olgu{\'i}n Mu{\~n}oz}, J.~Wang, M.~Satyanarayanan, and J.~Gross, ``{EdgeDroid}: An experimental approach to benchmarking human-in-the-loop applications,'' in \emph{Proceedings of the 20th International Workshop on Mobile Computing Systems and Applications (HotMobile)}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2019, pp. 93--98.
 
 \bibitem{fuller2020}
-A.~Fuller, Z.~Fan, C.~Day, and C.~Barlow, ``Digital twin: Enabling
-  technologies, challenges and open research,'' \emph{IEEE Access}, vol.~8, pp.
-  108\,952--108\,971, 2020.
+A.~Fuller, Z.~Fan, C.~Day, and C.~Barlow, ``Digital twin: Enabling technologies, challenges and open research,'' \emph{IEEE Access}, vol.~8, pp. 108\,952--108\,971, 2020.
 
 \bibitem{li2025}
-Q.~Li, Y.~Zhang, L.~Wang, X.~Duan, L.~Lu, Y.~Hu, Y.~Zhan, Y.~Lian, and T.~Sun,
-  ``Native network digital twin architecture for {6G}: From design to
-  practice,'' \emph{IEEE Communications Magazine}, vol.~63, no.~4, pp. 24--31,
-  2025.
+Q.~Li, Y.~Zhang, L.~Wang, X.~Duan, L.~Lu, Y.~Hu, Y.~Zhan, Y.~Lian, and T.~Sun, ``Native network digital twin architecture for {6G}: From design to practice,'' \emph{IEEE Communications Magazine}, vol.~63, no.~4, pp. 24--31, 2025.
+
+\bibitem{openai_codex}
+\BIBentryALTinterwordspacing
+{OpenAI}, ``Codex,'' Software and product documentation, 2026, accessed October 13, 2026; tool-use citation, not scholarly evidence. [Online]. Available: \url{https://openai.com/codex/}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}
