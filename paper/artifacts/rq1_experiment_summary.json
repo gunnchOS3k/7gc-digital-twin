@@ -1,6 +1,6 @@
 {
   "experiment_id": "rq1_gary_flagship_profiles",
-  "result_sha256": "7d4aad3ce0e9a969e248465477ad5690bdd7e82b1ff83c2cf8e021920571b458",
+  "result_sha256": "1a3f06675626f7087da080421f08174931328b275e10aaf30a076d566c3965dc",
   "findings": {
     "classes_that_failed": [
       "wearable"
@@ -14,11 +14,13 @@
     "n_min_useful_cases": 8,
     "degraded_wifi_n_still_target": 4,
     "gary_overlay_n_below_min_useful": 0,
-    "gary_mean_demand_mbps_min": 24.9347,
-    "gary_mean_demand_mbps_max": 26.0733,
-    "gary_mean_demand_mbps_range": 1.1386,
+    "gary_mean_demand_mbps_min": 24.048,
+    "gary_mean_demand_mbps_max": 26.3852,
+    "gary_mean_demand_mbps_range": 2.3372,
     "level_rederive_all_match": true,
-    "digest_match": true
+    "digest_match": true,
+    "primary_task_completion_mean": 0.4272570333333333,
+    "primary_time_above_min_useful_mean": 0.5914930666666667
   },
   "failed_cases": [
     {
@@ -77,6 +79,46 @@
       "sinr_db_stub": 12.0
     },
     {
+      "seed": 3,
+      "mean_demand_mbps": 25.2557,
+      "p95_demand_mbps": 47.5083,
+      "jains_fairness_on_demand": 0.7666,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.506,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 4,
+      "mean_demand_mbps": 26.2742,
+      "p95_demand_mbps": 47.7394,
+      "jains_fairness_on_demand": 0.7751,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.499,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 5,
+      "mean_demand_mbps": 25.3321,
+      "p95_demand_mbps": 47.6532,
+      "jains_fairness_on_demand": 0.7577,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.498,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 6,
+      "mean_demand_mbps": 25.3348,
+      "p95_demand_mbps": 47.3887,
+      "jains_fairness_on_demand": 0.7613,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.472,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
       "seed": 7,
       "mean_demand_mbps": 25.0176,
       "p95_demand_mbps": 47.7018,
@@ -87,12 +129,232 @@
       "sinr_db_stub": 12.0
     },
     {
-      "seed": 42,
-      "mean_demand_mbps": 26.0733,
-      "p95_demand_mbps": 47.726,
-      "jains_fairness_on_demand": 0.7749,
+      "seed": 8,
+      "mean_demand_mbps": 25.0079,
+      "p95_demand_mbps": 47.8481,
+      "jains_fairness_on_demand": 0.7562,
       "n_synthetic_users": 1000,
-      "pedestrian_fraction": 0.521,
+      "pedestrian_fraction": 0.515,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 9,
+      "mean_demand_mbps": 26.3852,
+      "p95_demand_mbps": 47.9298,
+      "jains_fairness_on_demand": 0.7714,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.488,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 10,
+      "mean_demand_mbps": 25.5309,
+      "p95_demand_mbps": 47.6676,
+      "jains_fairness_on_demand": 0.7682,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.513,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 11,
+      "mean_demand_mbps": 25.0773,
+      "p95_demand_mbps": 47.2677,
+      "jains_fairness_on_demand": 0.7689,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.496,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 12,
+      "mean_demand_mbps": 25.9218,
+      "p95_demand_mbps": 47.6846,
+      "jains_fairness_on_demand": 0.7667,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.495,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 13,
+      "mean_demand_mbps": 24.5464,
+      "p95_demand_mbps": 47.8026,
+      "jains_fairness_on_demand": 0.7453,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.493,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 14,
+      "mean_demand_mbps": 24.048,
+      "p95_demand_mbps": 47.0177,
+      "jains_fairness_on_demand": 0.7403,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.512,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 15,
+      "mean_demand_mbps": 25.9634,
+      "p95_demand_mbps": 48.2037,
+      "jains_fairness_on_demand": 0.7681,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.499,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 16,
+      "mean_demand_mbps": 25.7507,
+      "p95_demand_mbps": 48.2501,
+      "jains_fairness_on_demand": 0.7637,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.486,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 17,
+      "mean_demand_mbps": 25.601,
+      "p95_demand_mbps": 46.9982,
+      "jains_fairness_on_demand": 0.77,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.511,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 18,
+      "mean_demand_mbps": 25.1407,
+      "p95_demand_mbps": 47.942,
+      "jains_fairness_on_demand": 0.7561,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.505,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 19,
+      "mean_demand_mbps": 25.0494,
+      "p95_demand_mbps": 47.0242,
+      "jains_fairness_on_demand": 0.7653,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.495,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 20,
+      "mean_demand_mbps": 25.6274,
+      "p95_demand_mbps": 47.722,
+      "jains_fairness_on_demand": 0.7617,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.478,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 21,
+      "mean_demand_mbps": 24.9666,
+      "p95_demand_mbps": 47.3028,
+      "jains_fairness_on_demand": 0.7529,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.512,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 22,
+      "mean_demand_mbps": 26.0334,
+      "p95_demand_mbps": 47.573,
+      "jains_fairness_on_demand": 0.7674,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.51,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 23,
+      "mean_demand_mbps": 24.8581,
+      "p95_demand_mbps": 47.1502,
+      "jains_fairness_on_demand": 0.755,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.492,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 24,
+      "mean_demand_mbps": 26.1935,
+      "p95_demand_mbps": 47.4142,
+      "jains_fairness_on_demand": 0.7807,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.513,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 25,
+      "mean_demand_mbps": 25.2019,
+      "p95_demand_mbps": 47.717,
+      "jains_fairness_on_demand": 0.7549,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.495,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 26,
+      "mean_demand_mbps": 25.6569,
+      "p95_demand_mbps": 47.3703,
+      "jains_fairness_on_demand": 0.7714,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.491,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 27,
+      "mean_demand_mbps": 25.2359,
+      "p95_demand_mbps": 47.7223,
+      "jains_fairness_on_demand": 0.7695,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.497,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 28,
+      "mean_demand_mbps": 26.0056,
+      "p95_demand_mbps": 47.5656,
+      "jains_fairness_on_demand": 0.7647,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.479,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 29,
+      "mean_demand_mbps": 25.4608,
+      "p95_demand_mbps": 48.111,
+      "jains_fairness_on_demand": 0.7563,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.469,
+      "radio_evidence_status": "synthetic_fixture",
+      "sinr_db_stub": 12.0
+    },
+    {
+      "seed": 30,
+      "mean_demand_mbps": 25.1804,
+      "p95_demand_mbps": 47.5235,
+      "jains_fairness_on_demand": 0.7524,
+      "n_synthetic_users": 1000,
+      "pedestrian_fraction": 0.506,
       "radio_evidence_status": "synthetic_fixture",
       "sinr_db_stub": 12.0
     }

@@ -1,0 +1,11 @@
+{
+  "configs/experiments/rq1_gary_flagship_profiles.yaml": "e1ecde820ed4e33d14d8d037d5db2981e219a20a4cfd7b3a1addfb8e3cd00991",
+  "paper/artifacts/experiment_protocol.yaml": "1d700affd16ef5241e3259c3ba3aaf419b504f6f1dec3d31d0ef1d9399615ce3",
+  "fixtures/device_os/SERVICE_CONTINUITY_PROFILES.json": "98f3a4e5bd76a1bd203af1a4797acc3b0041369eb879845462b3a231ece6e46a",
+  "src/seven_gc_twin/rq1_statistical_report.py": "f68703c87b762acfa3b0091eacbb76d6f4f9e5b0bbad9fa6a5a34fe6f091ca6a",
+  "src/seven_gc_twin/continuity_benchmark.py": "2b96917ad73c178e0b753a73d6ca04a0198469860dd7e06ad69cb503b696981f",
+  "src/seven_gc_twin/stats.py": "a6b44acbe83a7d8fb7ba5e918df4a07d8378d19bfb0787936e2bdf329ec4087c",
+  "paper/figures/owner_seed_outcomes.pdf": "b44eaa40b3653278c29ceb089a3f8042832d8b48a3d4a9d062f48aaa502b3a45",
+  "paper/figures/owner_fixture_matrix.pdf": "5cce70daffc6aaeca45dfb06d5e6bbb7e2a236945f4f3a3d643887634edbd397",
+  "paper/figures/owner_class_outcomes.pdf": "899584ecf4545de32635528f631034b9241e6fa30068ad706aa068adf69e1d4e"
+}

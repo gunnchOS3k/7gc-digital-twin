@@ -1,0 +1,62 @@
+{
+  "source_sha": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+  "status": "OWNER_REVIEW_DRAFT",
+  "evidence_class": "SYNTHETIC_SIM",
+  "seed_count": 30,
+  "steps_per_seed": 48,
+  "frozen_report_numerical_parity": true,
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "primary_independent_scipy_check": {
+    "task_completion_ratio": {
+      "mean": 0.4272570333333333,
+      "std": 0.04161018415665298,
+      "t_critical": 2.045229642132704,
+      "ci_low": 0.4117195352176044,
+      "ci_high": 0.4427945314490622,
+      "pass": true
+    },
+    "time_above_minimum_useful": {
+      "mean": 0.5914930666666667,
+      "std": 0.0402434246511225,
+      "t_critical": 2.045229642132704,
+      "ci_low": 0.5764659249377754,
+      "ci_high": 0.606520208395558,
+      "pass": true
+    }
+  },
+  "post_hoc_analytic_expectations": {
+    "wearable": {
+      "time_above_minimum_useful": 0.34368750000000003,
+      "task_completion_ratio": 0.17207437500000003
+    },
+    "smartphone": {
+      "time_above_minimum_useful": 0.594,
+      "task_completion_ratio": 0.42026399999999997
+    },
+    "laptop": {
+      "time_above_minimum_useful": 0.681,
+      "task_completion_ratio": 0.5243366666666667
+    },
+    "edge_node": {
+      "time_above_minimum_useful": 0.7722000000000001,
+      "task_completion_ratio": 0.628716
+    }
+  },
+  "post_hoc_semantic_comparator": {
+    "description": "classify all offline snapshots as failed; no policy execution",
+    "offline_supported_rows": 8,
+    "offline_unsupported_rows": 1
+  },
+  "metric_semantics": {
+    "recovery_event_count": "outage-entry count; does not count completed recoveries",
+    "secondary_duplicates": [
+      "reliability = time_above_minimum_useful",
+      "outage_fraction = qoe_violation_fraction = packet_loss_proxy = 1 - time_above_minimum_useful"
+    ],
+    "proxies": [
+      "throughput_proxy_mbps = 5*time_above_minimum_useful",
+      "compute_completion_time_proxy = steps*(1.2 - 0.4*task_completion_ratio)"
+    ]
+  }
+}
