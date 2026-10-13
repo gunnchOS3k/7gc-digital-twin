@@ -13,7 +13,7 @@
     },
     "EXPERIMENT_REPRODUCED": {
       "status": true,
-      "basis": "Fresh full payload equality at 1a5491bf; reproduction records and focused 27-test log"
+      "basis": "Exact scientific values and stable semantic provenance match at 1a5491bf; variable producer commit/time, validated dependent hashes and output locations retained separately in current_verification.json. Whole-payload byte equality is not claimed. Positive fresh run and altered-result/invalid-provenance failure tests pass."
     },
     "STATISTICS_VERIFIED": {
       "status": true,
