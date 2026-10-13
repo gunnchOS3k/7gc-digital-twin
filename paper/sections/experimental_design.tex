@@ -1,0 +1,28 @@
+\section{Experimental Design and Reproducibility}
+\label{sec:design}
+\subsection{Protocol Versions and Provenance}
+The current experiment uses seeds $1,2,\ldots,30$ and the configuration \texttt{rq1\_gary\_flagship\_profiles.yaml}. The evaluated source revision is \texttt{1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa}. The protocol mirror in \texttt{paper/artifacts} is retained unchanged. Earlier source revision \texttt{376b6d673ff6aaf1d60b5a73589f26d49b46dbed} configured four seeds, $1,2,7,42$, for the original fixture and site-reporting path. Revision \texttt{b8c84e465fc89e3e14915a1f30ff8491645f884a} introduced seeded statistical reporting; revision \texttt{dd0a7b0738f9e4e65830ea2397fb4438e255d5b0} expanded the list to 30 and corrected statistical helpers.
+
+Those revisions are distinct development stages. The earlier manuscript's four-seed language does not describe the current statistical results. Seed 42 is absent from the current list. The configuration is frozen in Git, but its history alone does not establish independent preregistration before analysis. The article therefore describes a versioned, predeclared seed list at the evaluated revision, and labels the analytic and semantic audits as post hoc. Historical prose and files remain recoverable separately.
+
+The profile bundle's declared content digest is \texttt{ef5323a1607bf88031fb209375325e3935049651346fcc138f022b1aba9c0083}; its full-file SHA-256 is \texttt{98f3a4e5bd76a1bd203af1a4797acc3b0041369eb879845462b3a231ece6e46a}. These distinguish the recorded content identity from the file-byte checksum. The provenance file names the frozen supervisor-ready Device OS artifact as its source. It does not supply a source Git revision for that external bundle; that upstream identity remains a provenance limitation.
+
+\subsection{Statistical Unit and Estimation}
+For primary outcome $X_s\in\{C_s,\tau_s\}$, the report computes
+\begin{equation}
+\bar X=\frac1n\sum_s X_s,\quad
+s_X^2=\frac1{n-1}\sum_s(X_s-\bar X)^2,\label{eq:stats}
+\end{equation}
+with $n=30$, and the two-sided interval
+\begin{equation}
+\bar X\ \pm\ t_{0.975,29}\frac{s_X}{\sqrt{30}},\qquad
+ t_{0.975,29}=2.0452296421.\label{eq:ci}
+\end{equation}
+The source's tabulated critical value was independently checked using SciPy. The intervals characterize variation of seed means under this generator. They do not include parameter uncertainty, measurement error, bias in the offline coverage declarations, or uncertainty about a real population. Treating 5,760 class-step observations as independent experimental replicates would understate the uncertainty at the chosen seed level.
+
+No competing controller is executed, and the report's paired-baseline and effect-size fields are null. Therefore no paired significance test, controller effect size, or causal superiority claim is reported. Per-class intervals are descriptive and unadjusted for simultaneous inference. The deterministic 21-snapshot corpus is an exhaustive enumeration of this stored bundle, not a random sample from a workload population; its counts receive no inferential confidence intervals.
+
+\subsection{Reproduction and Secondary Analyses}
+The recovered digital reproduction completed \texttt{make paper-reproduce}; its reproduction-stage tests passed 17 checks, and the focused profile/statistical tests passed 27. A derived reporting script verifies exact equality of the current per-seed, primary, secondary, and per-class summaries against the source revision's committed statistical report. Independent SciPy calculations reproduce the primary means, sample deviations, and intervals. These automated checks verify implementation and artifact parity; independent human replication remains pending.
+
+The post hoc analyses consist of source inspection, closed-form expectations for the fixed generator, and a semantic comparator that assigns failure to every offline snapshot. The comparator is a classification-rule contrast, not an executed cloud-only controller or an offline-disabled physical system. No new simulation sweep, ablation campaign, hardware run, or parameter-fitting study was added during manuscript preparation. The package includes all figure sources, output hashes, environment records, and commands.

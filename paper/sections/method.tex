@@ -1,30 +1,70 @@
-\section{Method}
+\section{System Model and Implemented Methods}
 \label{sec:method}
-The frozen protocol is \texttt{paper/artifacts/experiment\_protocol.yaml}, mirroring \texttt{configs/experiments/rq1\_gary\_flagship\_profiles.yaml}.
-Seeds are $1,2,7,42$. Mode is \texttt{synthetic-fixture}.
-Requested metric families are workload, compute, radio, failure, mobility, and inclusion.
+\subsection{Two Distinct Evidence Paths}
+The benchmark has two paths (Fig.~\ref{fig:architecture}). The first reclassifies stored service-profile snapshots and applies a context-name mapping. The second produces seeded abstract timelines from synthetic class priors. They share outcome terminology, but neither path supplies the other's observations. In particular, the timeline does not derive its Bernoulli probabilities from the profile corpus, and its class names differ from the profile names. This distinction prevents an apparent combined validation from two artifacts that were never coupled.
 
-\paragraph{Continuity levels.}
-Levels follow the Device OS rule (re-implemented in this repo and checked against stored labels):
-\texttt{connected}$\rightarrow$\texttt{target};
-\texttt{degraded} or \texttt{transitioning}$\rightarrow$\texttt{degraded};
-\texttt{offline} and the workload is in \texttt{offline\_capabilities}$\rightarrow$\texttt{min\_useful};
-otherwise \texttt{failed} (below min-useful).
-The injected bearer corpus is the same labeled set used by Device OS tests (\texttt{wifi\_nominal}, \texttt{dock\_ethernet}, \texttt{degraded\_wifi}, \texttt{jam\_wifi\_offline\_fallback}, \texttt{force\_offline}, plus an explicit wearable coding path).
-Those bearer metrics are scenario \emph{inputs}, not channel soundings~\cite{itur_m2160}.
+\begin{figure}[t]
+\centering
+\fbox{\begin{minipage}{0.91\columnwidth}\small
+\textbf{Path A: semantic corpus}\par
+Frozen profiles + workload coverage $\longrightarrow$\par
+State classification $\longrightarrow$ 21 labels\par
+Authored context map $\longrightarrow$ 20 overlay rows\medskip\par
+\textbf{Path B: stochastic generator}\par
+Seed + four synthetic priors $\longrightarrow$\par
+48 abstract steps per class $\longrightarrow$ $C_s,\tau_s$\par
+30 seed means $\longrightarrow$ Student-$t$ intervals\medskip\par
+\textbf{Audit layer}\par
+Frozen hashes, source parity, metric dependencies,\par
+post hoc analytic expectations and limitations
+\end{minipage}}
+\caption{Implemented evidence flow. No live sensors, channel calibration, workload execution, or policy optimizer connects the two paths.}\label{fig:architecture}
+\end{figure}
 
-\paragraph{Gary overlay.}
-Gary bad-day names are mapped to bearer-stress labels \emph{before} looking at outcomes (protocol field \texttt{gary\_scenario\_to\_bearer\_stress}):
-neighborhood outage $\rightarrow$ jam/offline fallback;
-storm congestion, school bandwidth collapse, and library hotspot overload $\rightarrow$ degraded Wi-Fi;
-SMB payment down $\rightarrow$ force offline.
-The mapping is an assumption, not a field measurement.
+\subsection{Profile-Based Minimum Useful Service}
+Let $o$ be the stored orchestrator state and $F_{c,w}$ a Boolean declaration that profile $c$ supports workload $w$ offline. The implemented classifier is
+\begin{equation}
+L(o,F)=\begin{cases}
+3,&o=\mathrm{connected},\\
+2,&o\in\{\mathrm{degraded},\mathrm{transitioning}\},\\
+1,&o=\mathrm{offline},\ F=1,\\
+0,&\text{otherwise}.
+\end{cases}\label{eq:classifier}
+\end{equation}
+The labels are target, degraded, minimum useful, and failed, respectively. The semantic acceptance predicate is $L\geq1$. These are ordered categories, not equally spaced utility scores. Averaging their numeric encodings would require a separate cardinal-utility assumption and is not done here.
 
-\paragraph{Seeds and sites.}
-Synthetic users are drawn with \texttt{generate\_users(n, seed)} so demand and mobility can vary across the pre-registered seeds.
-Radio $\mathrm{SINR}$ remains a YAML stub (\texttt{sinr\_db\_stub}) and is not seed-jittered.
-Comparative sites are scored with the same generator; inclusion composites hash site identifiers and barrier lists and are not RF.
+The four profiles are desk, mobile/docked, local creation, and wearable. Each contains five common scenario snapshots; wearable includes a sixth unsupported coding request. Connected state receives the target label without checking measured latency, throughput, task correctness, or resource availability. Thus, \eqref{eq:classifier} operationalizes the repository's current \emph{declared} service threshold, not a user-validated threshold. It can expose an unsupported offline workload, but cannot detect a connected application failure if the stored state remains connected.
 
-\paragraph{Non-claims.}
-No University of Oulu affiliation, no community deployment, no held-out RF campaign, no SUBMITTED/ACCEPTED status.
-Baselines named for later campaigns (terrestrial-only, cloud-only, local-only, oracle) are not executed in this digital run.
+Five Gary context names map to common snapshots: neighborhood outage maps to jam/offline fallback; storm congestion, school bandwidth collapse, and library hotspot overload map to degraded Wi-Fi; payment-system unavailability maps to forced offline. The mapping is fixed in the versioned configuration. It is a lookup assumption, not a model of those events' physical causes or business consequences.
+
+\subsection{Seeded Continuity Generator}
+For each seed $s$, the simulator instantiates \texttt{random.Random(s)} and iterates over wearable, smartphone, laptop, and edge node, each for $T=48$ abstract steps. Let $a_c$, $q_c$, and $h_c$ denote class useful-service base probability, conditional task base probability, and stress sensitivity. Table~\ref{tab:priors} gives their exact values. At each step the code draws stress $S\sim U(0,1)$ and demand $D\sim U(1,50)$, then samples
+\begin{align}
+M_{sct}&\sim\mathrm{Bernoulli}\big[a_c(1-0.35h_cS)\big],\label{eq:useful}\\
+Y_{sct}&=M_{sct}B_{sct},\quad
+B_{sct}\sim\mathrm{Bernoulli}\big[q_c(1-0.2S)\big].\label{eq:task}
+\end{align}
+The task draw is performed only if $M_{sct}=1$, exactly as in the implementation. Stress and Bernoulli draws use a pseudorandom stream; the displayed probability model describes their intended sampling semantics. All configured probabilities remain within $[0,1]$.
+
+\begin{table}[t]\centering\caption{Synthetic timeline priors. Values are authored assumptions, not calibrated device measurements.}\label{tab:priors}\small
+\begin{tabular}{lrrr}\toprule
+Class & $a_c$ & $q_c$ & $h_c$\\\midrule
+Wearable & 0.45 & 0.55 & 1.35\\
+Smartphone & 0.72 & 0.78 & 1.00\\
+Laptop & 0.80 & 0.85 & 0.85\\
+Edge node & 0.88 & 0.90 & 0.70\\\bottomrule
+\end{tabular}\end{table}
+
+Useful occupancy and task completion for a class and seed are
+\begin{equation}
+\tau_{sc}=\frac1T\sum_{t=1}^{T}M_{sct},\qquad
+C_{sc}=\frac1T\sum_{t=1}^{T}Y_{sct}.\label{eq:outcomes}
+\end{equation}
+The primary seed means weight all four classes equally: $\tau_s=\frac14\sum_c\tau_{sc}$ and $C_s=\frac14\sum_c C_{sc}$. Each step represents one synthetic task opportunity; it has no assigned number of seconds. Consequently, useful time is a fraction of equally weighted abstract steps, and completion is a synthetic success fraction rather than a measured jobs-per-second rate. There are 5,760 class-step outcomes across the 30 seeds, but the statistical sample size is 30 seed means.
+
+Demand does not enter \eqref{eq:useful} or \eqref{eq:task}. It only contributes to the energy proxy. There is no queue, battery state, memory constraint, congestion feedback, traffic scheduler, radio channel, or admission-control decision in this generator. Resource constraint is represented indirectly by class-specific probabilities. A class ordering in the results therefore does not demonstrate a device performance ordering under equal physical workloads.
+
+\subsection{Reporting Algorithm and Numerical Conventions}
+The implementation loads the frozen bundle, rederives all stored labels, constructs the context overlay, generates a timeline for each recorded seed, and reports primary and secondary summaries. These steps are deterministic for the source, configuration, and Python random generator used. Reproduction must preserve class order and conditional draw behavior: consuming an extra random number, even for an unused task draw, changes subsequent samples.
+
+Class fractions and seed aggregates are rounded to six decimals before the stored report computes across-seed summaries. The manuscript reports four decimals. The analytic model applies to the unrounded fractions. The maximum rounding discrepancy between an unrounded overall seed fraction and its stored value is at most $10^{-6}$, combining class and aggregate rounding. The statistical audit independently recalculates the stored means and intervals; it does not silently replace historical values with unrounded recalculations.

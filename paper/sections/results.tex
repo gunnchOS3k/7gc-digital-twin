@@ -1,41 +1,60 @@
-\section{Results}
+\section{Reproduced Results}
 \label{sec:results}
-Numbers below are copied from generated TeX/JSON by \texttt{paper/scripts/generate\_tables.py}.
-If the experiment JSON is missing, those files state \texttt{RESULT\_PENDING} rather than inventing values.
-All present numbers are \texttt{SYNTHETIC\_SIM}.
-A machine-readable extract is \texttt{paper/artifacts/rq1\_experiment\_summary.json}.
+\subsection{Profile Corpus and Failure Coverage}
+All 21 stored labels match the rederived classifier, and the recorded content digest matches provenance. Table~\ref{tab:fixture} and Fig.~\ref{fig:fixture} show 12 target, eight minimum-useful, zero degraded, and one failed snapshot. The failure is the wearable profile's explicit unsupported offline coding request. The result follows directly from an offline state with $F_{c,w}=0$ in \eqref{eq:classifier}; it does not measure failed compilation or execution on a wearable.
+\input{tables/owner_fixture}
 
-\paragraph{What drops below min-useful.}
-\input{tables/rq1_findings}
-\input{tables/rq1_continuity_levels}
-\input{tables/rq1_failure_cases}
+The three other profiles each have three target and two minimum-useful rows. The wearable has the same common five rows plus the unsupported request. This asymmetry prevents interpreting raw failure counts as fair comparative device reliability. The corpus deliberately probes a missing wearable capability while omitting analogous unsupported tasks for the other profiles.
 
-The only below-min-useful row in the frozen corpus is wearable $\times$ \texttt{offline\_coding} $\times$ \texttt{force\_offline\_coding\_unsupported}.
-Desk, mobile/docked, and local-creation never reach \texttt{failed}: when forced offline they remain at \texttt{min\_useful} because their primary workloads are listed in \texttt{offline\_capabilities}.
-Wearable offline coverage includes lessons and games but not coding, writing, or research notebooks, which is why the explicit coding path fails.
+\begin{figure*}[t]\centering
+\includegraphics[width=0.91\textwidth]{figures/owner_fixture_matrix.pdf}
+\caption{The 21 frozen snapshots. Absent cells are untested combinations. All four degraded-Wi-Fi labels retain connected state and therefore receive target. No snapshot exercises degraded or transitioning state.}\label{fig:fixture}
+\end{figure*}
 
-\paragraph{Labeled degrade that does not degrade.}
-All four classes still score \texttt{target} on the scenario named \texttt{degraded\_wifi} (orchestrator state remains \texttt{connected} in this injected corpus).
-The benchmark therefore does \emph{not} treat that label as evidence of a min-useful miss.
-That is a property of the current digital corpus, not a measured Wi-Fi fade.
+All four scenarios named degraded Wi-Fi receive target because their stored orchestrator state is connected. Hence the scenario label does not establish a degraded-service observation. The zero degraded count exposes a coverage gap in the fixture, even though the classifier has a degraded branch. The 20 Gary overlay rows contain no below-minimum-useful outcome because the context mapping selects declared supported workloads. This is a property of that mapping and workload selection, not evidence that all real disruptions preserve useful service.
 
-\paragraph{Gary overlay.}
-\input{tables/rq1_gary_overlay}
-Zero overlay rows fall below min-useful: Gary bad-day names, under the frozen mapping, land on primary workloads that remain at \texttt{target} or \texttt{min\_useful}.
-The wearable coding failure is visible only when that unsupported workload is requested explicitly.
+The post hoc connected-only semantic comparator labels all nine offline rows failed. The benchmark instead identifies eight as minimum useful and one as failed. The eight reclassifications show precisely what the coverage declaration adds to a connectivity-only label. They do not quantify a policy improvement: no fallback action, application execution, or user benefit was measured in this comparison.
 
-\paragraph{Seed sensitivity and site families.}
-\input{tables/rq1_runs}
-\input{tables/rq1_seed_sensitivity}
-\input{tables/rq1_site_inclusion}
+\subsection{Thirty-Seed Primary Outcomes}
+Table~\ref{tab:primary} gives the reproduced overall outcomes. Task completion is 0.427257 with sample standard deviation 0.041610; useful occupancy is 0.591493 with standard deviation 0.040243. Their 95\% seed-level intervals are [0.411720,0.442795] and [0.576466,0.606520], respectively. Completion is bounded by useful occupancy at every class and step by \eqref{eq:task}; the lower completion mean reflects the conditional task-success gate.
+\input{tables/owner_primary}
 
-Gary mean demand varies across the four pre-registered seeds (Table of seed sensitivity) with $n{=}1000$ synthetic users.
-Radio $\mathrm{SINR}$ stays at the YAML stub for every seed.
-Mean demand is identical across comparative sites when the same seed and user count are used; inclusion readiness is not.
-That split is expected: demand comes from \texttt{generate\_users}, while inclusion composites depend on site barrier lists.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.95\textwidth]{figures/rq1_continuity_heatmap.png}
-\caption{Continuity-level heatmap (0 failed, 1 min-useful, 2 degraded, 3 target) on shared Device OS scenarios. SYNTHETIC\_SIM. CSV/SVG siblings are in \texttt{paper/figures/}.}
+\begin{figure}[t]\centering
+\includegraphics[width=\columnwidth]{figures/owner_seed_outcomes.pdf}
+\caption{All 30 recorded seed means. Lines show means and shaded bands show their 95\% Student-$t$ intervals. These are intervals for generator means, not prediction bands for real deployments.}\label{fig:seeds}
 \end{figure}
+
+The observed overall completion range is approximately 0.344 to 0.495 and the useful-occupancy range 0.490 to 0.651 (Fig.~\ref{fig:seeds}). The intervals use all recorded seeds; none were removed based on outcome. Changing the seed set, step count, or prior values creates a different experiment and must be versioned separately.
+
+\subsection{Class Priors and Analytic Interpretation}
+The four timeline classes differ from the four profile categories. Table~\ref{tab:classes} therefore summarizes the stochastic classes independently. Wearable completion and useful occupancy are about 0.171 and 0.348; edge-node values are 0.628 and 0.786. The ordering is consistent with the authored probabilities and stress sensitivities.
+\input{tables/owner_class}
+
+For $b_c=0.35h_c$, the unrounded model yields the post hoc expectations
+\begin{align}
+\mathbb E[\tau_c]&=a_c(1-b_c/2),\label{eq:exp_tau}\\
+\mathbb E[C_c]&=a_cq_c\left[1-\frac{b_c+0.2}{2}+\frac{0.2b_c}{3}\right].\label{eq:exp_c}
+\end{align}
+These integrate \eqref{eq:useful} and \eqref{eq:task} over uniform stress. Expected completion values for wearable, smartphone, laptop, and edge node are 0.1721, 0.4203, 0.5243, and 0.6287; expected useful fractions are 0.3437, 0.5940, 0.6810, and 0.7722. Fig.~\ref{fig:classes} places these values beside the simulation estimates. The smartphone completion expectation lies just above its descriptive interval; the study has not performed a formal goodness-of-fit test or simultaneous-coverage assessment. The analytic calculation is a model interpretation, not an additional independent experiment.
+
+\begin{figure}[t]\centering
+\includegraphics[width=\columnwidth]{figures/owner_class_outcomes.pdf}
+\caption{Class means and descriptive 95\% intervals. Crosses mark post hoc analytic expectations. The class ordering reflects configured priors, with no calibrated hardware ranking implied.}\label{fig:classes}
+\end{figure}
+
+\subsection{Secondary Endpoint Audit}
+The source defines reliability equal to useful occupancy. Outage fraction, QoE-violation fraction, and packet-loss proxy each equal its complement; throughput proxy is five times useful occupancy; compute-completion-time proxy is $T(1.2-0.4C)$. The identities hold up to reporting precision (Table~\ref{tab:metrics}). These fields are retained in machine-readable outputs for historical compatibility, but do not constitute independent validation of reliability, packet loss, quality of experience, throughput, or compute performance.
+
+The field \texttt{recovery\_event\_count} increments when a failed step follows a non-outage step, including entry into an initial outage. It counts outage episodes entered, rather than successful recoveries. It is excluded from the aggregated secondary-key list. No recovery duration, restored-task fraction, or completed-recovery count is reported as an empirical result.
+
+\begin{table}[t]\centering\caption{Metric meanings established by source inspection; historical field names are preserved in artifacts.}\label{tab:metrics}\small
+\begin{tabular}{p{0.41\columnwidth}p{0.51\columnwidth}}\toprule
+Reported field & Implemented definition and interpretation\\\midrule
+Reliability & $\tau$; duplicate primary endpoint\\
+Outage / QoE violation / packet-loss proxy & $1-\tau$; three duplicate complements\\
+Throughput proxy & $5\tau$; arbitrary Mbps scaling\\
+Compute completion proxy & $T(1.2-0.4C)$; synthetic transform\\
+Recovery-event count & Number of outage entries; no completion test\\
+Latency / jitter & Affine stress proxy / consecutive absolute differences\\
+Energy proxy & Demand-weighted synthetic sum; no battery model\\\bottomrule
+\end{tabular}\end{table}

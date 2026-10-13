@@ -1,0 +1,41 @@
+\section{Results}
+\label{sec:results}
+Numbers below are copied from generated TeX/JSON by \texttt{paper/scripts/generate\_tables.py}.
+If the experiment JSON is missing, those files state \texttt{RESULT\_PENDING} rather than inventing values.
+All present numbers are \texttt{SYNTHETIC\_SIM}.
+A machine-readable extract is \texttt{paper/artifacts/rq1\_experiment\_summary.json}.
+
+\paragraph{What drops below min-useful.}
+\input{tables/rq1_findings}
+\input{tables/rq1_continuity_levels}
+\input{tables/rq1_failure_cases}
+
+The only below-min-useful row in the frozen corpus is wearable $\times$ \texttt{offline\_coding} $\times$ \texttt{force\_offline\_coding\_unsupported}.
+Desk, mobile/docked, and local-creation never reach \texttt{failed}: when forced offline they remain at \texttt{min\_useful} because their primary workloads are listed in \texttt{offline\_capabilities}.
+Wearable offline coverage includes lessons and games but not coding, writing, or research notebooks, which is why the explicit coding path fails.
+
+\paragraph{Labeled degrade that does not degrade.}
+All four classes still score \texttt{target} on the scenario named \texttt{degraded\_wifi} (orchestrator state remains \texttt{connected} in this injected corpus).
+The benchmark therefore does \emph{not} treat that label as evidence of a min-useful miss.
+That is a property of the current digital corpus, not a measured Wi-Fi fade.
+
+\paragraph{Gary overlay.}
+\input{tables/rq1_gary_overlay}
+Zero overlay rows fall below min-useful: Gary bad-day names, under the frozen mapping, land on primary workloads that remain at \texttt{target} or \texttt{min\_useful}.
+The wearable coding failure is visible only when that unsupported workload is requested explicitly.
+
+\paragraph{Seed sensitivity and site families.}
+\input{tables/rq1_runs}
+\input{tables/rq1_seed_sensitivity}
+\input{tables/rq1_site_inclusion}
+
+Gary mean demand varies across the four pre-registered seeds (Table of seed sensitivity) with $n{=}1000$ synthetic users.
+Radio $\mathrm{SINR}$ stays at the YAML stub for every seed.
+Mean demand is identical across comparative sites when the same seed and user count are used; inclusion readiness is not.
+That split is expected: demand comes from \texttt{generate\_users}, while inclusion composites depend on site barrier lists.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/rq1_continuity_heatmap.png}
+\caption{Continuity-level heatmap (0 failed, 1 min-useful, 2 degraded, 3 target) on shared Device OS scenarios. SYNTHETIC\_SIM. CSV/SVG siblings are in \texttt{paper/figures/}.}
+\end{figure}
