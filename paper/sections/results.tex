@@ -48,7 +48,7 @@ The source defines reliability equal to useful occupancy. Outage fraction, QoE-v
 The field \texttt{recovery\_event\_count} increments when a failed step follows a non-outage step, including entry into an initial outage. It counts outage episodes entered, rather than successful recoveries. It is excluded from the aggregated secondary-key list. No recovery duration, restored-task fraction, or completed-recovery count is reported as an empirical result.
 
 \begin{table}[t]\centering\caption{Metric meanings established by source inspection; historical field names are preserved in artifacts.}\label{tab:metrics}\small
-\begin{tabular}{p{0.41\columnwidth}p{0.51\columnwidth}}\toprule
+\begin{tabular}{p{0.39\columnwidth}p{0.49\columnwidth}}\toprule
 Reported field & Implemented definition and interpretation\\\midrule
 Reliability & $\tau$; duplicate primary endpoint\\
 Outage / QoE violation / packet-loss proxy & $1-\tau$; three duplicate complements\\

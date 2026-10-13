@@ -1,0 +1,192 @@
+note: Running TeX ...
+warning: manuscript.tex:45: Overfull \hbox (9.2679pt too wide) in paragraph at lines 45--45
+warning: manuscript.tex:45: Overfull \hbox (9.2679pt too wide) in paragraph at lines 45--45
+warning: sections/introduction:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/introduction:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/introduction:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/introduction:9: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/related_work:1: Underfull \hbox (badness 1596) in paragraph at lines 12--1
+warning: sections/related_work:21: Underfull \hbox (badness 2293) in paragraph at lines 21--21
+warning: sections/related_work:24: Underfull \hbox (badness 2680) in paragraph at lines 23--24
+warning: sections/related_work:24: Underfull \hbox (badness 1881) in paragraph at lines 24--24
+warning: sections/related_work:25: Underfull \hbox (badness 10000) in paragraph at lines 24--25
+warning: sections/method:34: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:34: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:34: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/method:40: Underfull \hbox (badness 1436) in paragraph at lines 39--40
+warning: sections/method:43: Overfull \hbox (16.21298pt too wide) in paragraph at lines 42--43
+warning: sections/method:70: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:70: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:70: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 1694) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 5475) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: sections/experimental_design:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: sections/experimental_design:23: Underfull \hbox (badness 2384) in paragraph at lines 21--23
+warning: sections/experimental_design:28: Underfull \hbox (badness 10000) in paragraph at lines 27--28
+warning: sections/results:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/results:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/results:9: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/results:22: Underfull \hbox (badness 5533) in paragraph at lines 20--22
+warning: sections/results:22: Underfull \hbox (badness 2368) in paragraph at lines 20--22
+warning: sections/results:22: Underfull \hbox (badness 3482) in paragraph at lines 20--22
+warning: sections/results:22: Underfull \hbox (badness 3343) in paragraph at lines 20--22
+warning: sections/results:48: Underfull \hbox (badness 2205) in paragraph at lines 47--48
+warning: sections/results:57: Underfull \hbox (badness 10000) in paragraph at lines 57--57
+warning: sections/results:59: Underfull \hbox (badness 2653) in paragraph at lines 58--59
+warning: sections/results:60: Underfull \hbox (badness 10000) in paragraph at lines 60--60
+warning: sections/discussion:8: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:8: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:8: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/discussion:10: Underfull \vbox (badness 4328) has occurred while \output is active
+warning: sections/discussion:10: Underfull \vbox (badness 4328) has occurred while \output is active
+warning: sections/discussion:10: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:10: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:10: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/discussion:13: Underfull \hbox (badness 2073) in paragraph at lines 12--13
+warning: sections/discussion:20: Underfull \hbox (badness 1609) in paragraph at lines 19--20
+warning: sections/discussion:20: Underfull \vbox (badness 2096) has occurred while \output is active
+warning: sections/limitations:11: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/limitations:11: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/limitations:11: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: manuscript.bbl:2: Underfull \hbox (badness 2781) in paragraph at lines 8--2
+warning: manuscript.bbl:49: Underfull \hbox (badness 1406) in paragraph at lines 47--49
+warning: manuscript.tex:57: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: manuscript.tex:57: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: manuscript.tex:57: Underfull \hbox (badness 10000) has occurred while \output is active
+note: Running BibTeX on manuscript.aux ...
+note: Rerunning TeX because bibtex was run ...
+warning: manuscript.tex:45: Overfull \hbox (9.2679pt too wide) in paragraph at lines 45--45
+warning: manuscript.tex:45: Overfull \hbox (9.2679pt too wide) in paragraph at lines 45--45
+warning: sections/introduction:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/introduction:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/introduction:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/introduction:9: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/related_work:1: Underfull \hbox (badness 1596) in paragraph at lines 12--1
+warning: sections/related_work:21: Underfull \hbox (badness 2293) in paragraph at lines 21--21
+warning: sections/related_work:24: Underfull \hbox (badness 2680) in paragraph at lines 23--24
+warning: sections/related_work:24: Underfull \hbox (badness 1881) in paragraph at lines 24--24
+warning: sections/related_work:25: Underfull \hbox (badness 10000) in paragraph at lines 24--25
+warning: sections/method:34: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:34: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:34: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/method:40: Underfull \hbox (badness 1436) in paragraph at lines 39--40
+warning: sections/method:43: Overfull \hbox (16.21298pt too wide) in paragraph at lines 42--43
+warning: sections/method:70: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:70: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:70: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 1694) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 5475) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: sections/experimental_design:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: sections/experimental_design:23: Underfull \hbox (badness 2384) in paragraph at lines 21--23
+warning: sections/experimental_design:28: Underfull \hbox (badness 10000) in paragraph at lines 27--28
+warning: sections/results:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/results:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/results:9: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/results:22: Underfull \hbox (badness 5533) in paragraph at lines 20--22
+warning: sections/results:22: Underfull \hbox (badness 2368) in paragraph at lines 20--22
+warning: sections/results:22: Underfull \hbox (badness 3482) in paragraph at lines 20--22
+warning: sections/results:22: Underfull \hbox (badness 3343) in paragraph at lines 20--22
+warning: sections/results:48: Underfull \hbox (badness 2205) in paragraph at lines 47--48
+warning: sections/results:57: Underfull \hbox (badness 10000) in paragraph at lines 57--57
+warning: sections/results:59: Underfull \hbox (badness 2653) in paragraph at lines 58--59
+warning: sections/results:60: Underfull \hbox (badness 10000) in paragraph at lines 60--60
+warning: sections/discussion:8: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:8: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:8: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/discussion:10: Underfull \vbox (badness 4328) has occurred while \output is active
+warning: sections/discussion:10: Underfull \vbox (badness 4328) has occurred while \output is active
+warning: sections/discussion:10: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:10: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:10: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/discussion:13: Underfull \hbox (badness 2073) in paragraph at lines 12--13
+warning: sections/discussion:20: Underfull \hbox (badness 1609) in paragraph at lines 19--20
+warning: sections/discussion:20: Underfull \vbox (badness 2096) has occurred while \output is active
+warning: sections/limitations:11: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/limitations:11: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/limitations:11: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: manuscript.bbl:2: Underfull \hbox (badness 2781) in paragraph at lines 8--2
+warning: manuscript.bbl:56: Underfull \hbox (badness 1406) in paragraph at lines 54--56
+warning: manuscript.tex:57: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: manuscript.tex:57: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: manuscript.tex:57: Underfull \hbox (badness 10000) has occurred while \output is active
+note: Rerunning TeX because "manuscript.aux" changed ...
+warning: manuscript.tex:45: Overfull \hbox (9.2679pt too wide) in paragraph at lines 45--45
+warning: manuscript.tex:45: Overfull \hbox (9.2679pt too wide) in paragraph at lines 45--45
+warning: sections/introduction:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/introduction:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/introduction:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/introduction:9: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/related_work:1: Underfull \hbox (badness 1596) in paragraph at lines 12--1
+warning: sections/related_work:21: Underfull \hbox (badness 2293) in paragraph at lines 21--21
+warning: sections/related_work:24: Underfull \hbox (badness 2680) in paragraph at lines 23--24
+warning: sections/related_work:24: Underfull \hbox (badness 1881) in paragraph at lines 24--24
+warning: sections/related_work:25: Underfull \hbox (badness 10000) in paragraph at lines 24--25
+warning: sections/method:34: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:34: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:34: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/method:40: Underfull \hbox (badness 1436) in paragraph at lines 39--40
+warning: sections/method:43: Overfull \hbox (16.21298pt too wide) in paragraph at lines 42--43
+warning: sections/method:70: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:70: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/method:70: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 1694) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 5475) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:6: Underfull \hbox (badness 10000) in paragraph at lines 4--6
+warning: sections/experimental_design:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: sections/experimental_design:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: sections/experimental_design:23: Underfull \hbox (badness 2384) in paragraph at lines 21--23
+warning: sections/experimental_design:28: Underfull \hbox (badness 10000) in paragraph at lines 27--28
+warning: sections/results:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/results:9: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/results:9: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/results:22: Underfull \hbox (badness 5533) in paragraph at lines 20--22
+warning: sections/results:22: Underfull \hbox (badness 2368) in paragraph at lines 20--22
+warning: sections/results:22: Underfull \hbox (badness 3482) in paragraph at lines 20--22
+warning: sections/results:22: Underfull \hbox (badness 3343) in paragraph at lines 20--22
+warning: sections/results:48: Underfull \hbox (badness 2205) in paragraph at lines 47--48
+warning: sections/results:57: Underfull \hbox (badness 10000) in paragraph at lines 57--57
+warning: sections/results:59: Underfull \hbox (badness 2653) in paragraph at lines 58--59
+warning: sections/results:60: Underfull \hbox (badness 10000) in paragraph at lines 60--60
+warning: sections/discussion:8: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:8: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:8: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/discussion:10: Underfull \vbox (badness 4328) has occurred while \output is active
+warning: sections/discussion:10: Underfull \vbox (badness 4328) has occurred while \output is active
+warning: sections/discussion:10: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:10: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/discussion:10: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: sections/discussion:13: Underfull \hbox (badness 2073) in paragraph at lines 12--13
+warning: sections/discussion:20: Underfull \hbox (badness 1609) in paragraph at lines 19--20
+warning: sections/discussion:20: Underfull \vbox (badness 2096) has occurred while \output is active
+warning: sections/limitations:11: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/limitations:11: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: sections/limitations:11: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: manuscript.bbl:2: Underfull \hbox (badness 2781) in paragraph at lines 8--2
+warning: manuscript.bbl:56: Underfull \hbox (badness 1406) in paragraph at lines 54--56
+warning: manuscript.tex:57: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: manuscript.tex:57: Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+warning: manuscript.tex:57: Underfull \hbox (badness 10000) has occurred while \output is active
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `manuscript.aux` (10.1591796875 KiB)
+note: Writing `manuscript.out` (5.4736328125 KiB)
+note: Writing `manuscript.bbl` (3.0947265625 KiB)
+note: Writing `manuscript.pdf` (165.2158203125 KiB)
+note: Writing `manuscript.log` (27.5615234375 KiB)
+note: Writing `manuscript.blg` (387 B)

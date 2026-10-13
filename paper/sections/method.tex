@@ -33,6 +33,8 @@ L(o,F)=\begin{cases}
 \end{equation}
 The labels are target, degraded, minimum useful, and failed, respectively. The semantic acceptance predicate is $L\geq1$. These are ordered categories, not equally spaced utility scores. Averaging their numeric encodings would require a separate cardinal-utility assumption and is not done here.
 
+For a hand check, an offline local-creation snapshot with declared workload support receives $L=1$, whereas an offline wearable coding request without support receives $L=0$. Changing only the stored state to connected yields $L=3$ for either request. This last case exposes a classifier limitation: capability and application success are not evaluated on the connected branch. These three evaluations illustrate the rule; they are not added observations.
+
 The four profiles are desk, mobile/docked, local creation, and wearable. Each contains five common scenario snapshots; wearable includes a sixth unsupported coding request. Connected state receives the target label without checking measured latency, throughput, task correctness, or resource availability. Thus, \eqref{eq:classifier} operationalizes the repository's current \emph{declared} service threshold, not a user-validated threshold. It can expose an unsupported offline workload, but cannot detect a connected application failure if the stored state remains connected.
 
 Five Gary context names map to common snapshots: neighborhood outage maps to jam/offline fallback; storm congestion, school bandwidth collapse, and library hotspot overload map to degraded Wi-Fi; payment-system unavailability maps to forced offline. The mapping is fixed in the versioned configuration. It is a lookup assumption, not a model of those events' physical causes or business consequences.
@@ -41,8 +43,8 @@ Five Gary context names map to common snapshots: neighborhood outage maps to jam
 For each seed $s$, the simulator instantiates \texttt{random.Random(s)} and iterates over wearable, smartphone, laptop, and edge node, each for $T=48$ abstract steps. Let $a_c$, $q_c$, and $h_c$ denote class useful-service base probability, conditional task base probability, and stress sensitivity. Table~\ref{tab:priors} gives their exact values. At each step the code draws stress $S\sim U(0,1)$ and demand $D\sim U(1,50)$, then samples
 \begin{align}
 M_{sct}&\sim\mathrm{Bernoulli}\big[a_c(1-0.35h_cS)\big],\label{eq:useful}\\
-Y_{sct}&=M_{sct}B_{sct},\quad
-B_{sct}\sim\mathrm{Bernoulli}\big[q_c(1-0.2S)\big].\label{eq:task}
+Y_{sct}&=M_{sct}B_{sct},\label{eq:task}\\
+B_{sct}&\sim\mathrm{Bernoulli}\big[q_c(1-0.2S)\big].\notag
 \end{align}
 The task draw is performed only if $M_{sct}=1$, exactly as in the implementation. Stress and Bernoulli draws use a pseudorandom stream; the displayed probability model describes their intended sampling semantics. All configured probabilities remain within $[0,1]$.
 

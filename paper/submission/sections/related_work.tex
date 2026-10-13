@@ -1,0 +1,26 @@
+\section{Related Work and Novelty Boundaries}
+\label{sec:related}
+\subsection{Resilience and Application Semantics}
+Sterbenz et al.~\cite{sterbenz2010} define network resilience in terms of maintaining acceptable service despite faults and challenges, and distinguish operational network state from service state. Their multilevel framework and service-state analysis predate this benchmark. The minimum-useful vocabulary here is a small executable instance of an established service-sensitive idea, rather than a claim to have originated that idea. The contribution lies in exposing what this particular corpus exercises and in reconciling its numerical reporting with the code.
+
+Edge computing can provide nearby processing and a fallback when remote cloud service is unavailable~\cite{satyanarayanan2017}. This supports the architectural motivation for local continuity, but local execution does not automatically preserve every workload. A local copy must contain the needed content, application, credentials, and adequate resources. The stored profiles encode only a declared coverage flag; they do not establish those conditions through physical execution.
+
+\subsection{Benchmarking and Physical Anchoring}
+EdgeDroid~\cite{olguin2019} records sensory traces, replays them through application task models, and collects pipeline timing from real client and cloudlet systems. Its workload-conditioned benchmarking is a close methodological comparator. The present corpus uses labeled snapshots and Bernoulli outcomes, without trace playback or execution of application code. It therefore cannot replace that kind of application measurement. A prospective extension could associate each continuity label with a trace-defined task, while preserving unsupported workloads as failures rather than changing the workload after the outage.
+
+Fuller et al.~\cite{fuller2020} discuss digital-twin definitions, data requirements, and common confusion between twins and other digital representations. Contemporary work by Li et al.~\cite{li2025} proposes a native network digital-twin architecture and reports a comparison with real network testing for a signaling-storm use case. The abstract and official publication metadata of that article were inspected; its detailed experimental methodology was not available for full-text audit in this package. Its reported physical comparison nevertheless illustrates the evidence boundary absent here. We do not reproduce or compare numerically against its system.
+
+\subsection{Claimed Increment}
+Table~\ref{tab:novelty} positions the evidence relative to the inspected literature. The novelty claim is intentionally modest: a reproducible profile corpus coupled with an explicit audit of synthetic endpoint semantics. Four-state classification, offline fallback, and digital-twin evaluation are established concepts. No exhaustive priority claim is made. The current study may remain too narrow for a research journal unless reviewers judge the semantic failures and reproducibility contribution sufficiently general or additional validation establishes that generality.
+
+\begin{table*}[t]
+\centering\caption{Contribution boundaries against closely related primary literature. These are methodological comparisons, not executed performance baselines.}\label{tab:novelty}
+\small\begin{tabular}{p{0.19\textwidth}p{0.34\textwidth}p{0.38\textwidth}}\toprule
+Source & Established contribution & Increment and boundary of this study \\\midrule
+Sterbenz et al.~\cite{sterbenz2010} & Acceptable service under challenges; operational and service states & Executable small corpus and metric audit; no new general theory of resilience \\
+Satyanarayanan~\cite{satyanarayanan2017} & Edge proximity and local fallback during cloud disruption & Workload support flags expose failure; no measured edge or cloud comparison \\
+EdgeDroid~\cite{olguin2019} & Trace replay, task models, and measured application timing & Snapshot semantics and synthetic occupancy; no claim of equivalent workload realism \\
+Fuller et al.~\cite{fuller2020} & Twin definitions, enabling technologies, and data-quality challenges & Clear physical-calibration boundary; no sensor-synchronized twin \\
+Li et al.~\cite{li2025} & Native network twin with reported real-network comparison & Reproducibility audit only; no equivalent network-validation evidence \\
+\bottomrule\end{tabular}
+\end{table*}
