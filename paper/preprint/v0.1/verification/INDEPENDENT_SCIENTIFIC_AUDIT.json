@@ -1,0 +1,151 @@
+{
+  "experimental_source_sha": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+  "publication_source_sha": "6523d11066d963d922433607462e5f5cd066b9f8",
+  "independent_replay_seed_class_rows": 120,
+  "seed_count": 30,
+  "steps_per_class": 48,
+  "primary": {
+    "task_completion_ratio": {
+      "n": 30,
+      "mean": 0.4272570333333333,
+      "sample_sd": 0.041610184156652984,
+      "ci95": [
+        0.4117195352176044,
+        0.4427945314490622
+      ]
+    },
+    "time_above_minimum_useful": {
+      "n": 30,
+      "mean": 0.5914930666666667,
+      "sample_sd": 0.04024342465112251,
+      "ci95": [
+        0.5764659249377754,
+        0.606520208395558
+      ]
+    }
+  },
+  "per_class": {
+    "wearable": {
+      "task_completion_ratio": {
+        "n": 30,
+        "mean": 0.1708333,
+        "sample_sd": 0.06052928900677355,
+        "ci95": [
+          0.14823129203126614,
+          0.19343530796873384
+        ]
+      },
+      "time_above_minimum_useful": {
+        "n": 30,
+        "mean": 0.34791659999999996,
+        "sample_sd": 0.07404205662655283,
+        "ci95": [
+          0.3202688416774544,
+          0.37556435832254553
+        ]
+      }
+    },
+    "smartphone": {
+      "task_completion_ratio": {
+        "n": 30,
+        "mean": 0.3916667,
+        "sample_sd": 0.07225180332943375,
+        "ci95": [
+          0.36468743324495007,
+          0.4186459667550499
+        ]
+      },
+      "time_above_minimum_useful": {
+        "n": 30,
+        "mean": 0.5687500333333334,
+        "sample_sd": 0.06836688656243042,
+        "ci95": [
+          0.543221418339877,
+          0.5942786483267898
+        ]
+      }
+    },
+    "laptop": {
+      "task_completion_ratio": {
+        "n": 30,
+        "mean": 0.5187500666666667,
+        "sample_sd": 0.07347387460246567,
+        "ci95": [
+          0.4913144709987109,
+          0.5461856623346225
+        ]
+      },
+      "time_above_minimum_useful": {
+        "n": 30,
+        "mean": 0.6631945333333333,
+        "sample_sd": 0.07758229367924961,
+        "ci95": [
+          0.6342248287697324,
+          0.6921642378969343
+        ]
+      }
+    },
+    "edge_node": {
+      "task_completion_ratio": {
+        "n": 30,
+        "mean": 0.6277778,
+        "sample_sd": 0.08541469178211956,
+        "ci95": [
+          0.5958834299192549,
+          0.6596721700807452
+        ]
+      },
+      "time_above_minimum_useful": {
+        "n": 30,
+        "mean": 0.7861111,
+        "sample_sd": 0.06699216896404307,
+        "ci95": [
+          0.7610958129940908,
+          0.8111263870059091
+        ]
+      }
+    }
+  },
+  "numerical_quadrature_and_closed_form": {
+    "wearable": {
+      "useful": 0.34368750000000003,
+      "completion": 0.17207437500000003,
+      "completion_expectation_in_descriptive_ci": true
+    },
+    "smartphone": {
+      "useful": 0.594,
+      "completion": 0.42026399999999997,
+      "completion_expectation_in_descriptive_ci": false
+    },
+    "laptop": {
+      "useful": 0.681,
+      "completion": 0.5243366666666667,
+      "completion_expectation_in_descriptive_ci": true
+    },
+    "edge_node": {
+      "useful": 0.7722000000000001,
+      "completion": 0.628716,
+      "completion_expectation_in_descriptive_ci": true
+    }
+  },
+  "maximum_observed_primary_rounding_error": 6.666666667043408e-07,
+  "secondary_identity_checks": 720,
+  "corpus_counts": {
+    "target": 12,
+    "min_useful": 8,
+    "failed": 1
+  },
+  "offline_counts": {
+    "min_useful": 8,
+    "failed": 1
+  },
+  "overlay_rows": 20,
+  "paired_contrast_and_effect_size": "not applicable: no executed baseline; null fields preserved",
+  "fixture_file_sha256_valid": true,
+  "content_digest_limit": "engine compares recorded identifiers; does not independently recompute bundle semantic digest",
+  "previous_verifier_source_hashes_valid": true,
+  "historical_verification_record_sha256": "4948dfca6ab3e567a2d1e0edb48dab683d41eece4a38c00df7233b27fd7e31e4",
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "human_scientific_approval": false,
+  "scope": "independent AI-assisted implementation/calculation audit; no external human peer review"
+}
