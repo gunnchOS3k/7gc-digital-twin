@@ -1,0 +1,404 @@
+{
+  "date": "2026-10-13",
+  "clean_directory": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_",
+  "preprint_source_sha": "19d90b9c6be2032618d15c2a1f963c4f0342e7b2",
+  "experimental_source_sha": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+  "existing_dependencies_reused": true,
+  "fresh_platform_installation": false,
+  "commands": {
+    "CLEAN_SOURCE_MANIFEST": {
+      "command": [
+        "/private/tmp/gunnchos-publication-qa-env/bin/python",
+        "VERIFY_MANIFEST.py"
+      ],
+      "cwd": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/source",
+      "exit_code": 0,
+      "log": "CLEAN_SOURCE_MANIFEST.txt"
+    },
+    "CLEAN_SOURCE_BUILD": {
+      "command": [
+        "sh",
+        "BUILD.sh"
+      ],
+      "cwd": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/source",
+      "exit_code": 0,
+      "log": "CLEAN_SOURCE_BUILD.txt"
+    },
+    "CLEAN_RENDER": {
+      "command": [
+        "pdftoppm",
+        "-scale-to",
+        "1700",
+        "-png",
+        "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/source/preprint.pdf",
+        "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/rendered/page"
+      ],
+      "cwd": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_",
+      "exit_code": 0,
+      "log": "CLEAN_RENDER.txt"
+    },
+    "CLEAN_EVIDENCE_MANIFEST": {
+      "command": [
+        "/private/tmp/gunnchos-publication-qa-env/bin/python",
+        "scripts/verify_manifest.py"
+      ],
+      "cwd": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/evidence",
+      "exit_code": 0,
+      "log": "CLEAN_EVIDENCE_MANIFEST.txt"
+    },
+    "CLEAN_REPRODUCE": {
+      "command": [
+        "/private/tmp/gunnchos-publication-qa-env/bin/python",
+        "scripts/reproduce.py"
+      ],
+      "cwd": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/evidence",
+      "exit_code": 0,
+      "log": "CLEAN_REPRODUCE.txt"
+    },
+    "CLEAN_INDEPENDENT_AUDIT": {
+      "command": [
+        "/private/tmp/gunnchos-publication-qa-env/bin/python",
+        "scripts/independent_audit.py"
+      ],
+      "cwd": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/evidence",
+      "exit_code": 0,
+      "log": "CLEAN_INDEPENDENT_AUDIT.txt"
+    },
+    "CLEAN_TEST_VERIFIER": {
+      "command": [
+        "/private/tmp/gunnchos-publication-qa-env/bin/python",
+        "scripts/test_verifier.py"
+      ],
+      "cwd": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/evidence",
+      "exit_code": 0,
+      "log": "CLEAN_TEST_VERIFIER.txt"
+    },
+    "CLEAN_VERIFY_CLAIMS": {
+      "command": [
+        "/private/tmp/gunnchos-publication-qa-env/bin/python",
+        "scripts/verify_claims.py"
+      ],
+      "cwd": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/evidence",
+      "exit_code": 0,
+      "log": "CLEAN_VERIFY_CLAIMS.txt"
+    },
+    "CLEAN_GENERATE_FIGURES": {
+      "command": [
+        "/private/tmp/gunnchos-publication-qa-env/bin/python",
+        "scripts/generate_figures.py"
+      ],
+      "cwd": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/evidence",
+      "exit_code": 0,
+      "log": "CLEAN_GENERATE_FIGURES.txt"
+    },
+    "CLEAN_EVIDENCE_MANIFEST_AFTER_RUN": {
+      "command": [
+        "/private/tmp/gunnchos-publication-qa-env/bin/python",
+        "scripts/verify_manifest.py"
+      ],
+      "cwd": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/evidence",
+      "exit_code": 0,
+      "log": "CLEAN_EVIDENCE_MANIFEST_AFTER_RUN.txt"
+    }
+  },
+  "archives": {
+    "source": {
+      "sha256": "17c93e57d17da963fdbb4c96fae5827219eebaacb6ab0e497b9901474dbcd8cf",
+      "payload_count": 51,
+      "every_member_checksum_valid": true,
+      "exact_membership_valid": true,
+      "manifest_covered_by_outer_zip_sha": true
+    },
+    "evidence": {
+      "sha256": "3c39ad6238dfb0b5d4dd5d1a241163082e66d10b5722359fcfb69d7bfc89b4e2",
+      "payload_count": 220,
+      "every_member_checksum_valid": true,
+      "exact_membership_valid": true,
+      "manifest_covered_by_outer_zip_sha": true
+    }
+  },
+  "human_scientific_approval": false,
+  "publication_authorized": false,
+  "clean_source_pdf_pages": 9,
+  "rendered_page_equality": [
+    {
+      "page": "page-1.png",
+      "pixel_file_sha256": "e4921f3926ea66387ae571700e294a1b55f174dcbc55a012373b46c487fcdbf1",
+      "identical": true
+    },
+    {
+      "page": "page-2.png",
+      "pixel_file_sha256": "f11772cdf8bad357e6f1722f1ac2945ae16c60dd5d95aee95dd65a790a2a5afc",
+      "identical": true
+    },
+    {
+      "page": "page-3.png",
+      "pixel_file_sha256": "6bf176f9073e2b84e36e733151234be5b6779249baefc51e097661089e3ac9a1",
+      "identical": true
+    },
+    {
+      "page": "page-4.png",
+      "pixel_file_sha256": "78795b421fe762803a524a6fb9ef3c6540983e9c40a44a5ada2a78e3c82bb0a6",
+      "identical": true
+    },
+    {
+      "page": "page-5.png",
+      "pixel_file_sha256": "07482b84e87a116c02c31e75ae7642bf01900725686dbc0ecfdce4166fc9e6aa",
+      "identical": true
+    },
+    {
+      "page": "page-6.png",
+      "pixel_file_sha256": "101579859a0de210c9e37adb48b11fce32c7eac6913ae40df3d23ebc9ece9532",
+      "identical": true
+    },
+    {
+      "page": "page-7.png",
+      "pixel_file_sha256": "50342166509dbdb5ca863351b89b5977c992c2b601839edf70e11c31045d11df",
+      "identical": true
+    },
+    {
+      "page": "page-8.png",
+      "pixel_file_sha256": "bb0b7eeef6d3a0a483083ea6d70ea317db811a59ba3e285923f335ebc4564d2c",
+      "identical": true
+    },
+    {
+      "page": "page-9.png",
+      "pixel_file_sha256": "78354ef32e163f76e5fd6c6b2761402dc18427101ffc340181fde1b8e3105ebb",
+      "identical": true
+    }
+  ],
+  "clean_build_pdf_sha256": "1494795d0c051a22b51ca5fabb00eba29e06a60a50a0392c2163083917e67ef6",
+  "accepted_release_pdf_sha256": "5cfa6e027c6785d45654534255e5f1e46f09e0d28c051be7439acc8621b5ccb5",
+  "fresh_unknown_git_producer_explicitly_retained": true,
+  "scientific_payload_sha256": "f8d15b0297088611b065f28ef2c65e1cb1aba86641adfd9da6ddb640e3c47772",
+  "numerical_reproduction_pass": true,
+  "fresh_raster_plots_equal": [
+    "owner_seed_outcomes.png",
+    "owner_fixture_matrix.png",
+    "owner_class_outcomes.png"
+  ],
+  "claim_and_citation_file_links": [
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "CLAIMS.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/source/fixtures/device_os/SERVICE_CONTINUITY_PROFILES.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/reproduction/rq1_gary_flagship_profiles.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/source/src/seven_gc_twin/continuity_benchmark.py",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "verification/INDEPENDENT_SCIENTIFIC_AUDIT.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/reproduction/rq1_gary_flagship_profiles.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/source/configs/experiments/rq1_gary_flagship_profiles.yaml",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/reproduction/rq1_gary_flagship_profiles.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "verification/INDEPENDENT_SCIENTIFIC_AUDIT.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/source/src/seven_gc_twin/rq1_statistical_report.py",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/scripts/independent_audit.py",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/source/src/seven_gc_twin/rq1_statistical_report.py",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "verification/INDEPENDENT_SCIENTIFIC_AUDIT.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/reproduction/current_verification.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "VERIFIER_EXCLUSIONS.md",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "verification/VERIFIER_REGRESSION.txt",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/reproduction/REPRODUCE_RECORD.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "evidence/reproduction/tests_2026-10-13.txt",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "CITATION_VERIFICATION.md",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "NOVELTY_ASSESSMENT.md",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "CROSS_PAPER_CONTRIBUTIONS.md",
+      "exists": true
+    },
+    {
+      "document": "CITATION_VERIFICATION.md",
+      "target": "CITED_IDENTITIES.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "CLAIMS.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "source/fixtures/device_os/SERVICE_CONTINUITY_PROFILES.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "reproduction/rq1_gary_flagship_profiles.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "source/src/seven_gc_twin/continuity_benchmark.py",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "verification/INDEPENDENT_SCIENTIFIC_AUDIT.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "reproduction/rq1_gary_flagship_profiles.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "source/configs/experiments/rq1_gary_flagship_profiles.yaml",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "reproduction/rq1_gary_flagship_profiles.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "verification/INDEPENDENT_SCIENTIFIC_AUDIT.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "source/src/seven_gc_twin/rq1_statistical_report.py",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "scripts/independent_audit.py",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "source/src/seven_gc_twin/rq1_statistical_report.py",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "verification/INDEPENDENT_SCIENTIFIC_AUDIT.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "reproduction/current_verification.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "VERIFIER_EXCLUSIONS.md",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "verification/VERIFIER_REGRESSION.txt",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "reproduction/REPRODUCE_RECORD.json",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "reproduction/tests_2026-10-13.txt",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "CITATION_VERIFICATION.md",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "NOVELTY_ASSESSMENT.md",
+      "exists": true
+    },
+    {
+      "document": "CLAIM_TO_EVIDENCE.md",
+      "target": "CROSS_PAPER_CONTRIBUTIONS.md",
+      "exists": true
+    },
+    {
+      "document": "CITATION_VERIFICATION.md",
+      "target": "CITED_IDENTITIES.json",
+      "exists": true
+    }
+  ],
+  "frozen_git_files_equal": 151,
+  "all_checks_passed": true
+}

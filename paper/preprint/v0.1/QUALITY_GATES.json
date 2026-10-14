@@ -1,0 +1,80 @@
+{
+  "schema": "gunnchos.preprint.quality_gates.v1",
+  "date": "2026-10-13",
+  "decision": "READY FOR OWNER REVIEW",
+  "scope": "Local exploratoryv0.1; no public release or journal approval",
+  "gates": {
+    "MANUSCRIPT_COMPILES": {
+      "status": true,
+      "basis": "Independent standard-article pdfLaTeX/BibTeX build,9pages, verification/COMPILE.txt; no IEEE branding/template assets."
+    },
+    "SOURCE_ARCHIVE_BUILDS": {
+      "status": true,
+      "basis": "Clean ZIP extraction builds with standard TeX dependencies; verification/CLEAN_EXTRACTION_ACCEPTANCE.json. Existing local TeX reused."
+    },
+    "EXPERIMENT_REPRODUCED": {
+      "status": true,
+      "basis": "Exact frozen scientific payload equality from extracted151-file Git snapshot; seed1\u201330 and120seed/class rows; historical provenance retained, clean Git producer unknown explicit. No physical/human reproduction claimed."
+    },
+    "STATISTICS_VERIFIED": {
+      "status": true,
+      "basis": "Independent replay and stdlib/SciPy mean/sampleSD/tCI calculations, analytic quadrature and rounding; no paired baseline/effect size, null fields retained."
+    },
+    "CITATIONS_VERIFIED": {
+      "status": true,
+      "basis": "Eight reference identities/identifiers and narrow used claims checked at declared source-inspection depths; partial full-text limits and no specialist originality clearance."
+    },
+    "CLAIMS_EVIDENCE_ALIGNED": {
+      "status": true,
+      "basis": "Two evidence paths separated; claims/JSON pointers and existing-file links verified. Unsupported measurement/superiority/registration/novelty claims removed or qualified."
+    },
+    "FIGURES_VERIFIED": {
+      "status": true,
+      "basis": "Three programmatic raster plots regenerate identically; native TeX diagram inspected; labels, all numeric table cells and captions checked on rendered pages."
+    },
+    "MATHEMATICS_AUDITED": {
+      "status": true,
+      "basis": "Classifier, Bernoulli gating, weightedfractions, ddof1/t29 CIs and posthoc expectations checked independently; metric identities and outage-entry count verified."
+    },
+    "NOVELTY_BOUNDARY_DOCUMENTED": {
+      "status": true,
+      "basis": "Closest prior resilience/fallback/trace/twin methods compared; elementary/narrow contribution and journal significance limits stated. This is not established novelty."
+    },
+    "CROSS_PAPER_OVERLAP_REVIEWED": {
+      "status": true,
+      "basis": "Current II self-contained journal-review copy and preserved IIIv0.1 compared with I; definitions, sources, units and primary outputs distinguished; stale II sections flagged."
+    },
+    "AI_DISCLOSURE_PREPARED": {
+      "status": true,
+      "basis": "Substantive ChatGPT/Codex drafting, code, statistical/math auditing and programmatic figures disclosed; historical inventory subject to owner confirmation."
+    },
+    "AUTHOR_METADATA_VERIFIED": {
+      "status": true,
+      "basis": "Owner-confirmed name, gunnchOSResearch,email andORCID consistent; additional authors/funding/contributions/rights remain unknown."
+    },
+    "REPRODUCIBILITY_ARCHIVE_VERIFIED": {
+      "status": true,
+      "basis": "All51source+220evidence payload bytes and exact member sets match SHA256SUMS; outer SHA covers each manifest;151frozenfiles match original Git bytes; clean instructions execute."
+    },
+    "OWNER_REVIEW_READY": {
+      "status": true,
+      "basis": "Complete bounded exploratory manuscript, audited results, editable sources, archives and explicit objections/limitations/declarations. Scientific release decision awaits author."
+    },
+    "OWNER_SCIENTIFIC_APPROVAL": {
+      "status": false,
+      "basis": "Pending explicit human review/decision; not inferred from file completion or automated checks."
+    },
+    "ORIGINALITY_HUMAN_VERIFIED": {
+      "status": false,
+      "basis": "Pending explicit human review/decision; not inferred from file completion or automated checks."
+    },
+    "ARTICLE_LICENSE_APPROVED": {
+      "status": false,
+      "basis": "Pending explicit human review/decision; not inferred from file completion or automated checks."
+    },
+    "PUBLICATION_AUTHORIZED": {
+      "status": false,
+      "basis": "Pending explicit human review/decision; not inferred from file completion or automated checks."
+    }
+  }
+}

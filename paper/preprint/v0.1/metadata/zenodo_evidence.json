@@ -22,5 +22,7 @@
   "related_manuscript_doi": null,
   "publication_authorized": false,
   "human_scientific_approval": false,
-  "ai_use": "Substantive ChatGPT/Codex drafting, code, audit, statistics and programmatic illustration assistance; human verification pending"
+  "ai_use": "Substantive ChatGPT/Codex drafting, code, audit, statistics and programmatic illustration assistance; human verification pending",
+  "experimental_source_sha": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+  "preprint_source_sha": "19d90b9c6be2032618d15c2a1f963c4f0342e7b2"
 }

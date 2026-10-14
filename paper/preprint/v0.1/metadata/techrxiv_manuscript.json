@@ -43,5 +43,7 @@
   "candidate_subject": "Communication, Networking and Broadcast Technologies",
   "live_availability": "TEMPORARILY_CLOSED_VERIFIED_2026-10-13",
   "submission_mechanics": "UNVERIFIED_DURING_PLATFORM_TRANSITION",
-  "platform_license_choice": null
+  "platform_license_choice": null,
+  "experimental_source_sha": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+  "preprint_source_sha": "19d90b9c6be2032618d15c2a1f963c4f0342e7b2"
 }

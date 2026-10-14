@@ -1,0 +1,29 @@
+{
+  "replay_rows": 120,
+  "primary": {
+    "task_completion_ratio": {
+      "n": 30,
+      "mean": 0.4272570333333333,
+      "sample_sd": 0.041610184156652984,
+      "ci95": [
+        0.4117195352176044,
+        0.4427945314490622
+      ]
+    },
+    "time_above_minimum_useful": {
+      "n": 30,
+      "mean": 0.5914930666666667,
+      "sample_sd": 0.04024342465112251,
+      "ci95": [
+        0.5764659249377754,
+        0.606520208395558
+      ]
+    }
+  },
+  "corpus": {
+    "target": 12,
+    "min_useful": 8,
+    "failed": 1
+  },
+  "digest_semantics_qualified": true
+}

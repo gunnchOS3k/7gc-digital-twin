@@ -1,0 +1,527 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+entering extended mode
+(./preprint.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def)
+No file preprint.aux.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+
+Package epstopdf Warning: Shell escape feature is not enabled.
+
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd) (./sections/introduction.tex
+
+Package natbib Warning: Citation `itur_m2160' on page 1 undefined on input line 3.
+
+
+Package natbib Warning: Citation `3gpp_ts22261' on page 1 undefined on input line 3.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [1{/Users/gunnchos/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]) (./sections/related_work.tex
+Underfull \hbox (badness 2376) in paragraph at lines 1--1
+[]\T1/lmr/bx/n/14.4 Related Work and Nov-elty
+
+Package natbib Warning: Citation `sterbenz2010' on page 2 undefined on input line 4.
+
+
+Package natbib Warning: Citation `satyanarayanan2017' on page 2 undefined on input line 6.
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 8--8
+[]\T1/lmr/bx/n/12 Benchmarking and Phys-i-cal An-
+
+Package natbib Warning: Citation `olguin2019' on page 2 undefined on input line 9.
+
+
+Package natbib Warning: Citation `fuller2020' on page 2 undefined on input line 11.
+
+
+Package natbib Warning: Citation `li2025' on page 2 undefined on input line 11.
+
+
+LaTeX Warning: Reference `tab:novelty' on page 2 undefined on input line 14.
+
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd)
+
+Package natbib Warning: Citation `sterbenz2010' on page 2 undefined on input line 20.
+
+
+Package natbib Warning: Citation `satyanarayanan2017' on page 2 undefined on input line 21.
+
+
+Package natbib Warning: Citation `olguin2019' on page 2 undefined on input line 22.
+
+
+Package natbib Warning: Citation `fuller2020' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `li2025' on page 2 undefined on input line 24.
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 24--25
+[]|\T1/lmr/m/n/9 Reproducibility au-dit only; no equiv-a-lent
+) (./sections/method.tex
+Underfull \hbox (badness 4792) in paragraph at lines 1--1
+[]\T1/lmr/bx/n/14.4 System Model and Im-ple-
+
+LaTeX Warning: Reference `fig:architecture' on page 2 undefined on input line 4.
+
+
+Underfull \vbox (badness 1253) has occurred while \output is active [2]
+
+LaTeX Warning: Reference `eq:classifier' on page 3 undefined on input line 38.
+
+
+LaTeX Warning: Reference `tab:priors' on page 3 undefined on input line 43.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+\T1/lmr/m/n/10 For each seed $\OML/lmm/m/it/10 s$\T1/lmr/m/n/10 , the sim-u-la-tor in-stan-ti-ates
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+\T1/lmtt/m/n/10 random.Random(s) \T1/lmr/m/n/10 and it-er-ates over wear-able,
+[3{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+
+LaTeX Warning: Reference `eq:useful' on page 4 undefined on input line 67.
+
+
+LaTeX Warning: Reference `eq:task' on page 4 undefined on input line 67.
+
+) (./sections/experimental_design.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\T1/lmr/m/n/10 con-fig-u-ra-tion \T1/lmtt/m/n/10 rq1_gary_flagship_profiles.yaml\T1/lmr/m/n/10 .
+
+Underfull \hbox (badness 1199) in paragraph at lines 4--5
+\T1/lmtt/m/n/10 38f9e4e65830ea2397fb4438e255d5b0 \T1/lmr/m/n/10 ex-panded the
+
+Underfull \hbox (badness 1803) in paragraph at lines 8--9
+[]\T1/lmr/m/n/10 The pro-file bun-dle's de-clared con-tent di-gest is
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\T1/lmtt/m/n/10 ef5323a1607bf88031fb209375325e3935049651
+
+Underfull \hbox (badness 3460) in paragraph at lines 8--9
+\T1/lmtt/m/n/10 346fcc138f022b1aba9c0083\T1/lmr/m/n/10 ; its full-file SHA-256
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\T1/lmr/m/n/10 is \T1/lmtt/m/n/10 98f3a4e5bd76a1bd203af1a4797acc3b0041369e
+[4]) (./sections/results.tex
+
+LaTeX Warning: Reference `tab:fixture' on page 5 undefined on input line 4.
+
+
+LaTeX Warning: Reference `fig:fixture' on page 5 undefined on input line 4.
+
+
+LaTeX Warning: Reference `eq:classifier' on page 5 undefined on input line 4.
+
+(./tables/owner_fixture.tex)
+
+LaTeX Warning: Reference `tab:primary' on page 5 undefined on input line 19.
+
+
+LaTeX Warning: Reference `eq:task' on page 5 undefined on input line 19.
+
+(./tables/owner_primary.tex
+Underfull \hbox (badness 1430) in paragraph at lines 3--3
+[]\T1/lmr/m/n/10 Table 4: []Frozen seeded time-line out-comes; 95%
+)
+
+LaTeX Warning: Reference `fig:seeds' on page 5 undefined on input line 27.
+
+
+LaTeX Warning: Reference `tab:classes' on page 5 undefined on input line 30.
+
+(./tables/owner_class.tex) [5]
+
+LaTeX Warning: Reference `eq:useful' on page 6 undefined on input line 38.
+
+
+LaTeX Warning: Reference `eq:task' on page 6 undefined on input line 38.
+
+
+LaTeX Warning: Reference `fig:classes' on page 6 undefined on input line 38.
+
+
+LaTeX Warning: Reference `tab:metrics' on page 6 undefined on input line 46.
+
+
+Underfull \vbox (badness 4328) has occurred while \output is active
+Underfull \hbox (badness 1348) in paragraph at lines 53--54
+[]|$\OML/lmm/m/it/9 ^^\$\T1/lmr/m/n/9 ; du-pli-cate pri-mary end-
+
+Underfull \hbox (badness 4303) in paragraph at lines 54--54
+[]|\T1/lmr/m/n/9 Outage / QoE vi-o-
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/lmr/m/n/9 la-tion / packet-loss
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+[]|\T1/lmr/m/n/9 Compute com-ple-tion
+
+Underfull \hbox (badness 7168) in paragraph at lines 56--57
+[]|$\OML/lmm/m/it/9 T\OT1/lmr/m/n/9 (1\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 2 \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 4\OML/lmm/m/it/9 C\OT1/lmr/m/n/9 )$\T1/lmr/m/n/9 ; syn-thetic
+
+Underfull \hbox (badness 2401) in paragraph at lines 59--59
+[]|\T1/lmr/m/n/9 Demand-weighted syn-thetic
+) (./sections/discussion.tex [6 <./figures/owner_fixture_matrix.pdf> <./figures/owner_seed_outcomes.pdf>]
+
+LaTeX Warning: Reference `sec:related' on page 7 undefined on input line 11.
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 18--19
+\T1/lmr/m/n/10 This ar-ti-cle pro-vides work-load se-man-tics and an
+
+Underfull \hbox (badness 1237) in paragraph at lines 18--19
+\T1/lmr/m/n/10 au-ditable re-port-ing bound-ary. A sep-a-rate cross-
+
+Underfull \hbox (badness 1014) in paragraph at lines 18--19
+\T1/lmr/m/n/10 layer-control study asks how ra-dio and or-ches-tra-
+[7 <./figures/owner_class_outcomes.pdf>]) (./sections/limitations.tex
+Underfull \hbox (badness 10000) in paragraph at lines 23--1
+\T1/lmr/m/n/10 The com-pan-ion con-trol study's di-men-sion-less
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--1
+\T1/lmr/m/n/10 reliability--delay util-ity and cat-e-gor-i-cal fi-delity
+
+Underfull \hbox (badness 2359) in paragraph at lines 23--1
+\T1/lmr/m/n/10 ac-cu-racy, com-mon con-troller ob-ser-va-tions, packet
+
+Underfull \hbox (badness 1803) in paragraph at lines 1--1
+[]\T1/lmr/bx/n/14.4 Limitations and Threats to
+) (./sections/conclusion.tex) (./sections/declarations.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[][]\T1/lmr/bx/n/14.4 Acknowledgment and Author-
+
+Underfull \vbox (badness 10000) has occurred while \output is active [8]
+
+Package natbib Warning: Citation `openai_codex' on page 9 undefined on input line 4.
+
+)
+No file preprint.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[9] (./preprint.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `preprint.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information)</Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on preprint.pdf (9 pages, 462667 bytes).
+Transcript written on preprint.log.
+This is BibTeX, Version 0.99e (TeX Live 2026)
+The top-level auxiliary file: preprint.aux
+The style file: plainnat.bst
+Database file #1: references.bib
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+entering extended mode
+(./preprint.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def) (./preprint.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+
+Package epstopdf Warning: Shell escape feature is not enabled.
+
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (./preprint.out) (./preprint.out) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd) (./sections/introduction.tex
+
+Package natbib Warning: Citation `itur_m2160' on page 1 undefined on input line 3.
+
+
+Package natbib Warning: Citation `3gpp_ts22261' on page 1 undefined on input line 3.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [1{/Users/gunnchos/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]) (./sections/related_work.tex
+Underfull \hbox (badness 2376) in paragraph at lines 1--1
+[]\T1/lmr/bx/n/14.4 Related Work and Nov-elty
+
+Package natbib Warning: Citation `sterbenz2010' on page 2 undefined on input line 4.
+
+
+Package natbib Warning: Citation `satyanarayanan2017' on page 2 undefined on input line 6.
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 8--8
+[]\T1/lmr/bx/n/12 Benchmarking and Phys-i-cal An-
+
+Package natbib Warning: Citation `olguin2019' on page 2 undefined on input line 9.
+
+
+Package natbib Warning: Citation `fuller2020' on page 2 undefined on input line 11.
+
+
+Package natbib Warning: Citation `li2025' on page 2 undefined on input line 11.
+
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd)
+
+Package natbib Warning: Citation `sterbenz2010' on page 2 undefined on input line 20.
+
+
+Package natbib Warning: Citation `satyanarayanan2017' on page 2 undefined on input line 21.
+
+
+Package natbib Warning: Citation `olguin2019' on page 2 undefined on input line 22.
+
+
+Package natbib Warning: Citation `fuller2020' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `li2025' on page 2 undefined on input line 24.
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 24--25
+[]|\T1/lmr/m/n/9 Reproducibility au-dit only; no equiv-a-lent
+) (./sections/method.tex
+Underfull \hbox (badness 4792) in paragraph at lines 1--1
+[]\T1/lmr/bx/n/14.4 System Model and Im-ple-
+
+Underfull \vbox (badness 1253) has occurred while \output is active [2]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+\T1/lmr/m/n/10 For each seed $\OML/lmm/m/it/10 s$\T1/lmr/m/n/10 , the sim-u-la-tor in-stan-ti-ates
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+\T1/lmtt/m/n/10 random.Random(s) \T1/lmr/m/n/10 and it-er-ates over wear-able,
+[3{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]) (./sections/experimental_design.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\T1/lmr/m/n/10 con-fig-u-ra-tion \T1/lmtt/m/n/10 rq1_gary_flagship_profiles.yaml\T1/lmr/m/n/10 .
+
+Underfull \hbox (badness 1199) in paragraph at lines 4--5
+\T1/lmtt/m/n/10 38f9e4e65830ea2397fb4438e255d5b0 \T1/lmr/m/n/10 ex-panded the
+
+Underfull \hbox (badness 1803) in paragraph at lines 8--9
+[]\T1/lmr/m/n/10 The pro-file bun-dle's de-clared con-tent di-gest is
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\T1/lmtt/m/n/10 ef5323a1607bf88031fb209375325e3935049651
+
+Underfull \hbox (badness 3460) in paragraph at lines 8--9
+\T1/lmtt/m/n/10 346fcc138f022b1aba9c0083\T1/lmr/m/n/10 ; its full-file SHA-256
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\T1/lmr/m/n/10 is \T1/lmtt/m/n/10 98f3a4e5bd76a1bd203af1a4797acc3b0041369e
+[4]) (./sections/results.tex (./tables/owner_fixture.tex) (./tables/owner_primary.tex
+Underfull \hbox (badness 1430) in paragraph at lines 3--3
+[]\T1/lmr/m/n/10 Table 4: []Frozen seeded time-line out-comes; 95%
+) (./tables/owner_class.tex) [5]
+Underfull \vbox (badness 4328) has occurred while \output is active
+Underfull \hbox (badness 1348) in paragraph at lines 53--54
+[]|$\OML/lmm/m/it/9 ^^\$\T1/lmr/m/n/9 ; du-pli-cate pri-mary end-
+
+Underfull \hbox (badness 4303) in paragraph at lines 54--54
+[]|\T1/lmr/m/n/9 Outage / QoE vi-o-
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/lmr/m/n/9 la-tion / packet-loss
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+[]|\T1/lmr/m/n/9 Compute com-ple-tion
+
+Underfull \hbox (badness 7168) in paragraph at lines 56--57
+[]|$\OML/lmm/m/it/9 T\OT1/lmr/m/n/9 (1\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 2 \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 4\OML/lmm/m/it/9 C\OT1/lmr/m/n/9 )$\T1/lmr/m/n/9 ; syn-thetic
+
+Underfull \hbox (badness 2401) in paragraph at lines 59--59
+[]|\T1/lmr/m/n/9 Demand-weighted syn-thetic
+) (./sections/discussion.tex [6 <./figures/owner_fixture_matrix.pdf> <./figures/owner_seed_outcomes.pdf>]
+Underfull \hbox (badness 1845) in paragraph at lines 18--19
+\T1/lmr/m/n/10 This ar-ti-cle pro-vides work-load se-man-tics and an
+
+Underfull \hbox (badness 1237) in paragraph at lines 18--19
+\T1/lmr/m/n/10 au-ditable re-port-ing bound-ary. A sep-a-rate cross-
+
+Underfull \hbox (badness 1014) in paragraph at lines 18--19
+\T1/lmr/m/n/10 layer-control study asks how ra-dio and or-ches-tra-
+[7 <./figures/owner_class_outcomes.pdf>]) (./sections/limitations.tex
+Underfull \hbox (badness 10000) in paragraph at lines 23--1
+\T1/lmr/m/n/10 The com-pan-ion con-trol study's di-men-sion-less
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--1
+\T1/lmr/m/n/10 reliability--delay util-ity and cat-e-gor-i-cal fi-delity
+
+Underfull \hbox (badness 2359) in paragraph at lines 23--1
+\T1/lmr/m/n/10 ac-cu-racy, com-mon con-troller ob-ser-va-tions, packet
+
+Underfull \hbox (badness 1803) in paragraph at lines 1--1
+[]\T1/lmr/bx/n/14.4 Limitations and Threats to
+) (./sections/conclusion.tex) (./sections/declarations.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[][]\T1/lmr/bx/n/14.4 Acknowledgment and Author-
+
+Underfull \vbox (badness 10000) has occurred while \output is active [8]
+
+Package natbib Warning: Citation `openai_codex' on page 9 undefined on input line 4.
+
+) (./preprint.bbl
+Underfull \hbox (badness 2035) in paragraph at lines 9--14
+\T1/lmr/m/n/10 2025.  URL []$\T1/lmtt/m/n/10 https : / / www . etsi . org / deliver /
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--14
+\T1/lmtt/m/n/10 etsi _ TS / 122200 _ 122299 / 122261 / 19 . 12 . 00 _ 60 /
+
+Underfull \hbox (badness 1824) in paragraph at lines 9--14
+\T1/lmtt/m/n/10 ts _ 122261v191200p . pdf$[]\T1/lmr/m/n/10 .  Ver-sioned ref-er-ence;
+
+Underfull \hbox (badness 6300) in paragraph at lines 22--26
+[]\T1/lmr/m/n/10 ITU-R.  Frame-work and over-all ob-jec-tives
+
+Underfull \hbox (badness 2828) in paragraph at lines 22--26
+\T1/lmr/m/n/10 of the fu-ture de-vel-op-ment of IMT for 2030
+
+Underfull \hbox (badness 1577) in paragraph at lines 22--26
+\T1/lmr/m/n/10 and be-yond.  Rec-om-men-da-tion M.2160-0, In-
+)
+
+Package natbib Warning: There were undefined citations.
+
+[9] (./preprint.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+) )
+(see the transcript file for additional information)</Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on preprint.pdf (9 pages, 474749 bytes).
+Transcript written on preprint.log.
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+entering extended mode
+(./preprint.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def) (./preprint.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+
+Package epstopdf Warning: Shell escape feature is not enabled.
+
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (./preprint.out) (./preprint.out) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd) (./sections/introduction.tex
+Underfull \vbox (badness 10000) has occurred while \output is active [1{/Users/gunnchos/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]) (./sections/related_work.tex
+Underfull \hbox (badness 2376) in paragraph at lines 1--1
+[]\T1/lmr/bx/n/14.4 Related Work and Nov-elty
+
+Underfull \hbox (badness 1297) in paragraph at lines 8--8
+[]\T1/lmr/bx/n/12 Benchmarking and Phys-i-cal An-
+(/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/gunnchos/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd)
+Underfull \hbox (badness 3068) in paragraph at lines 24--25
+[]|\T1/lmr/m/n/9 Reproducibility au-dit only; no equiv-a-lent
+) (./sections/method.tex
+Underfull \hbox (badness 4792) in paragraph at lines 1--1
+[]\T1/lmr/bx/n/14.4 System Model and Im-ple-
+
+Underfull \vbox (badness 1253) has occurred while \output is active [2]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+\T1/lmr/m/n/10 For each seed $\OML/lmm/m/it/10 s$\T1/lmr/m/n/10 , the sim-u-la-tor in-stan-ti-ates
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+\T1/lmtt/m/n/10 random.Random(s) \T1/lmr/m/n/10 and it-er-ates over wear-able,
+[3{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]) (./sections/experimental_design.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\T1/lmr/m/n/10 con-fig-u-ra-tion \T1/lmtt/m/n/10 rq1_gary_flagship_profiles.yaml\T1/lmr/m/n/10 .
+
+Underfull \hbox (badness 1199) in paragraph at lines 4--5
+\T1/lmtt/m/n/10 38f9e4e65830ea2397fb4438e255d5b0 \T1/lmr/m/n/10 ex-panded the
+
+Underfull \hbox (badness 1803) in paragraph at lines 8--9
+[]\T1/lmr/m/n/10 The pro-file bun-dle's de-clared con-tent di-gest is
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\T1/lmtt/m/n/10 ef5323a1607bf88031fb209375325e3935049651
+
+Underfull \hbox (badness 3460) in paragraph at lines 8--9
+\T1/lmtt/m/n/10 346fcc138f022b1aba9c0083\T1/lmr/m/n/10 ; its full-file SHA-256
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\T1/lmr/m/n/10 is \T1/lmtt/m/n/10 98f3a4e5bd76a1bd203af1a4797acc3b0041369e
+[4]) (./sections/results.tex (./tables/owner_fixture.tex) (./tables/owner_primary.tex
+Underfull \hbox (badness 1430) in paragraph at lines 3--3
+[]\T1/lmr/m/n/10 Table 4: []Frozen seeded time-line out-comes; 95%
+) (./tables/owner_class.tex) [5]
+Underfull \vbox (badness 4328) has occurred while \output is active
+Underfull \hbox (badness 1348) in paragraph at lines 53--54
+[]|$\OML/lmm/m/it/9 ^^\$\T1/lmr/m/n/9 ; du-pli-cate pri-mary end-
+
+Underfull \hbox (badness 4303) in paragraph at lines 54--54
+[]|\T1/lmr/m/n/9 Outage / QoE vi-o-
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/lmr/m/n/9 la-tion / packet-loss
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+[]|\T1/lmr/m/n/9 Compute com-ple-tion
+
+Underfull \hbox (badness 7168) in paragraph at lines 56--57
+[]|$\OML/lmm/m/it/9 T\OT1/lmr/m/n/9 (1\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 2 \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 4\OML/lmm/m/it/9 C\OT1/lmr/m/n/9 )$\T1/lmr/m/n/9 ; syn-thetic
+
+Underfull \hbox (badness 2401) in paragraph at lines 59--59
+[]|\T1/lmr/m/n/9 Demand-weighted syn-thetic
+) (./sections/discussion.tex [6 <./figures/owner_fixture_matrix.pdf> <./figures/owner_seed_outcomes.pdf>]
+Underfull \hbox (badness 1845) in paragraph at lines 18--19
+\T1/lmr/m/n/10 This ar-ti-cle pro-vides work-load se-man-tics and an
+
+Underfull \hbox (badness 1237) in paragraph at lines 18--19
+\T1/lmr/m/n/10 au-ditable re-port-ing bound-ary. A sep-a-rate cross-
+
+Underfull \hbox (badness 1014) in paragraph at lines 18--19
+\T1/lmr/m/n/10 layer-control study asks how ra-dio and or-ches-tra-
+[7 <./figures/owner_class_outcomes.pdf>]) (./sections/limitations.tex
+Underfull \hbox (badness 10000) in paragraph at lines 23--1
+\T1/lmr/m/n/10 The com-pan-ion con-trol study's di-men-sion-less
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--1
+\T1/lmr/m/n/10 reliability--delay util-ity and cat-e-gor-i-cal fi-delity
+
+Underfull \hbox (badness 2359) in paragraph at lines 23--1
+\T1/lmr/m/n/10 ac-cu-racy, com-mon con-troller ob-ser-va-tions, packet
+
+Underfull \hbox (badness 1803) in paragraph at lines 1--1
+[]\T1/lmr/bx/n/14.4 Limitations and Threats to
+) (./sections/conclusion.tex) (./sections/declarations.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[][]\T1/lmr/bx/n/14.4 Acknowledgment and Author-
+
+Underfull \vbox (badness 10000) has occurred while \output is active [8]) (./preprint.bbl
+Underfull \hbox (badness 2035) in paragraph at lines 9--14
+\T1/lmr/m/n/10 2025.  URL []$\T1/lmtt/m/n/10 https : / / www . etsi . org / deliver /
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--14
+\T1/lmtt/m/n/10 etsi _ TS / 122200 _ 122299 / 122261 / 19 . 12 . 00 _ 60 /
+
+Underfull \hbox (badness 1824) in paragraph at lines 9--14
+\T1/lmtt/m/n/10 ts _ 122261v191200p . pdf$[]\T1/lmr/m/n/10 .  Ver-sioned ref-er-ence;
+
+Underfull \hbox (badness 6300) in paragraph at lines 22--26
+[]\T1/lmr/m/n/10 ITU-R.  Frame-work and over-all ob-jec-tives
+
+Underfull \hbox (badness 2828) in paragraph at lines 22--26
+\T1/lmr/m/n/10 of the fu-ture de-vel-op-ment of IMT for 2030
+
+Underfull \hbox (badness 1577) in paragraph at lines 22--26
+\T1/lmr/m/n/10 and be-yond.  Rec-om-men-da-tion M.2160-0, In-
+) [9] (./preprint.aux) )
+(see the transcript file for additional information)</Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></Users/gunnchos/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on preprint.pdf (9 pages, 474532 bytes).
+Transcript written on preprint.log.

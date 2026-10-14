@@ -1,0 +1,1578 @@
+{
+  "scientific_payload_equal": true,
+  "scientific_payload_sha256": "f8d15b0297088611b065f28ef2c65e1cb1aba86641adfd9da6ddb640e3c47772",
+  "historical_provenance": {
+    "/result_sha256": "1a3f06675626f7087da080421f08174931328b275e10aaf30a076d566c3965dc",
+    "/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "rq1_experiment",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:37Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "experiment_id": "rq1_gary_flagship_profiles",
+        "n_seeds": 30
+      },
+      "content_sha256": "8253d90bccaa269b54a548ffbc4eebfb44df42155bc27a9b67da76d05a619811"
+    },
+    "/runs/0/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:35Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "21ea27c8c8c697e31ea4b7b6983f0232c93191551bf65f0c6fb6574540112dd9"
+    },
+    "/runs/1/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:35Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "21ea27c8c8c697e31ea4b7b6983f0232c93191551bf65f0c6fb6574540112dd9"
+    },
+    "/runs/2/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:35Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "21ea27c8c8c697e31ea4b7b6983f0232c93191551bf65f0c6fb6574540112dd9"
+    },
+    "/runs/3/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:35Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "21ea27c8c8c697e31ea4b7b6983f0232c93191551bf65f0c6fb6574540112dd9"
+    },
+    "/runs/4/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:35Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "21ea27c8c8c697e31ea4b7b6983f0232c93191551bf65f0c6fb6574540112dd9"
+    },
+    "/runs/5/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:35Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "21ea27c8c8c697e31ea4b7b6983f0232c93191551bf65f0c6fb6574540112dd9"
+    },
+    "/runs/6/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/7/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/8/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/9/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/10/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/11/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/12/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/13/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/14/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/15/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/16/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/17/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/18/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/19/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/20/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/21/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/22/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/23/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/24/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/25/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/26/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/27/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:36Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "f2d0e4dffe9936272902ec45f0f899804a20336a1d731f906fa4b58941be7be3"
+    },
+    "/runs/28/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:37Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "ead8f4a847626aab9134662e430b216ac538cb24e323e676f48f53c4c34253d2"
+    },
+    "/runs/29/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+        "generated_at": "2026-10-13T04:02:37Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "ead8f4a847626aab9134662e430b216ac538cb24e323e676f48f53c4c34253d2"
+    }
+  },
+  "fresh_provenance": {
+    "/result_sha256": "6ce476fce5b1931c21eedff047476681559fb6c87f580040373cc1842b8a3dd5",
+    "/wrote": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/evidence/generated/fresh_verifier_v2/rq1_gary_flagship_profiles.json",
+    "/statistical_artifacts": {
+      "json": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/evidence/generated/fresh_verifier_v2/rq1_statistical_report.json",
+      "csv": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/evidence/generated/fresh_verifier_v2/rq1_statistical_report.csv",
+      "md": "/private/tmp/paper-i-v01-acceptance-3ur9b5d_/evidence/generated/fresh_verifier_v2/rq1_statistical_report.md"
+    },
+    "/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "rq1_experiment",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:51Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "experiment_id": "rq1_gary_flagship_profiles",
+        "n_seeds": 30
+      },
+      "content_sha256": "bcb58b9a722f133180103b8b2cf5e3df613c5cfe7095f2f74cb51138f2048873"
+    },
+    "/runs/0/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/1/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/2/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/3/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/4/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/5/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/6/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/7/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/8/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/9/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/10/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/11/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/12/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/13/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:49Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "1207d6ae3ebe0aad90093687abc78273deeb8302cf40a96a7026bd8bd9bc2bd6"
+    },
+    "/runs/14/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/15/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/16/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/17/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/18/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/19/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/20/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/21/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/22/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/23/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/24/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/25/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/26/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/27/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/28/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    },
+    "/runs/29/campus_metrics/provenance": {
+      "schema_name": "gunnchos.twin_provenance",
+      "schema_version": "1.0.0",
+      "artifact_kind": "campus_metrics",
+      "site_id": "gary",
+      "mode": "synthetic-fixture",
+      "evidence_status": "synthetic_fixture",
+      "producer": {
+        "repository": "7gc-digital-twin",
+        "commit": "unknown",
+        "generated_at": "2026-10-14T00:05:50Z"
+      },
+      "non_claims": [
+        "Not a community deployment",
+        "Not an RF campaign measurement",
+        "Not University of Oulu affiliation",
+        "Not field-validated unless evidence_status says otherwise"
+      ],
+      "extra": {
+        "n_users": 1000,
+        "n_barriers": 14
+      },
+      "content_sha256": "701fb5c12ffcf667ba393a015c1c56b97046c2ebf4140b8ec2aaba47e283a0e0"
+    }
+  },
+  "exclusions": [
+    "/provenance/producer/{commit,generated_at}; /provenance/content_sha256 (validated)",
+    "/result_sha256 (validated whole-result digest)",
+    "/runs/0/campus_metrics/provenance/producer/{commit,generated_at}; /runs/0/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/1/campus_metrics/provenance/producer/{commit,generated_at}; /runs/1/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/10/campus_metrics/provenance/producer/{commit,generated_at}; /runs/10/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/11/campus_metrics/provenance/producer/{commit,generated_at}; /runs/11/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/12/campus_metrics/provenance/producer/{commit,generated_at}; /runs/12/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/13/campus_metrics/provenance/producer/{commit,generated_at}; /runs/13/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/14/campus_metrics/provenance/producer/{commit,generated_at}; /runs/14/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/15/campus_metrics/provenance/producer/{commit,generated_at}; /runs/15/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/16/campus_metrics/provenance/producer/{commit,generated_at}; /runs/16/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/17/campus_metrics/provenance/producer/{commit,generated_at}; /runs/17/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/18/campus_metrics/provenance/producer/{commit,generated_at}; /runs/18/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/19/campus_metrics/provenance/producer/{commit,generated_at}; /runs/19/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/2/campus_metrics/provenance/producer/{commit,generated_at}; /runs/2/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/20/campus_metrics/provenance/producer/{commit,generated_at}; /runs/20/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/21/campus_metrics/provenance/producer/{commit,generated_at}; /runs/21/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/22/campus_metrics/provenance/producer/{commit,generated_at}; /runs/22/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/23/campus_metrics/provenance/producer/{commit,generated_at}; /runs/23/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/24/campus_metrics/provenance/producer/{commit,generated_at}; /runs/24/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/25/campus_metrics/provenance/producer/{commit,generated_at}; /runs/25/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/26/campus_metrics/provenance/producer/{commit,generated_at}; /runs/26/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/27/campus_metrics/provenance/producer/{commit,generated_at}; /runs/27/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/28/campus_metrics/provenance/producer/{commit,generated_at}; /runs/28/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/29/campus_metrics/provenance/producer/{commit,generated_at}; /runs/29/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/3/campus_metrics/provenance/producer/{commit,generated_at}; /runs/3/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/4/campus_metrics/provenance/producer/{commit,generated_at}; /runs/4/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/5/campus_metrics/provenance/producer/{commit,generated_at}; /runs/5/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/6/campus_metrics/provenance/producer/{commit,generated_at}; /runs/6/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/7/campus_metrics/provenance/producer/{commit,generated_at}; /runs/7/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/8/campus_metrics/provenance/producer/{commit,generated_at}; /runs/8/campus_metrics/provenance/content_sha256 (validated)",
+    "/runs/9/campus_metrics/provenance/producer/{commit,generated_at}; /runs/9/campus_metrics/provenance/content_sha256 (validated)",
+    "/statistical_artifacts (nonempty output locations)",
+    "/wrote (nonempty output locations)"
+  ],
+  "provenance_validated": true,
+  "source_sha": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+  "publication_execution_sha": "19d90b9c6be2032618d15c2a1f963c4f0342e7b2",
+  "git_metadata_available": false,
+  "frozen_source_bytes_equal": true,
+  "source_sha256": {
+    "src/seven_gc_twin/rq1_statistical_report.py": "f68703c87b762acfa3b0091eacbb76d6f4f9e5b0bbad9fa6a5a34fe6f091ca6a",
+    "src/seven_gc_twin/continuity_benchmark.py": "2b96917ad73c178e0b753a73d6ca04a0198469860dd7e06ad69cb503b696981f",
+    "src/seven_gc_twin/stats.py": "a6b44acbe83a7d8fb7ba5e918df4a07d8378d19bfb0787936e2bdf329ec4087c",
+    "src/seven_gc_twin/experiment_manifest.py": "70bd1d8496214cdd32d4c7b5acf30c4c1bd6d8502077f85d04f1bb791d397666",
+    "src/seven_gc_twin/provenance.py": "fc0cbef52bfd2893252ead58411a246f27f2efe6cb91b56219e2c2242b690464",
+    "configs/experiments/rq1_gary_flagship_profiles.yaml": "e1ecde820ed4e33d14d8d037d5db2981e219a20a4cfd7b3a1addfb8e3cd00991",
+    "paper/artifacts/experiment_protocol.yaml": "1d700affd16ef5241e3259c3ba3aaf419b504f6f1dec3d31d0ef1d9399615ce3",
+    "fixtures/device_os/SERVICE_CONTINUITY_PROFILES.json": "98f3a4e5bd76a1bd203af1a4797acc3b0041369eb879845462b3a231ece6e46a"
+  },
+  "independent_seed_statistics": {
+    "task_completion_ratio": {
+      "n": 30,
+      "mean": 0.4272570333333333,
+      "sample_sd": 0.041610184156652984,
+      "ci95": [
+        0.4117195352176044,
+        0.4427945314490622
+      ]
+    },
+    "time_above_minimum_useful": {
+      "n": 30,
+      "mean": 0.5914930666666667,
+      "sample_sd": 0.04024342465112251,
+      "ci95": [
+        0.5764659249377754,
+        0.606520208395558
+      ]
+    }
+  },
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "evidence_class": "SYNTHETIC_SIM",
+  "human_validation": false
+}

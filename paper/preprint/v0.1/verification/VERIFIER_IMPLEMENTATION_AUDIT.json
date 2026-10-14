@@ -1,0 +1,13 @@
+{
+  "repaired_verifier_source_sha": "6523d11066d963d922433607462e5f5cd066b9f8",
+  "current_test_execution_sha": "19d90b9c6be2032618d15c2a1f963c4f0342e7b2",
+  "verifier_file_sha256": "6a981cc7aed660a7f29f622d3de67d6106f710bde3647ed4bdfa32b6cabcc6b8",
+  "current_code_equals_repaired_commit_bytes": true,
+  "frozen_scientific_source_sha": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa",
+  "original_record_execution_commit": "951a91e9927354d5fcb7009819ea7bb16902c718",
+  "original_record_preserved": true,
+  "original_record_scope": "Execution metadata from before checkpoint commit is retained; this is not relabeled as a clean execution of a later commit. New immutable verifier identity and current focused-test execution are recorded separately.",
+  "four_current_regression_tests": "verification/VERIFIER_REGRESSION_CURRENT.txt",
+  "portable_current_source_execution": "verification/CLEAN_EXTRACTION_ACCEPTANCE.json",
+  "human_scientific_approval": false
+}

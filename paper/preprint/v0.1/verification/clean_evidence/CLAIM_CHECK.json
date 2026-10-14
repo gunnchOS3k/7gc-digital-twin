@@ -1,0 +1,73 @@
+{
+  "claims": [
+    {
+      "id": "I-seeds",
+      "file": "reproduction/rq1_gary_flagship_profiles.json",
+      "sha256": "63e13bed37b9d4743827c1e34f6b3b7a8971978a718099bf8d6f3cc553733455",
+      "status": "PASS"
+    },
+    {
+      "id": "I-steps",
+      "file": "reproduction/rq1_gary_flagship_profiles.json",
+      "sha256": "63e13bed37b9d4743827c1e34f6b3b7a8971978a718099bf8d6f3cc553733455",
+      "status": "PASS"
+    },
+    {
+      "id": "I-completion",
+      "file": "reproduction/rq1_gary_flagship_profiles.json",
+      "sha256": "63e13bed37b9d4743827c1e34f6b3b7a8971978a718099bf8d6f3cc553733455",
+      "status": "PASS"
+    },
+    {
+      "id": "I-useful",
+      "file": "reproduction/rq1_gary_flagship_profiles.json",
+      "sha256": "63e13bed37b9d4743827c1e34f6b3b7a8971978a718099bf8d6f3cc553733455",
+      "status": "PASS"
+    },
+    {
+      "id": "I-no-paired-baseline",
+      "file": "reproduction/rq1_gary_flagship_profiles.json",
+      "sha256": "63e13bed37b9d4743827c1e34f6b3b7a8971978a718099bf8d6f3cc553733455",
+      "status": "PASS"
+    },
+    {
+      "id": "I-no-effect-size",
+      "file": "reproduction/rq1_gary_flagship_profiles.json",
+      "sha256": "63e13bed37b9d4743827c1e34f6b3b7a8971978a718099bf8d6f3cc553733455",
+      "status": "PASS"
+    },
+    {
+      "id": "I-replay120",
+      "file": "verification/INDEPENDENT_SCIENTIFIC_AUDIT.json",
+      "sha256": "ed77dd1755e365fd7155d3a754666bcbb200418fb089653ba5b329b42e9ab2a9",
+      "status": "PASS"
+    },
+    {
+      "id": "I-corpus-counts",
+      "file": "verification/INDEPENDENT_SCIENTIFIC_AUDIT.json",
+      "sha256": "ed77dd1755e365fd7155d3a754666bcbb200418fb089653ba5b329b42e9ab2a9",
+      "status": "PASS"
+    },
+    {
+      "id": "I-verifier-record",
+      "file": "reproduction/current_verification.json",
+      "sha256": "4948dfca6ab3e567a2d1e0edb48dab683d41eece4a38c00df7233b27fd7e31e4",
+      "status": "PASS"
+    },
+    {
+      "id": "I-source-record",
+      "file": "reproduction/current_verification.json",
+      "sha256": "4948dfca6ab3e567a2d1e0edb48dab683d41eece4a38c00df7233b27fd7e31e4",
+      "status": "PASS"
+    },
+    {
+      "id": "I-identity-files",
+      "file": "literature/CITED_IDENTITIES.json",
+      "sha256": "567fe060bc5c04f81b92bc670e8091300c62a88f5b8b02df5753425bfef0897a",
+      "status": "PASS"
+    }
+  ],
+  "numeric_table_cells_match": true,
+  "seed_axis_label_correct": true,
+  "human_review": false
+}

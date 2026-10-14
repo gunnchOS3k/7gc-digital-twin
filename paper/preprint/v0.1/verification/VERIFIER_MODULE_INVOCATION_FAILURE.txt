@@ -1,0 +1,17 @@
+E
+======================================================================
+ERROR: test_verify_current (unittest.loader._FailedTest.test_verify_current)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_verify_current
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py", line 141, in loadTestsFromName
+    module = __import__(module_name)
+  File "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/_publication_worktrees/7gc-digital-twin/paper/submission/scripts/test_verify_current.py", line 3, in <module>
+    from verify_current import compare,digest,SUB,SOURCE_SHA
+ModuleNotFoundError: No module named 'verify_current'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
