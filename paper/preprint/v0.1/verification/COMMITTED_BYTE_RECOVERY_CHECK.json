@@ -1,0 +1,11 @@
+{
+  "checked_checkpoint_sha": "1542b01b0e6d844db5c4ff01932c3f3d6fe7c900",
+  "inventoried_files_checked": 318,
+  "all_committed_bytes_equal_working_payload": true,
+  "csv_original_bytes_retained": true,
+  "csv_sha256": "9a7dca96ee61d07461e0fca822c5db21adaad582677d812b891d76463a255c29",
+  "correction": "Git initially normalized retained reproduction CSV CRLF toLF; -text attributes plus explicit index renormalization now retain the original bytes. Archive/PDF bytes, science and historical original files never changed.",
+  "archives_rebuilt": false,
+  "experiments_repeated": false,
+  "publication_authorized": false
+}
