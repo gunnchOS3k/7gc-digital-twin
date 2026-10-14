@@ -1,0 +1,130 @@
+[
+  {
+    "bib_key": "fuller2020",
+    "title": "Digital Twin: Enabling Technologies, Challenges and Open Research",
+    "authors": [
+      "Aidan Fuller",
+      "Zhong Fan",
+      "Charles Day",
+      "Chris Barlow"
+    ],
+    "venue": "IEEE Access",
+    "year": 2020,
+    "volume": "8",
+    "issue": null,
+    "pages": "108952-108971",
+    "doi": "10.1109/access.2020.2998358",
+    "primary_publisher_url": "https://ieeexplore.ieee.org/document/9103025/",
+    "retained_identity_metadata": "literature/10.1109_ACCESS.2020.2998358.json"
+  },
+  {
+    "bib_key": "satyanarayanan2017",
+    "title": "The Emergence of Edge Computing",
+    "authors": [
+      "Mahadev Satyanarayanan"
+    ],
+    "venue": "Computer",
+    "year": 2017,
+    "volume": "50",
+    "issue": "1",
+    "pages": "30-39",
+    "doi": "10.1109/mc.2017.9",
+    "primary_publisher_url": "http://ieeexplore.ieee.org/document/7807196/",
+    "retained_identity_metadata": "literature/10.1109_MC.2017.9.json"
+  },
+  {
+    "bib_key": "li2025",
+    "title": "Native Network Digital Twin Architecture for 6G: From Design to Practice",
+    "authors": [
+      "Qin Li",
+      "Yong Zhang",
+      "Longbiao Wang",
+      "Xiaodong Duan",
+      "Lu Lu",
+      "Yushuang Hu",
+      "Yajun Zhan",
+      "Yue Lian",
+      "Tao Sun"
+    ],
+    "venue": "IEEE Communications Magazine",
+    "year": 2025,
+    "volume": "63",
+    "issue": "4",
+    "pages": "24-31",
+    "doi": "10.1109/mcom.001.2400216",
+    "primary_publisher_url": "https://ieeexplore.ieee.org/document/10742570/",
+    "retained_identity_metadata": "literature/10.1109_MCOM.001.2400216.json"
+  },
+  {
+    "bib_key": "sterbenz2010",
+    "title": "Resilience and survivability in communication networks: Strategies, principles, and survey of disciplines",
+    "authors": [
+      "James P.G. Sterbenz",
+      "David Hutchison",
+      "Egemen K. Çetinkaya",
+      "Abdul Jabbar",
+      "Justin P. Rohrer",
+      "Marcus Schöller",
+      "Paul Smith"
+    ],
+    "venue": "Computer Networks",
+    "year": 2010,
+    "volume": "54",
+    "issue": "8",
+    "pages": "1245-1265",
+    "doi": "10.1016/j.comnet.2010.03.005",
+    "primary_publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S1389128610000824",
+    "retained_identity_metadata": "literature/10.1016_j.comnet.2010.03.005.json"
+  },
+  {
+    "bib_key": "olguin2019",
+    "title": "EdgeDroid",
+    "authors": [
+      "Manuel Osvaldo J. Olguín Muñoz",
+      "Junjue Wang",
+      "Mahadev Satyanarayanan",
+      "James Gross"
+    ],
+    "venue": "Proceedings of the 20th International Workshop on Mobile Computing Systems and Applications",
+    "year": 2019,
+    "volume": null,
+    "issue": null,
+    "pages": "93-98",
+    "doi": "10.1145/3301293.3302353",
+    "primary_publisher_url": "https://dl.acm.org/doi/10.1145/3301293.3302353",
+    "retained_identity_metadata": "literature/10.1145_3301293.3302353.json"
+  },
+  {
+    "bib_key": "itur_m2160",
+    "title": "Framework and overall objectives of the future development of IMT for 2030 and beyond",
+    "authors": [
+      "ITU-R"
+    ],
+    "venue": "ITU-R Recommendation M.2160-0",
+    "year": 2023,
+    "identifier": "M.2160-0 (2023-11)",
+    "url": "https://www.itu.int/rec/R-REC-M.2160-0-202311-I/en"
+  },
+  {
+    "bib_key": "3gpp_ts22261",
+    "title": "5G; Service requirements for the 5G system",
+    "authors": [
+      "3GPP"
+    ],
+    "venue": "ETSI TS122261 V19.12.0;3GPP TS22.261 Release19",
+    "year": 2025,
+    "identifier": "V19.12.0 (2025-10)",
+    "url": "https://www.etsi.org/deliver/etsi_TS/122200_122299/122261/19.12.00_60/ts_122261v191200p.pdf"
+  },
+  {
+    "bib_key": "openai_codex",
+    "title": "Codex",
+    "authors": [
+      "OpenAI"
+    ],
+    "venue": "Product/software documentation; not a research paper",
+    "year": 2026,
+    "url": "https://openai.com/codex/",
+    "year_scope": "access year, not a claimed research publication date"
+  }
+]
