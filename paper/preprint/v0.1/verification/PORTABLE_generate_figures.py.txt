@@ -1,0 +1,28 @@
+/Users/gunnchos/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/dp/z5frf3m511jcdpdf8v878v8h0000gn/T/matplotlib-lgn225az because there was an issue with the default path (/Users/gunnchos/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/gunnchos/.cache/fontconfig
+	/Users/gunnchos/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/gunnchos/.cache/fontconfig
+	/Users/gunnchos/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/gunnchos/.cache/fontconfig
+	/Users/gunnchos/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/gunnchos/.cache/fontconfig
+	/Users/gunnchos/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/gunnchos/.cache/fontconfig
+	/Users/gunnchos/.fontconfig
+Matplotlib is building the font cache; this may take a moment.

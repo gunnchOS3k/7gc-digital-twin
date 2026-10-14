@@ -1,0 +1,223 @@
+site_id: ghana
+display_name: Ghana
+region_type: west_africa_mobile_first
+campus_role: Mobile-first, power-aware, affordability-aware inclusion node
+digital_divide_context: Mobile-first access with power and cost constraints
+access_barriers:
+- rural backhaul
+- power interruptions
+affordability_barriers:
+- prepaid data costs
+- device import costs
+device_barriers:
+- feature phones mixed with smartphones
+skills_barriers:
+- workforce digital skills gaps
+trust_privacy_barriers:
+- mobile money fraud fears
+power_energy_barriers:
+- solar hub variability
+- grid outages
+resilience_barriers:
+- backhaul failure during storms
+language_accessibility_barriers:
+- multilingual education content
+local_governance: Community + vocational school co-governance
+required_local_steering_circle_roles:
+- vocational instructor
+- solar hub operator
+- youth apprentice
+- telehealth liaison
+- local gov ICT
+local_partner_types_needed:
+- vocational school
+- solar hub
+- health clinic ICT
+community_data_rights: Community retains rights to aggregated insights; no raw PII
+  in public repo
+no_foreign_savior_guardrails:
+- Local instructors own curriculum pacing
+- No donor-driven tech dumping
+- Power metrics include solar reality
+- Mobile money hygiene taught before telemetry
+- Export only aggregates
+anchor_use_cases:
+- use_case_id: ghana_mobile_workforce
+  name: Mobile-first workforce
+  human_problem: Youth unemployment without digital trades
+  technical_problem: Skills-to-repo gap
+  current_workaround: Paper certificates only
+  7gc_intervention: WAIKE workforce track
+  risks_if_done_badly: Training without jobs pathway
+  required_local_partner: vocational school
+  evidence_to_collect:
+  - portfolio rubric
+  repos_involved:
+  - waike-research-ops
+- use_case_id: ghana_solar_hub
+  name: Solar learning hub ops
+  human_problem: Hubs fail when power unstable
+  technical_problem: Need power-aware scheduling
+  current_workaround: Manual generator logs
+  7gc_intervention: Device low-power modes + NTN
+  risks_if_done_badly: Ignoring battery wear
+  required_local_partner: solar operator
+  evidence_to_collect:
+  - power logs
+  repos_involved:
+  - gunnchos-device-os
+  - ntn-resilience-sim
+- use_case_id: ghana_mobile_money_sec
+  name: Mobile money cybersecurity
+  human_problem: Fraud erodes trust
+  technical_problem: Need security education + measurement
+  current_workaround: Word of mouth only
+  7gc_intervention: Edge-IO aggregate probes
+  risks_if_done_badly: Collecting transaction PII
+  required_local_partner: clinic ICT
+  evidence_to_collect:
+  - training attendance
+  repos_involved:
+  - edge-io-measurement-node
+  - waike-research-ops
+resilience_use_cases:
+- use_case_id: ghana_power_backhaul
+  name: Power/backhaul failure
+  normal_day: Normal school day
+  bad_day: Backhaul down
+  worst_day: Regional outage
+  recovery_day: Solar recovery
+  7gc_response: Offline cache + satellite window
+  metrics:
+  - continuity
+  - recovery_time
+  device_and_os_requirements: low_bandwidth
+  edge_io_measurement_requirements: aggregate only
+  waike_learning_tracks:
+  - waike_ghana_power_backhaul
+  ntn_resilience_requirements:
+  - ntn
+  - device-os
+  ai_ran_requirements:
+  - spectrumx-ai-ran-gary
+  beam_selection_requirements:
+  - readygary-6g-beam-selection
+  privacy_and_ethics: Aggregate-only; local ethics review required
+  consent_requirements: Explicit opt-in before any measurement
+  data_never_collected:
+  - precise location of minors
+  - biometrics
+  - raw message content
+  retention_policy: Minimum necessary; delete on request where applicable
+  local_review_needed: true
+- use_case_id: ghana_heat_derate
+  name: Heat derate day
+  normal_day: Cool morning labs
+  bad_day: Midday thermal throttle
+  worst_day: Extended heat wave
+  recovery_day: Night batch sync
+  7gc_response: Power-aware AI-RAN
+  metrics:
+  - energy_score
+  device_and_os_requirements: thermal guard
+  edge_io_measurement_requirements: no student IDs
+  waike_learning_tracks:
+  - waike_ghana_heat_derate
+  ntn_resilience_requirements:
+  - spectrumx
+  - hardware
+  ai_ran_requirements:
+  - spectrumx-ai-ran-gary
+  beam_selection_requirements:
+  - readygary-6g-beam-selection
+  privacy_and_ethics: Aggregate-only; local ethics review required
+  consent_requirements: Explicit opt-in before any measurement
+  data_never_collected:
+  - precise location of minors
+  - biometrics
+  - raw message content
+  retention_policy: Minimum necessary; delete on request where applicable
+  local_review_needed: true
+bad_day_scenarios:
+- scenario_id: backhaul_cut
+  description: Bad-day scenario 1 for ghana
+  trigger: configurable stress event
+  metrics:
+  - service_continuity
+  - unmet_demand_proxy
+  - recovery_time_proxy
+  needs_local_validation: true
+- scenario_id: solar_low
+  description: Bad-day scenario 2 for ghana
+  trigger: configurable stress event
+  metrics:
+  - service_continuity
+  - unmet_demand_proxy
+  - recovery_time_proxy
+  needs_local_validation: true
+- scenario_id: mobile_money_phishing_spike
+  description: Bad-day scenario 3 for ghana
+  trigger: configurable stress event
+  metrics:
+  - service_continuity
+  - unmet_demand_proxy
+  - recovery_time_proxy
+  needs_local_validation: true
+- scenario_id: exam_day_congestion
+  description: Bad-day scenario 4 for ghana
+  trigger: configurable stress event
+  metrics:
+  - service_continuity
+  - unmet_demand_proxy
+  - recovery_time_proxy
+  needs_local_validation: true
+- scenario_id: clinic_telehealth_drop
+  description: Bad-day scenario 5 for ghana
+  trigger: configurable stress event
+  metrics:
+  - service_continuity
+  - unmet_demand_proxy
+  - recovery_time_proxy
+  needs_local_validation: true
+metrics_definitions:
+- metric_id: digital_inclusion_readiness
+  description: Inclusion readiness (smoke composite)
+  scale: 0-1
+- metric_id: access_barrier_score
+  description: Access barrier pressure
+  scale: 0-1
+- metric_id: affordability_pressure
+  description: Affordability pressure
+  scale: 0-1
+- metric_id: power_resilience_risk
+  description: Power/resilience risk
+  scale: 0-1
+- metric_id: privacy_data_harm_risk
+  description: Privacy/data harm risk
+  scale: 0-1
+local_capacity_indicators:
+- trainer_count_proxy
+- mentor_hours_proxy
+- open_lab_hours_proxy
+evidence_to_collect:
+- item_id: ghana_ev_0
+  description: Field validation item 1
+  requires_local_validation: true
+- item_id: ghana_ev_1
+  description: Field validation item 2
+  requires_local_validation: true
+- item_id: ghana_ev_2
+  description: Field validation item 3
+  requires_local_validation: true
+- item_id: ghana_ev_3
+  description: Field validation item 4
+  requires_local_validation: true
+- item_id: ghana_ev_4
+  description: Field validation item 5
+  requires_local_validation: true
+source_assumptions:
+- source_id: gsma_mobile
+  claim: Mobile connectivity statistics (public reports)
+  url_or_reference: https://www.gsma.com
+  confidence: low
+  needs_local_validation: true

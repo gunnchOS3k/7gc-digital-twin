@@ -1,0 +1,26 @@
+{
+  "draft_only": true,
+  "platform": "Zenodo",
+  "title": "Minimum-Useful-Service Continuity: A Reproducible Synthetic Benchmark and Metric-Semantics Audit for Edge Devices — frozen source and computational evidence",
+  "version": "0.1",
+  "creators": [
+    {
+      "name": "Edmund Gunn, Jr.",
+      "given_name": "Edmund",
+      "family_name": "Gunn",
+      "suffix": "Jr.",
+      "affiliation": "gunnchOS Research",
+      "email": "egunnjr@gunnchos.com",
+      "orcid": "0009-0004-6546-2609"
+    }
+  ],
+  "resource_type_candidate": "dataset (mixed software/data evidence; owner must confirm classification)",
+  "description": "Bounded exact-source synthetic evidence: frozen source1a5491bf, seeds1–30,4classes×48abstract steps, preserved raw outputs, independent replay/statistics, provenance comparison and plotting scripts. No physical device, RF, carrier or human study. Separate from manuscript; no DOI reserved.",
+  "license": null,
+  "component_software_notice": "Retained MIT source LICENSE; not blanket article/data permission",
+  "doi": null,
+  "related_manuscript_doi": null,
+  "publication_authorized": false,
+  "human_scientific_approval": false,
+  "ai_use": "Substantive ChatGPT/Codex drafting, code, audit, statistics and programmatic illustration assistance; human verification pending"
+}

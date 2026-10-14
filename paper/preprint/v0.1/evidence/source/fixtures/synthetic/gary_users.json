@@ -1,0 +1,18 @@
+{
+  "fixture_id": "gary_synthetic_users_seed42",
+  "site_id": "gary",
+  "seed": 42,
+  "n_users": 8,
+  "users": [
+    {"user_idx": 0, "demand_mbps": 8.5, "mobility": "static", "workload": "learn"},
+    {"user_idx": 1, "demand_mbps": 12.0, "mobility": "pedestrian", "workload": "create"},
+    {"user_idx": 2, "demand_mbps": 4.0, "mobility": "static", "workload": "sense"},
+    {"user_idx": 3, "demand_mbps": 22.5, "mobility": "static", "workload": "learn"},
+    {"user_idx": 4, "demand_mbps": 6.2, "mobility": "pedestrian", "workload": "learn"},
+    {"user_idx": 5, "demand_mbps": 15.1, "mobility": "static", "workload": "create"},
+    {"user_idx": 6, "demand_mbps": 3.3, "mobility": "pedestrian", "workload": "sense"},
+    {"user_idx": 7, "demand_mbps": 9.8, "mobility": "static", "workload": "learn"}
+  ],
+  "evidence_status": "synthetic_fixture",
+  "note": "Deterministic fixture for RQ1 schema tests. Not a community census and not RF traffic."
+}

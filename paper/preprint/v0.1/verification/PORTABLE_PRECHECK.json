@@ -1,0 +1,27 @@
+{
+  "stage": "preliminary clean-directory portability check; final ZIP extraction still required",
+  "directory": "/private/tmp/paper-i-portability-ajxzykew",
+  "existing_environment_reused": true,
+  "checks": {
+    "reproduce.py": {
+      "exit_code": 0,
+      "log": "PORTABLE_reproduce.py.txt"
+    },
+    "independent_audit.py": {
+      "exit_code": 0,
+      "log": "PORTABLE_independent_audit.py.txt"
+    },
+    "test_verifier.py": {
+      "exit_code": 0,
+      "log": "PORTABLE_test_verifier.py.txt"
+    },
+    "verify_claims.py": {
+      "exit_code": 0,
+      "log": "PORTABLE_verify_claims.py.txt"
+    },
+    "generate_figures.py": {
+      "exit_code": 0,
+      "log": "PORTABLE_generate_figures.py.txt"
+    }
+  }
+}

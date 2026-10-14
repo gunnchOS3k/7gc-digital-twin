@@ -1,0 +1,7 @@
+# Paper I exploratory preprint v0.1 — local author-review candidate
+
+Open preprint.pdf for the complete neutral article. PREPRINT_RELEASE_READINESS.md records final checks and human decisions; SCIENTIFIC_REVIEW.md gives the five strongest objections. The IEEE journal-review manuscript remains separate in paper/submission/ and is not part of this neutral template.
+
+Use REPRODUCIBILITY.md for clean source/evidence execution, CITATION_VERIFICATION.md for inspection depths and POLICY_CHECK.md for dated platform checks. Source archive files are relative; BUILD.sh requires a normal TeX distribution on PATH. Verify source SHA256SUMS with VERIFY_MANIFEST.py before building. Evidence archive has its own scripts/verify_manifest.py, frozen source, retained outputs and portable reproduction/audit/plot scripts. The outer ZIP hashes cover their inner manifest files. No hidden machine path or runtime binary is bundled.
+
+Human scientific approval, originality verification, article-license approval and publication authorization are false. Additional authors, funding, conflicts, rights and prior dissemination are pending. This is not posted, peer reviewed, journal accepted, physically validated or an established novelty claim. Metadata is draft-only. Source archive review companions refer to evidence paths that are provided by the separate evidence archive; the archive inventory explicitly distinguishes those two scopes.

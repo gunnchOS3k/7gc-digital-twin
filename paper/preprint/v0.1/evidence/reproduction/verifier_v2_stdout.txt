@@ -1,0 +1,1 @@
+PASS: exact scientific payload equality; provenance digests/timestamps/producer commits separately validated and retained.

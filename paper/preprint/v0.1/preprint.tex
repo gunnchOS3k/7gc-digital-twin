@@ -1,0 +1,35 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[a4paper,margin=18mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsfonts,graphicx,booktabs,array,url}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+\setlength{\columnsep}{7mm}
+\title{Minimum-Useful-Service Continuity: A Reproducible Synthetic Benchmark and Metric-Semantics Audit for Edge Devices}
+\author{Edmund Gunn, Jr.\\gunnchOS Research\\\texttt{egunnjr@gunnchos.com}\\ORCID: \href{https://orcid.org/0009-0004-6546-2609}{0009-0004-6546-2609}}
+\date{gunnchOS Research Exploratory Preprint --- v0.1\\Local candidate for scientific review, 13 October 2026\\Not peer reviewed. Not posted. Publication authorization: false.}
+\begin{document}
+\maketitle
+\begin{abstract}
+
+Useful service on an edge device can persist after a network disconnection, while a connected device can still fail to complete a task. Evaluating continuity therefore requires explicit workload semantics and a clear boundary between measured and simulated evidence. This article develops and audits a reproducible synthetic benchmark that separates a deterministic service-profile corpus from a seeded continuity generator. The corpus contains 21 stored snapshots across four device profiles; eight offline snapshots preserve declared local workloads, whereas an unsupported wearable coding workload fails. All four snapshots labeled degraded Wi-Fi remain in the connected state and receive the target label, exposing incomplete stress coverage. A separate generator uses 30 recorded seeds, four synthetic device classes, and 48 abstract steps per class. Mean task completion is 0.4273 with a 95 percent interval of 0.4117 to 0.4428; mean time above minimum useful service is 0.5915 with an interval of 0.5765 to 0.6065. These intervals describe simulation variability. A source-level audit shows that several secondary endpoints duplicate the useful-time outcome and that the recovery counter records outage entries. Analytic expectations explain the generator's class ordering through its configured priors. The contribution is a transparent benchmark and an evidence-semantics audit, with explicit limits on hardware, radio, human-experience, and transferability claims. Physical calibration and independent policy comparisons remain necessary before deployment conclusions.
+
+\end{abstract}
+\noindent\textbf{Keywords:} 
+Benchmarking, edge computing, minimum useful service, reproducibility, service continuity, synthetic simulation.
+
+
+\noindent\textbf{Evidence status.} Synthetic fixture and simulation audit. Experimental source: \texttt{1a5491bf}; preserved journal source: \texttt{951a91e}; repaired-verifier source: \texttt{6523d11}. Full revisions and file hashes accompany this candidate. Human scientific approval, originality verification and article-license approval remain pending.
+
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/method}
+\input{sections/experimental_design}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/limitations}
+\input{sections/conclusion}
+\input{sections/declarations}
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

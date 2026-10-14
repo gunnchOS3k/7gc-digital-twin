@@ -1,0 +1,3 @@
+site_id: ghana
+edge_cache: true
+offline_server_where_needed: true

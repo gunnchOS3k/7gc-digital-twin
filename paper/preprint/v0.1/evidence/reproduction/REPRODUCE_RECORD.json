@@ -1,0 +1,19 @@
+{
+  "repo": "7gc-digital-twin",
+  "research_question": "RQ1",
+  "command": "make reproduce",
+  "start": "2026-10-13T04:02:32Z",
+  "end": "2026-10-13T04:02:37Z",
+  "result": "PASS",
+  "artifact": "results/experiments/rq1_gary_flagship_profiles.json",
+  "output_hashes": {
+    "results/experiments/rq1_gary_flagship_profiles.json": "63e13bed37b9d4743827c1e34f6b3b7a8971978a718099bf8d6f3cc553733455"
+  },
+  "evidence_status": "synthetic_fixture",
+  "non_claims": [
+    "Not independent human sign-off",
+    "Not RF campaign measurement",
+    "Not community deployment",
+    "Not University of Oulu affiliation"
+  ]
+}

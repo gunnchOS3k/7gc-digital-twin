@@ -1,0 +1,3 @@
+site_id: gaza
+strategy: sound-isolated partitions between learning zones
+not_fully_soundproof: true

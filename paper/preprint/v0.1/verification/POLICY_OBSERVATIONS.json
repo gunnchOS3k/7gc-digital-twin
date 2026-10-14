@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-13",
+  "techrxiv": {
+    "url": "https://www.techrxiv.org/",
+    "method": "live browser accessibility state; automatic challenge completed without interaction",
+    "closure_verified": true,
+    "evidence_excerpt": "Submissions are temporarily closed during this process. All previously published content will remain accessible and DOIs will continue to resolve.",
+    "submission_mechanics_verified": false
+  },
+  "arxiv": {
+    "rate_url": "https://info.arxiv.org/help/moderation/index.html",
+    "new_per_author_calendar_month": 2,
+    "active_limit": 3,
+    "endorsement_url": "https://info.arxiv.org/help/endorsement.html",
+    "account_eligibility_checked": false
+  },
+  "licenses_accepted": false,
+  "doi_created": false,
+  "authorization": false
+}

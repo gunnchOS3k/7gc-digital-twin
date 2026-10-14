@@ -1,0 +1,104 @@
+[
+  {
+    "id": "I-seeds",
+    "file": "evidence/reproduction/rq1_gary_flagship_profiles.json",
+    "pointer": "/statistical_report/seeds",
+    "expected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  {
+    "id": "I-steps",
+    "file": "evidence/reproduction/rq1_gary_flagship_profiles.json",
+    "pointer": "/statistical_report/steps_per_seed",
+    "expected": 48
+  },
+  {
+    "id": "I-completion",
+    "file": "evidence/reproduction/rq1_gary_flagship_profiles.json",
+    "pointer": "/statistical_report/primary/task_completion_ratio/mean",
+    "expected": 0.4272570333333333,
+    "tolerance": 1e-12
+  },
+  {
+    "id": "I-useful",
+    "file": "evidence/reproduction/rq1_gary_flagship_profiles.json",
+    "pointer": "/statistical_report/primary/time_above_minimum_useful/mean",
+    "expected": 0.5914930666666667,
+    "tolerance": 1e-12
+  },
+  {
+    "id": "I-no-paired-baseline",
+    "file": "evidence/reproduction/rq1_gary_flagship_profiles.json",
+    "pointer": "/statistical_report/paired_vs_baseline",
+    "expected": null
+  },
+  {
+    "id": "I-no-effect-size",
+    "file": "evidence/reproduction/rq1_gary_flagship_profiles.json",
+    "pointer": "/statistical_report/effect_sizes",
+    "expected": null
+  },
+  {
+    "id": "I-replay120",
+    "file": "evidence/verification/INDEPENDENT_SCIENTIFIC_AUDIT.json",
+    "pointer": "/independent_replay_seed_class_rows",
+    "expected": 120
+  },
+  {
+    "id": "I-corpus-counts",
+    "file": "evidence/verification/INDEPENDENT_SCIENTIFIC_AUDIT.json",
+    "pointer": "/corpus_counts",
+    "expected": {
+      "target": 12,
+      "min_useful": 8,
+      "failed": 1
+    }
+  },
+  {
+    "id": "I-verifier-record",
+    "file": "evidence/reproduction/current_verification.json",
+    "pointer": "/scientific_payload_equal",
+    "expected": true
+  },
+  {
+    "id": "I-source-record",
+    "file": "evidence/reproduction/current_verification.json",
+    "pointer": "/source_sha",
+    "expected": "1a5491bf9261f77a75cc0fa7edbb5f25b425c7aa"
+  },
+  {
+    "id": "I-identity-files",
+    "file": "evidence/literature/CITED_IDENTITIES.json",
+    "length": 8
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "pdf_sha256": "5cfa6e027c6785d45654534255e5f1e46f09e0d28c051be7439acc8621b5ccb5",
+  "pages": 9,
+  "page_inspections": [
+    {
+      "page": 1,
+      "notes": "Title, author metadata, review status, abstract and units readable.",
+      "png_sha256": "e4921f3926ea66387ae571700e294a1b55f174dcbc55a012373b46c487fcdbf1"
+    },
+    {
+      "page": 2,
+      "notes": "Related work, research questions, novelty limits and two evidence paths clear.",
+      "png_sha256": "f11772cdf8bad357e6f1722f1ac2945ae16c60dd5d95aee95dd65a790a2a5afc"
+    },
+    {
+      "page": 3,
+      "notes": "Wide novelty table, method diagram and Eqs1\u20134 fit; mathematical symbols intact.",
+      "png_sha256": "6bf176f9073e2b84e36e733151234be5b6779249baefc51e097661089e3ac9a1"
+    },
+    {
+      "page": 4,
+      "notes": "Prior table, exact source/protocol history, hashes, SD and tCI equations fit.",
+      "png_sha256": "78795b421fe762803a524a6fb9ef3c6540983e9c40a44a5ada2a78e3c82bb0a6"
+    },
+    {
+      "page": 5,
+      "notes": "Fixture counts and primary table match data; provenance qualification readable.",
+      "png_sha256": "07482b84e87a116c02c31e75ae7642bf01900725686dbc0ecfdce4166fc9e6aa"
+    },
+    {
+      "page": 6,
+      "notes": "Fixture/seed figures readable; repaired class table fits within column; Eqs7\u20138 intact.",
+      "png_sha256": "101579859a0de210c9e37adb48b11fce32c7eac6913ae40df3d23ebc9ece9532"
+    },
+    {
+      "page": 7,
+      "notes": "Class mean/expectation figure, metric identity table and future design readable.",
+      "png_sha256": "50342166509dbdb5ca863351b89b5977c992c2b601839edf70e11c31045d11df"
+    },
+    {
+      "page": 8,
+      "notes": "Companion definitions, validity limits and conclusion readable.",
+      "png_sha256": "bb0b7eeef6d3a0a483083ea6d70ea317db811a59ba3e285923f335ebc4564d2c"
+    },
+    {
+      "page": 9,
+      "notes": "Declarations, AI disclosure and all8 bibliography entries fit; no clipping.",
+      "png_sha256": "78354ef32e163f76e5fd6c6b2761402dc18427101ffc340181fde1b8e3105ebb"
+    }
+  ],
+  "actual_layout_fix": "Class table17.77pt overflow corrected with8pt table text and3pt cell padding; no numeric cells removed.",
+  "overfull_boxes": 0,
+  "undefined_references_or_citations": false,
+  "inspector": "Codex visual inspection, not independent human scientific review",
+  "neutral_layout": "standardarticle; no IEEE assets"
+}
