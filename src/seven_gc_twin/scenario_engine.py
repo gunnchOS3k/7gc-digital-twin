@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from .bad_day_scenarios import run_bad_day
-from .campus_metrics import compute_campus_metrics
+from .campus_metrics import compute_campus_metrics, synthetic_evidence_status
 from .community_benefit import community_benefit_report
 from .local_capacity import local_capacity_plan
 from .site_profiles import list_profile_sites
@@ -19,7 +19,7 @@ def run_scenario(site_id: str, scenario_id: str, mode: str = "smoke") -> dict:
         "bad_day": bad,
         "community_benefit": community_benefit_report(site_id, metrics),
         "local_capacity": local_capacity_plan(site_id),
-        "evidence_status": "smoke_test_only",
+        "evidence_status": synthetic_evidence_status(mode),
     }
 
 
