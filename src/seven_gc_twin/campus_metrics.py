@@ -16,6 +16,32 @@ from .site_profiles import load_profile
 from .config.schema import FLAGSHIP_SITE_ID, METRIC_FAMILIES
 
 
+_KNOWN_SYNTHETIC_MODES = {"smoke", "synthetic-fixture", "toy", "local-safe"}
+_FORBIDDEN_EVIDENCE_FRAGMENTS = (
+    "physical",
+    "measured",
+    "certified",
+    "full_v1",
+    "evt",
+    "ota",
+)
+
+
+def synthetic_evidence_status(mode: str) -> str:
+    """Label a campus run that has no physical evidence file.
+
+    Known toy modes stay ``smoke_test_only``. Any other mode stays an
+    explicit synthetic label. Caller strings such as ``physical`` are rejected
+    so a mode flag cannot mint a measurement claim.
+    """
+    key = (mode or "smoke").strip().lower()
+    if any(fragment in key for fragment in _FORBIDDEN_EVIDENCE_FRAGMENTS):
+        raise ValueError(f"synthetic campus path cannot adopt evidence mode {mode!r}")
+    if key in _KNOWN_SYNTHETIC_MODES:
+        return "smoke_test_only"
+    return "synthetic_unspecified"
+
+
 def _seed_score(site_id: str, salt: str) -> float:
     h = hashlib.sha256(f"{site_id}:{salt}".encode()).hexdigest()
     return round(int(h[:8], 16) / 0xFFFFFFFF, 4)
@@ -121,11 +147,11 @@ def compute_campus_metrics(site_id: str, mode: str = "smoke", seed: int = 42) ->
         "is_flagship": site_id == FLAGSHIP_SITE_ID or bool(site.get("is_flagship")),
         "scenario_environment_not_community_deployment": True,
         "mode": mode,
-        "evidence_status": "smoke_test_only" if mode in {"smoke", "synthetic-fixture", "toy"} else mode,
+        "evidence_status": synthetic_evidence_status(mode),
         "metric_families": list(METRIC_FAMILIES),
         **families["inclusion"],
         "families": families,
-        "evidence_maturity_level": 1 if mode in {"smoke", "synthetic-fixture", "toy"} else 2,
+        "evidence_maturity_level": 1,
         "needs_local_validation": True,
         "provenance": stamp(
             artifact_kind="campus_metrics",

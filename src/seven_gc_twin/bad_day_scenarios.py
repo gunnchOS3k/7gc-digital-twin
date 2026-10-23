@@ -1,6 +1,7 @@
 """Bad-day scenario helpers."""
 from __future__ import annotations
 
+from .campus_metrics import synthetic_evidence_status
 from .site_profiles import load_profile
 
 
@@ -17,7 +18,7 @@ def run_bad_day(site_id: str, scenario_id: str, mode: str = "smoke") -> dict:
         "site_id": site_id,
         "scenario_id": scenario_id,
         "mode": mode,
-        "evidence_status": "smoke_test_only" if mode == "smoke" else "research_run",
+        "evidence_status": synthetic_evidence_status(mode),
         "description": base.get("description"),
         "metrics": base.get("metrics", []),
         "stress_score": 0.55 if mode == "smoke" else 0.5,
