@@ -1,7 +1,7 @@
 {
   "schema": "7gc_digital_twin.calibrated_measurement_gap/v1",
-  "generated_at": "2026-10-30T21:15:00.000Z",
-  "source_tip": "017e8ce",
+  "generated_at": "2026-10-30T21:54:56Z",
+  "source_tip": "pending_commit",
   "evidence_class_current": "SYNTHETIC_SIM",
   "calibrated_measurements_present": false,
   "field_rf_present": false,
@@ -12,7 +12,7 @@
       "id": "GAP-CAL-001",
       "need": "Calibrated site RF / channel measurements for Gary flagship profiles",
       "why_cursor_cannot_close": "Inventing RF numbers would falsify paper evidence; physical/lab capture is owner/external",
-      "unblock_test": "Owner supplies measurement bundle with provenance SHA; reproduce path refuses to promote SYNTHETIC_SIM → CALIBRATED without that bundle",
+      "unblock_test": "Owner supplies measurement bundle with provenance SHA; reproduce path refuses to promote SYNTHETIC_SIM \u2192 CALIBRATED without that bundle",
       "engineering_may_resume_after": true
     },
     {
@@ -30,10 +30,17 @@
       "engineering_may_resume_after": false
     }
   ],
+  "engineering_guard": {
+    "module": "src/seven_gc_twin/evidence_class_guard.py",
+    "tests": "tests/test_evidence_class_guard.py",
+    "refuses_calibrated_without": "paper/calibrated_measurements/PROVENANCE.sha256",
+    "refuses_self_submitted": true
+  },
   "digital_feasibly_complete_without_calibration": [
     "make reproduce synthetic RQ1 path",
     "README / manuscript honesty that results are SYNTHETIC_SIM",
-    "CLAIMS_TO_EVIDENCE rows bound to synthetic tables only"
+    "CLAIMS_TO_EVIDENCE rows bound to synthetic tables only",
+    "evidence_class_guard refuses CALIBRATED/SUBMITTED without owner bundle"
   ],
   "non_claims": [
     "This ledger is not calibrated evidence",
