@@ -2,12 +2,14 @@
 
 **Maturity:** review-ready draft (not submission-final)
 
-**Real:** repo code, docs, diagrams, E2E commands
+**Real:** repo code, docs, diagrams, E2E commands, `make reproduce` synthetic fixture path
 
-**Synthetic:** all demo metrics
+**Synthetic:** all demo / Monte Carlo metrics (`evidence_status=synthetic_fixture`)
 
-**Missing:** calibrated measurements, BibTeX completion
+**Bibliography:** eight manuscript citations verified in `paper/preprint/v0.1/CITATION_VERIFICATION.md` (not an exhaustive novelty search). Do not treat older "BibTeX completion" backlog notes as current.
 
-**Commands:** `make e2e`
+**Still missing / external:** calibrated measurements, independent scientific review, SUBMITTED/ACCEPTED (none authorized)
 
-**Artifacts:** `results/e2e/gary_summary.md, gary_export.json`
+**Commands:** `make reproduce` · `make paper-reproduce` · `make e2e`
+
+**Artifacts:** `results/reproduce/REPRODUCE_RECORD.json`, `results/experiments/rq1_gary_flagship_profiles.json`, `results/e2e/gary_summary.md`
