@@ -42,9 +42,14 @@ def test_stamp_keeps_synthetic_and_human_false():
 
 def test_gap_ledger_honest():
     import json
+    import subprocess
 
     gap = json.loads((ROOT / "paper" / "CALIBRATED_MEASUREMENT_GAP.json").read_text())
+    tip = subprocess.check_output(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, text=True).strip()
     assert gap["evidence_class_current"] == "SYNTHETIC_SIM"
     assert gap["calibrated_measurements_present"] is False
     assert gap["submitted_claim"] is False
+    assert gap.get("accepted_claim") is False
+    assert gap["source_tip"].startswith(tip[:7])
     assert "HUMAN/RC2/V1 remain false" in gap["non_claims"]
+    assert "Presence of gap rows does not authorize SUBMITTED/ACCEPTED" in gap["non_claims"]

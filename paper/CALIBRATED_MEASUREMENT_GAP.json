@@ -1,7 +1,8 @@
 {
   "schema": "7gc_digital_twin.calibrated_measurement_gap/v1",
-  "generated_at": "2026-10-30T21:54:56Z",
-  "source_tip": "094ae006c746973cac5c41c5a130648cfd6f4c89",
+  "generated_at": "2026-11-02T01:10:00Z",
+  "source_tip": "af316c3",
+  "promotion_guard_tip": "094ae006c746973cac5c41c5a130648cfd6f4c89",
   "evidence_class_current": "SYNTHETIC_SIM",
   "calibrated_measurements_present": false,
   "field_rf_present": false,
